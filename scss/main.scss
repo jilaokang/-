@@ -24,15 +24,18 @@ img {
     color: green;
 }
 
-.block{
-.weui-flex__item {
-    color: #888;
-    padding: 20px;
-    border: 1px solid #f8f7f7;
-    &:hover {
-        box-shadow: 0 0 10px rgb(197, 197, 197) inset;
+.block {
+    .weui-flex__item {
+        color: #888;
+        padding: 20px;
+        border: 1px solid #f8f7f7;
+        &:hover {
+            box-shadow: 0 0 10px rgb(197, 197, 197) inset;
+        }
+        p{
+            font-size: 0.8em;
+        }
     }
-}
 }
 
 .title {

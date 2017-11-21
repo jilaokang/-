@@ -23,6 +23,8 @@ img {
   border: 1px solid #f8f7f7; }
   .block .weui-flex__item:hover {
     box-shadow: 0 0 10px #c5c5c5 inset; }
+  .block .weui-flex__item p {
+    font-size: 0.8em; }
 
 .title {
   padding: 8px 10px; }
