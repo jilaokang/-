@@ -1,3 +1,6 @@
+body {
+  background: #fafafa; }
+
 .weui-flex {
   text-align: center;
   padding: 0; }
@@ -17,14 +20,16 @@ img {
 .green {
   color: green; }
 
-.block .weui-flex__item {
-  color: #888;
-  padding: 20px;
-  border: 1px solid #f8f7f7; }
-  .block .weui-flex__item:hover {
-    box-shadow: 0 0 18px #e9cfcf inset; }
-  .block .weui-flex__item p {
-    font-size: 0.8em; }
+.block {
+  background: white; }
+  .block .weui-flex__item {
+    color: #888;
+    padding: 20px;
+    border: 1px solid #f8f7f7; }
+    .block .weui-flex__item:hover {
+      box-shadow: 0 0 18px #e9cfcf inset; }
+    .block .weui-flex__item p {
+      font-size: 0.8em; }
 
 .title {
   padding: 8px 10px; }
