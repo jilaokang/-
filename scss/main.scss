@@ -1,0 +1,40 @@
+.weui-flex {
+    text-align: center;
+    padding: 0;
+}
+
+.iconfont {
+    font-size: 2.6em !important;
+}
+
+img {
+    width: 50px;
+}
+
+.red {
+    color: #369;
+    ;
+}
+
+.blue {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.block{
+.weui-flex__item {
+    color: #888;
+    padding: 20px;
+    border: 1px solid #f8f7f7;
+    &:hover {
+        box-shadow: 0 0 3px rgb(197, 197, 197) inset;
+    }
+}
+}
+
+.title {
+    padding: 8px 10px;
+}
