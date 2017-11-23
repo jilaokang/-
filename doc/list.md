@@ -46,6 +46,8 @@
 > * 学生：1
 > * 老师：2
 >
+> 图标编码 -> font
+>
 > 图标颜色 -> color
 > 
 > 是否显示 -> display
@@ -60,6 +62,7 @@ life: [
     id: 01,
     item: "一卡通缴费",
     include: 2,
+    font: "#$5846",
     color: "#666666",
     display: "true"
   },
@@ -67,6 +70,7 @@ life: [
     id: 02,
     item: "校车班次",
     include: 0,
+    font: "#9876",
     color: "#888888",
     display: "false"
   }
