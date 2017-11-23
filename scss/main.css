@@ -30,6 +30,7 @@ img {
 }
 
 .block .weui-flex__item p {
+  padding: 12px;
   font-size: 0.8em;
 }
  
