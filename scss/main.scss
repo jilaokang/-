@@ -1,5 +1,5 @@
-body{
-    background: rgb(250,250,250);
+body {
+    background: rgb(250, 250, 250);
 }
 
 .weui-flex {
@@ -16,27 +16,28 @@ img {
     width: 50px;
 }
 
-
 .block {
     background: white;
     .weui-flex__item {
         color: rgb(6, 6, 6);
         border: 1px solid #f8f7f7;
         padding: 20px 0;
-
         &:hover {
             box-shadow: 0 0 18px rgb(253, 247, 247) inset;
         }
-        
-        p{
+        p {
             padding: 12px;
             font-size: 0.8em;
         }
     }
 }
 
-footer{
+.icon-none {
+    background: rgb(250, 250, 250);
+    border-width: 0;
+}
+
+footer {
     margin: 38px 0 8px 0 !important;
     text-align: center;
 }
-

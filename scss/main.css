@@ -35,6 +35,11 @@ img {
   font-size: 0.8em;
 }
 
+.icon-none {
+  background: #fafafa;
+  border-width: 0;
+}
+
 footer {
   margin: 38px 0 8px 0 !important;
   text-align: center;
