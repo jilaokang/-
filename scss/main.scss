@@ -8,6 +8,7 @@ body{
 }
 
 .iconfont {
+    color: #999;
     font-size: 1.68em !important;
 }
 
@@ -20,14 +21,22 @@ img {
     background: white;
     .weui-flex__item {
         color: rgb(6, 6, 6);
-        padding: 20px;
         border: 1px solid #f8f7f7;
+        padding: 20px;
+
         &:hover {
             box-shadow: 0 0 18px rgb(253, 247, 247) inset;
         }
+        
         p{
             padding: 12px;
             font-size: 0.8em;
         }
     }
 }
+
+footer{
+    margin: 50px 0 !important;
+    text-align: center;
+}
+

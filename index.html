@@ -24,10 +24,7 @@
         @font-face {
             font-family: 'iconfont';
             src: url('fonts/icon/iconfont.eot');
-            src: url('fonts/icon/iconfont.eot?#iefix') format('embedded-opentype'),
-            url('fonts/icon/iconfont.woff') format('woff'),
-            url('fonts/icon/iconfont.ttf') format('truetype'),
-            url('fonts/icon/iconfont.svg#iconfont') format('svg');
+            src: url('fonts/icon/iconfont.eot?#iefix') format('embedded-opentype'), url('fonts/icon/iconfont.woff') format('woff'), url('fonts/icon/iconfont.ttf') format('truetype'), url('fonts/icon/iconfont.svg#iconfont') format('svg');
         }
 
         .iconfont {
@@ -41,186 +38,181 @@
     </style>
 </head>
 
-
-
-
-
-
 <body ontouchstart>
-    <div class="weui-cells__title">开关</div>
-    <div class="weui-cells weui-cells_form">
-        <div class="weui-cell weui-cell_switch">
-            <div class="weui-cell__bd">教师身份</div>
-            <div class="weui-cell__ft">
-                <input class="weui-switch" type="checkbox"  />
- 
+
+
+    <div>
+        <div class="weui-cells__title">开关</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell weui-cell_switch">
+                <div class="weui-cell__bd">教师身份</div>
+                <div class="weui-cell__ft">
+                    <input class="weui-switch" type="checkbox" />
+                </div>
             </div>
         </div>
     </div>
-    <div>
+
+    <div class="weui-cells__title">生活服务</div>
+    <div class="block">
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <font class="iconfont">
+                    &#xe60d;
+                </font>
+                <p>一卡通</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont">
+                    &#xe68f;
+                </font>
+                <p>电信报修</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont">
+                </font>
+                <p> </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="weui-cells__title">教学服务</div>
+    <div class="block">
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <font class="iconfont">
+                    &#xe67a;
+                </font>
+                <p>校历</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont">
+                    &#xe684;
+                </font>
+                <p>课表查询</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont">
+                    &#xe6f1;
+                </font>
+                <p>评教查询</p>
+            </div>
+        </div>
+        <div class="block">
+
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                    <font class="iconfont">
+                        &#xe6f7;
+                    </font>
+                    <p>监考查询</p>
+                </div>
+                <div class="weui-flex__item">
+                    <font class="iconfont">
+                        &#xe68a;
+                    </font>
+                    <p>成绩查询</p>
+                </div>
+                <div class="weui-flex__item">
+                    <font class="iconfont">
+                        &#xe632;
+                    </font>
+                    <p>教师信息教师信息</p>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                    <font class="iconfont">
+                        &#xe724;
+                    </font>
+                    <p>计算机、四六级报名</p>
+                </div>
+                <div class="weui-flex__item">
+                    <font class="iconfont">
+
+                    </font>
+                    <p> </p>
+                </div>
+                <div class="weui-flex__item">
+                    <font class="iconfont">
+
+                    </font>
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="weui-cells__title">行政服务</div>
+    <div class="block">
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <font class="iconfont">
+                    &#xe606;
+                </font>
+                <p>教室借用</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont">
+                    &#xe613;
+                </font>
+                <p>OA查询</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont">
+
+                </font>
+                <p> </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="weui-cells__title">
+        信息中心 | 版本日志 | 建议反馈
+    </footer>
+    <!--
+
+
+    <div id="block">
+        <div class="weui-cells__title">办事大厅</div>
+        <div class="block">
+            <!-- 行数渲染 -->
+    <!--
+            <div class="weui-flex">
+                <!-- 列数渲染 -->
+    <!--
+                <div v-if="life.display" class="weui-flex__item" v-for="life in life">
+                    <font v-html="life.font" color="{{life.color}}" class="iconfont">
+                        {{life.font}}
+                    </font>
+                    <p>{{life.item}}</p>
+                </div>
+            </div>
+        </div>
 
         <div class="weui-cells__title">办事大厅</div>
         <div class="block">
             <div class="weui-flex">
-                <div class="weui-flex__item">
-                    <font color=": #342771" class="iconfont">&#xe60e;</font>
-                    <p>预约缴费</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#38925E" class="iconfont"></font>
-                    <p></p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#F70044" class="iconfont"></font>
-                    <p></p>
+                <div class="weui-flex__item" v-for="thought in thought">
+                    <font v-html="thought.font" color="{{thought.color}}" class="iconfont">
+                        {{thought.font}}
+                    </font>
+                    <p>{{thought.item}}</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--生活服务-->
-    <div>
-        <div class="weui-cells__title">生活服务</div>
-        <div class="block">
-            <div class="weui-flex">
-                <div class="weui-flex__item">
-                    <font color="#F70044" class="iconfont">&#xe60d;</font>
-                    <p>一卡通充值</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#066FA5" class="iconfont">&#xe68f;</font>
-                    <p>电信报修</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color=": #342771" class="iconfont">&#xe67a;</font>
-                    <p>校历</p>
-                </div>
-            </div>
-        </div>
-        <div class="block">
-            <div class="weui-flex">
-                <div class="weui-flex__item">
-                    <font color="#38925E" class="iconfont">&#xe6f8;</font>
-                    <p>图书借阅</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#38925E" class="iconfont"> </font>
-                    <p> </p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#F70044" class="iconfont"> </font>
-                    <p> </p>
-                </div>
-            </div>
-        </div>
     </div>
 
-    <!--教学服务-->
-    <div>
-        <div class="weui-cells__title">教学服务</div>
-        <div class="block">
-            <div class="weui-flex">
-                <div class="weui-flex__item">
-                    <font color="#38925E" class="iconfont">&#xe611;</font>
-                    <p>活动通知</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#F70044" class="iconfont">&#xe62b;</font>
-                    <p>网上选课</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#38925E" class="iconfont">&#xe632;</font>
-                    <p>教师资历</p>
-                </div>
-            </div>
-        </div>
-        <div class="block">
-            <div class="weui-flex">
-                <div class="weui-flex__item">
-                    <font color="#342771" class="iconfont">&#xe75f;</font>
-                    <p>教室申请</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color=" #11CD86" class="iconfont">&#xe627;</font>
-                    <p>我的考试</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#38925E" class="iconfont">&#xe684;</font>
-                    <p>我的课表</p>
-                </div>
-            </div>
-        </div>
-        <div class="block">
-            <div class="weui-flex">
-                <div class="weui-flex__item">
-                    <font color="#066FA5" class="iconfont">&#xe724;</font>
-                    <p>四六级</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#38925E" class="iconfont">&#xe68a;</font>
-                    <p>成绩查询</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#F70044" class="iconfont">&#xe68a;</font>
-                    <p>成绩录入</p>
-                </div>
-            </div>
-        </div>
-        <div class="block">
-            <div class="weui-flex">
-                <div class="weui-flex__item">
-                    <font color="#F70044" class="iconfont">&#xe6f1;</font>
-                    <p>在线评教</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#066FA5" class="iconfont">&#xe62c;</font>
-                    <p>工作量确认</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#38925E" class="iconfont">&#xe630;</font>
-                    <p>手动调课</p>
-                </div>
-            </div>
-        </div>
-        <div class="block">
-            <div class="weui-flex">
-                <div class="weui-flex__item">
-                    <font color="#F70044" class="iconfont">&#xe6f7;</font>
-                    <p>监考查询</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#38925E" class="iconfont">&#xe60b;</font>
-                    <p>教材登记</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#38925E" class="iconfont"></font>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </div>
+-->
 
-    <div>
-        <div class="weui-cells__title">行政服务</div>
-        <div class="block">
-            <div class="weui-flex">
-                <div class="weui-flex__item">
-                    <font color=" #11CD86" class="iconfont">&#xe613;</font>
-                    <p>OA流程</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#342771" class="iconfont">&#xe75f;</font>
-                    <p>会议申请</p>
-                </div>
-                <div class="weui-flex__item">
-                    <font color="#F70044" class="iconfont">&#xe690;</font>
-                    <p>车辆申请</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<script src="js/list/list.js"></script>
+    <script src="js/list/list.js"></script>
 
 </body>
 

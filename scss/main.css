@@ -8,6 +8,7 @@ body {
 }
 
 .iconfont {
+  color: #999;
   font-size: 1.68em !important;
 }
 
@@ -21,8 +22,8 @@ img {
 
 .block .weui-flex__item {
   color: #060606;
-  padding: 20px;
   border: 1px solid #f8f7f7;
+  padding: 20px;
 }
 
 .block .weui-flex__item:hover {
@@ -32,6 +33,11 @@ img {
 .block .weui-flex__item p {
   padding: 12px;
   font-size: 0.8em;
+}
+
+footer {
+  margin: 50px 0 !important;
+  text-align: center;
 }
  
 
