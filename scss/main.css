@@ -23,7 +23,7 @@ img {
 .block .weui-flex__item {
   color: #060606;
   border: 1px solid #f8f7f7;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .block .weui-flex__item:hover {
