@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../lib/vue/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="qq">
+        <template v-for="aa of lover">
+               {{say}}
+            <p>{{aa.name}}</p>
+            <p>{{aa.age}}</p>
+        </template>
+    </div>
+
+<div id="name">
+    <div
+        v-for="item of hello"
+        :key="item.id"
+        >
+        {{item.kitey}}
+    </div>
+</div>
+    <script>
+
+
+new Vue({
+    el:"#name",
+    data:{
+        hello:[
+            {kitey:"dd"},
+            {kitey:"99"},
+            {kitey:"88"},
+        ]
+    }
+})
+
+
+        var vm = new Vue({
+            el: "#qq",
+            data: {
+                say: "words",
+                lover: [
+                    { name: "qian", age: 18 },
+                    { name: "wang", age: 16 }
+                ]
+            }
+        })
+
+    </script>
+
+
+</body>
+
+</html>
