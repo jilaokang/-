@@ -3,6 +3,7 @@ body {
 }
 
 header {
+  background: white;
   color: #333;
   padding: 20px 15px;
   line-height: 20px;
@@ -16,7 +17,7 @@ header .weui-flex {
 header a,
 header font {
   font-weight: 800;
-  color: #EE451F !important;
+  color: #0B90AA !important;
 }
 
 .right {
