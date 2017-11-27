@@ -2,6 +2,31 @@ body {
     background: rgb(250, 250, 250);
 }
 
+header {
+    color: #333;
+    padding: 20px 15px;
+    line-height: 20px;
+    font-size: 0.8em;
+    .weui-flex {
+        text-align: left;
+    }
+    .weui-flex__item {
+        font {
+            font-size: 18px !important;
+            color: #EE451F;
+        }
+    }
+    a{
+        font-weight: 800;
+        color: #EE451F;
+        font-size: 0.88em;
+    }
+}
+
+.right {
+    text-align: right;
+}
+
 .weui-flex {
     text-align: center;
     padding: 0;
