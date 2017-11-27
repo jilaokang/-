@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,33 @@
     <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-        <h1>期待您的反馈</h1>
-        
-        <div class="weui-cell">
-                <div class="weui-cell__hd"><label class="weui-label">联系方式</label></div>
+    <h1>期待您的反馈</h1>
+
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <label class="weui-label">联系方式</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" placeholder="输入联系方式" />
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="weui-label">留言内容</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
                 <div class="weui-cell__bd">
-                    <input class="weui-input" placeholder="输入联系方式"/>
+                    <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+                    <div class="weui-textarea-counter">
+                        <span>0</span>/200</div>
                 </div>
             </div>
-
-<div class="box">
-    <div class="weui-cells__title">留言内容</div>
-    <div class="weui-cells weui-cells_form">
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
-                <div class="weui-textarea-counter"><span>0</span>/200</div>
-            </div>
         </div>
-    </div></div>
-    
+    </div>
+
     <div class="weui-btn-area">
         <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">确定</a>
     </div>
