@@ -13,12 +13,11 @@ h2{
 }
 
 .weui-cells:before,
-.weui-cell:before{
+.weui-cell:before,
+.weui-cells:after{
     border: none !important;
 }
-.weui-cell{
-    border: none !important;
-}
+
 
 .block-bg_color{
     background: white;
