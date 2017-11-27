@@ -15,12 +15,12 @@ header .weui-flex {
 
 header a,
 header font {
-  line-height: 80px;
+  line-height: 70px;
   color: #0B90AA !important;
 }
 
 header span {
-  line-height: 85px;
+  line-height: 75px;
 }
 
 .right {
