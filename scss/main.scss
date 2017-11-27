@@ -6,7 +6,6 @@ header {
     background: white;
     color: #333;
     padding: 0 15px;
-    
     font-size: 0.8em;
     .weui-flex {
         text-align: left;
@@ -34,7 +33,6 @@ header {
 }
 
 .iconfont {
-    color: #999;
     font-size: 1.68em !important;
 }
 
@@ -45,7 +43,7 @@ img {
 .block {
     background: white;
     .weui-flex__item {
-        color: rgb(6, 6, 6);
+        color: #999;
         border: 1px solid #f8f7f7;
         padding: 20px 0;
         &:hover {
@@ -54,6 +52,7 @@ img {
         p {
             padding: 12px;
             font-size: 0.8em;
+            color: rgb(6,6,6);
         }
     }
 }
