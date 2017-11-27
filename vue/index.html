@@ -11,50 +11,40 @@
 
 <body>
 
-    <div id="qq">
-        <template v-for="aa of lover">
-               {{say}}
-            <p>{{aa.name}}</p>
-            <p>{{aa.age}}</p>
-        </template>
+    <div id="a">
+
+
     </div>
 
-<div id="name">
-    <div
-        v-for="item of hello"
-        :key="item.id"
-        >
-        {{item.kitey}}
-    </div>
-</div>
     <script>
 
 
-new Vue({
-    el:"#name",
-    data:{
-        hello:[
-            {kitey:"dd"},
-            {kitey:"99"},
-            {kitey:"88"},
-        ]
-    }
-})
-
-
-        var vm = new Vue({
-            el: "#qq",
+        var a=new Vue({
+            el:"#qq",
             data: {
-                say: "words",
-                lover: [
-                    { name: "qian", age: 18 },
-                    { name: "wang", age: 16 }
+                hello: [
+                    { kitey: "dd" },
+                    { kitey: "99" },
+                    { kitey: "88" }
                 ]
             }
         })
 
-    </script>
 
+        var vm = new Vue({
+            el: "#a",
+            data: {
+                userProfile: {
+                    name: 'Anika'
+                }
+            }
+        })
+
+        Vue.set(vm.userProfile, 'name', 27)
+
+
+    </script>
+0
 
 </body>
 
