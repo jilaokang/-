@@ -4,7 +4,11 @@ body{
 
 h2{
     color: #1aad19;
+<<<<<<< HEAD
     margin: 60px auto 60px auto;
+=======
+    margin: 80px auto 80px auto;
+>>>>>>> 886d9d0ba3e6424fe95a41e86b95434278c052b8
     text-align: center;
 }
 
