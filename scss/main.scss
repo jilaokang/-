@@ -10,16 +10,10 @@ header {
     .weui-flex {
         text-align: left;
     }
-    .weui-flex__item {
-        font {
-            font-size: 18px !important;
-            color: #EE451F;
-        }
-    }
-    a{
+    a,
+    font {
         font-weight: 800;
-        color: #EE451F;
-        font-size: 0.88em;
+        color: #EE451F !important;
     }
 }
 
