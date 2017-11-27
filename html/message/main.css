@@ -1,5 +1,10 @@
-h1{
-    margin: 80px auto 50px auto;
+body{
+    background: rgb(250, 250, 250);
+}
+
+h2{
+    color: #1aad19;
+    margin: 60px auto 60px auto;
     text-align: center;
 }
 
@@ -7,6 +12,13 @@ h1{
     padding: 10px 15px;
 }
 
-.weui-cell::before{
-    border-top: none !important;
+.weui-cells:before,
+.weui-cell:before,
+.weui-cells:after{
+    border: none !important;
+}
+
+
+.block-bg_color{
+    background: white;
 }
