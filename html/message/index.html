@@ -8,6 +8,7 @@
     <title>留言反馈</title>
     <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css">
     <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.1.3/weui.min.js"></script>
 </head>
 
 <body>
@@ -35,11 +36,25 @@
         </div>
     </div>
 
-    
+    <div id="toast" style="display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content">已完成</p>
+        </div>
+    </div>
 
     <div class="weui-btn-area">
-        <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">确定</a>
+        <a class="weui-btn weui-btn_primary" onclick="success();" id="showTooltips">确定</a>
     </div>
+
+
+    <script>
+        function success() {
+            weui.toast('操作成功', 3000);
+        }
+
+    </script>
 
 </body>
 
