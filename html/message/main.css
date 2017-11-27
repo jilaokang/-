@@ -7,6 +7,6 @@ h1{
     padding: 10px 15px;
 }
 
-.weui-cell{
+.weui-cell::before{
     border-top: none !important;
 }
