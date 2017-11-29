@@ -20,23 +20,7 @@
 
     <!-- jQuery -->
     <script src="lib/jquery/jquery.js"></script>
-
-    <style>
-        @font-face {
-            font-family: 'iconfont';
-            src: url('fonts/icon/iconfont.eot');
-            src: url('fonts/icon/iconfont.eot?#iefix') format('embedded-opentype'), url('fonts/icon/iconfont.woff') format('woff'), url('fonts/icon/iconfont.ttf') format('truetype'), url('fonts/icon/iconfont.svg#iconfont') format('svg');
-        }
-
-        .iconfont {
-            font-family: "iconfont" !important;
-            font-size: 16px;
-            font-style: normal;
-            -webkit-font-smoothing: antialiased;
-            -webkit-text-stroke-width: 0.2px;
-            -moz-osx-font-smoothing: grayscale;
-        }
-    </style>
+    <link rel="stylesheet" href="scss/icon/icon.css">
 </head>
 
 <body ontouchstart>
@@ -59,7 +43,7 @@
         <div id="wel">
             <div class="weui-flex">
                 <div class="weui-flex__item">
-                    <font class="iconfont"> &#xe611; </font>
+                    <font class="iconfont icon-tongzhi" style="font-weight:800" ></font>
                     <a href="#">请各单位迅速上交思想报告</a>
                 </div>
                 <div class="right">
@@ -73,93 +57,129 @@
     <div class="block">
         <div class="weui-flex">
             <div class="weui-flex__item">
-                <a href="http://weixin.17wanxiao.com/H5/index.html?customerCode=1845&outid=15031017&unionId=oafHVspfXbpVOBYp5cPP32lxcOvM&openId=o-wzYjju9xS-uKLfrWDxlrIvRiaM&type=2&customerId=1845&name=%E9%92%B1%E5%8D%9A%E5%BA%B7&xqNo=XQ001 
-                ">
-                <font class="iconfont" color="red">
-                    &#xe60d;
-                </font>
-                <p>一卡通</p>
-            </a>
+                <a href="http://weixin.17wanxiao.com/H5/index.html?customerCode=1845&outid=15031017&unionId=oafHVspfXbpVOBYp5cPP32lxcOvM&openId=o-wzYjju9xS-uKLfrWDxlrIvRiaM&type=2&customerId=1845&name=%E9%92%B1%E5%8D%9A%E5%BA%B7&xqNo=XQ001">
+                    <font class="iconfont icon-diban-" color="#E7475E"></font>
+                    <p>一卡通</p>
+                </a>
             </div>
-            
-                <div class="weui-flex__item">
-                        <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx5d89f273de8f088c&redirect_uri=http%3A%2F%2Fwx.whxy.net%2FRepair%2FIndex.aspx&response_type=code&scope=snsapi_base&state=1&connect_redirect=1#wechat_redirect">
-                    <font class="iconfont" color="#1F6ED4">
-                        &#xe68f;
-                    </font>
+
+            <div class="weui-flex__item">
+                <a href="http://wx.whxy.net/Repair/Napply.aspx">
+                    <font class="iconfont icon-dianxin" color="#0B90AA"></font>
                     <p>网络报修</p>
-                    </a>
-                </div>
-            
+                </a>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-youpinwangtubiao-"></font>
+                <p>校车班次</p>
+            </div>
+        </div>
+
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <font class="iconfont icon-tuangou" ></font>
+                <p>团购</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-svgmoban06" ></font>
+                <p>二手市场</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-huodong5050"></font>
+                <p>活动报名</p>
+            </div>
+        </div>
+
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <font class="iconfont icon-yundong" ></font>
+                <p>运动</p>
+            </div>
             <div class="weui-flex__item icon-none">
-                <font class="iconfont">
-                </font>
-                <p> </p>
+                <font class="iconfont" ></font>
+                <p></p>
+            </div>
+            <div class="weui-flex__item icon-none">
+                <font class="iconfont"></font>
+                <p></p>
             </div>
         </div>
     </div>
 
 
-    <div class="weui-cells__title">教学服务</div>
+    <div class="weui-cells__title">办事大厅</div>
     <div class="block">
+
         <div class="weui-flex">
             <div class="weui-flex__item">
-                <font class="iconfont">
-                    &#xe67a;
-                </font>
-                <p>校历</p>
+                <font class="iconfont icon-qingjia" ></font>
+                <p>请假申请</p>
             </div>
             <div class="weui-flex__item">
-                <font class="iconfont">
-                    &#xe684;
-                </font>
-                <p>课表查询</p>
+                <font class="iconfont icon-jiangxuejin" ></font>
+                <p>奖助学金</p>
             </div>
             <div class="weui-flex__item">
-                <font class="iconfont">
-                    &#xe6f1;
-                </font>
-                <p>评教查询</p>
+                <font class="iconfont icon-icon1"></font>
+                <p>教室借用</p>
+            </div>
+        </div>
+
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <font class="iconfont icon-shoudongdaoru" ></font>
+                <p>调课申请</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-oa" ></font>
+                <p>OA</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-huiyi1"></font>
+                <p>会议申请</p>
+            </div>
+        </div>
+
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <font class="iconfont icon-cheliang1" ></font>
+                <p>出勤车辆申请</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-sushedafen" ></font>
+                <p>宿舍更换</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-qingongjianxue"></font>
+                <p>勤工助学</p>
             </div>
         </div>
         <div class="weui-flex">
             <div class="weui-flex__item">
-                <font class="iconfont">
-                    &#xe6f7;
-                </font>
-                <p>监考查询</p>
+                <font class="iconfont icon-pingjia" ></font>
+                <p>心理咨询</p>
             </div>
             <div class="weui-flex__item">
-                <font class="iconfont">
-                    &#xe68a;
-                </font>
-                <p>成绩查询</p>
+                <font class="iconfont icon-zhusu1" ></font>
+                <p>寒暑假住宿申请</p>
             </div>
             <div class="weui-flex__item">
-                <font class="iconfont">
-                    &#xe632;
-                </font>
-                <p>教师信息</p>
+                <font class="iconfont icon-xuanke"></font>
+                <p>电话查询</p>
             </div>
         </div>
         <div class="weui-flex">
             <div class="weui-flex__item">
-                <font class="iconfont">
-                    &#xe724;
-                </font>
-                <p>计算机、四六级报名</p>
+                <font class="iconfont icon-logos" ></font>
+                <p>贫困生申请</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-wanshang" ></font>
+                <p>晚归登记</p>
             </div>
             <div class="weui-flex__item icon-none">
-                <font class="iconfont">
-
-                </font>
-                <p> </p>
-            </div>
-            <div class="weui-flex__item icon-none">
-                <font class="iconfont">
-
-                </font>
-                <p> </p>
+                <font class="iconfont"></font>
+                <p></p>
             </div>
         </div>
     </div>
@@ -170,22 +190,58 @@
     <div class="block">
         <div class="weui-flex">
             <div class="weui-flex__item">
-                <font class="iconfont">
-                    &#xe606;
-                </font>
-                <p>教室借用</p>
+                <font class="iconfont icon-xiaozhaorili" ></font>
+                <p>校历</p>
             </div>
             <div class="weui-flex__item">
-                <font class="iconfont">
-                    &#xe613;
-                </font>
-                <p>OA查询</p>
+                <font class="iconfont icon-tushuguan1" ></font>
+                <p>图书借阅</p>
             </div>
-            <div class="weui-flex__item icon-none">
-                <font class="iconfont">
-
-                </font>
-                <p> </p>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-zuowei"></font>
+                <p>座位预约</p>
+            </div>
+        </div>
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <font class="iconfont icon-kebiaoxinxi" ></font>
+                <p>课表查询</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-gongzuoliangfenpei" ></font>
+                <p>成绩比例</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-jiaoxuepingjia"></font>
+                <p>评教查询</p>
+            </div>
+        </div>
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <font class="iconfont icon-gongzuoliangbaogao" ></font>
+                <p>工作量确认</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-jiankaoanpai" ></font>
+                <p>监考查询</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-chengjidan"></font>
+                <p>成绩查询</p>
+            </div>
+        </div>
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <font class="iconfont icon-iconfont-jiaoshi" ></font>
+                <p>教师信息</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-siliuji" ></font>
+                <p>计算机、四六级报名</p>
+            </div>
+            <div class="weui-flex__item">
+                <font class="iconfont icon-gongzi"></font>
+                <p>工资查询</p>
             </div>
         </div>
     </div>
@@ -196,7 +252,7 @@
             <a href="html/message/index.html" class="weui-footer__link">留言反馈</a>
         </p>
         <p class="weui-footer__text">Copyright &copy; 2017 信息中心</p>
-        
+
     </footer>
 
 
