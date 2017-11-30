@@ -5,13 +5,10 @@
 * style
 */
 .weui-lable {
-  font-size: 0.8em;
+  color: #1aad19;
+  font-size: 0.88em;
   font-weight: 800;
   padding-right: 20px;
-}
-
-.weui-select option {
-  text-align: center;
 }
 
 select {
@@ -48,6 +45,10 @@ footer a {
 .green {
   color: #1aad19;
   font-weight: 800 !important;
+}
+
+.weui-cells {
+  margin: 0 !important;
 }
  
 

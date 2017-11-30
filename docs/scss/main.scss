@@ -12,16 +12,13 @@ $style-color__green:#1aad19;
 */
 
 .weui-lable {
-    font-size: 0.8em;
+    color: $style-color__green;
+    font-size: 0.88em;
     font-weight: 800;
     padding-right: 20px;
 }
 
-.weui-select {
-    option {
-        text-align: center;
-    }
-}
+
 
 select{
     border-radius: 5px;
@@ -59,4 +56,8 @@ footer {
 .green {
     color: $style-color__green;
     font-weight: 800 !important;
+}
+
+.weui-cells{
+    margin: 0 !important;
 }
