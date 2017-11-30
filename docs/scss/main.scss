@@ -1,28 +1,51 @@
+/*
+* var
+*/
+
+$style-color__grey :#999;
+$style-color__black:rgb(66, 66, 66);
+$style-color__grey__Light:#ddd;
+$style-color__green:#1aad19;
+
+
+/*
+* style
+*/
+
+
+
+
+/* 
+* block
+*/
+
+// footer
 footer {
     margin: 28px 0 16px 0 !important;
     text-align: center;
     a{
-        color: #999 !important;
+        color: $style-color__grey !important;
     }
 }
 
+// title
 .com-h2__title {
-    color: #1aad19;
+    color: $style-color__green;
     margin: 60px auto 60px auto;
     text-align: center;
 }
 
 .com-p__data{
-    color:rgb(66, 66, 66);
+    color:$style-color__black;
 }
 
 .com-p__date{
-    color: #ddd;
+    color: $style-color__grey__Light;
     font-size: 0.84em;
 }
 
 .green{
-    color:#1aad19;
+    color:$style-color__green;
     font-weight: 800 !important;
 }
 
