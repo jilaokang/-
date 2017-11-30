@@ -1,17 +1,22 @@
+-var com_title ='更新日志'
+
 head
     include ../common/css.jade
-    title 更新日志
+    title #{com_title}
     
 body
-    -var com_title ='更新日志'
     include ../common/title.jade
 
     article.weui-article
         h1 V1.0版本更新
         section
-            h2.title 2017年11月30日
-            p.
-                的
+            h2.title 2017年11月30日 
+
+            p.com-p__data 实现智慧校园首页构建
+            p.com-p__data 实现留言反馈、版本日志功能
+            p.com-p__data 实现后台统一系统管理页面功能定制
+            p.com-p__data 对接一卡通、网络报修、OA、校历、工资查询系统
+
 
     include ../common/footer.jade
 
