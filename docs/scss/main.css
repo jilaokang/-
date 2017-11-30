@@ -10,8 +10,16 @@ footer {
 }
 
 .com-p__data {
-  color: #999;
-  line-height: 2;
+  color: #424242;
+}
+
+.com-p__date {
+  color: #aaa;
+}
+
+.green {
+  color: #1aad19;
+  font-weight: 800 !important;
 }
  
 
