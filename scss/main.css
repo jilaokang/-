@@ -1,79 +1,53 @@
 body {
-  background: #fafafa;
-}
+  background: #fafafa; }
 
 header {
   background: white;
   color: #333;
   padding: 0 15px;
-  font-size: 0.8em;
-}
-
-header .weui-flex {
-  text-align: left;
-}
-
-header a,
-header font {
-  line-height: 50px;
-  color: #D11C16 !important;
-}
-
-header a {
-  font-weight: 800;
-  margin-left: 6px;
-}
-
-header span {
-  line-height: 61px;
-}
+  font-size: 0.8em; }
+  header .weui-flex {
+    text-align: left; }
+  header a,
+  header font {
+    line-height: 50px;
+    color: #D11C16 !important; }
+  header a {
+    font-weight: 800;
+    margin-left: 6px; }
+  header span {
+    line-height: 61px; }
 
 .right {
-  text-align: right;
-}
+  text-align: right; }
 
 .weui-flex {
   text-align: center;
-  padding: 0;
-}
+  padding: 0; }
 
 .iconfont {
-  font-size: 1.6em !important;
-}
+  font-size: 1.6em !important; }
 
 img {
-  width: 50px;
-}
+  width: 50px; }
 
 .block {
-  background: white;
-}
-
-.block .weui-flex__item {
-  color: #999;
-  border: 1px solid #f8f7f7;
-  padding: 20px 0;
-}
-
-.block .weui-flex__item:hover {
-  box-shadow: 0 0 18px #fdf7f7 inset;
-}
-
-.block .weui-flex__item p {
-  padding: 12px;
-  font-size: 0.8em;
-  color: rgba(6, 6, 6, 0.705);
-}
+  background: white; }
+  .block .weui-flex__item {
+    color: #999;
+    border: 1px solid #f8f7f7;
+    padding: 20px 0; }
+    .block .weui-flex__item:hover {
+      box-shadow: 0 0 18px #fdf7f7 inset; }
+    .block .weui-flex__item p {
+      padding: 12px;
+      font-size: 0.8em;
+      color: rgba(6, 6, 6, 0.705); }
 
 .icon-none {
   background: #fafafa;
-  border-width: 0;
-}
+  border-width: 0; }
 
 footer {
   margin: 28px 0 16px 0 !important;
-  text-align: center;
-}
- 
-
- /*# sourceMappingURL= main.css.map */
+  text-align: center; }
