@@ -15,7 +15,7 @@ header {
         line-height: 50px;
         color: #D11C16!important;
     }
-    a{
+    a {
         font-weight: 800;
         margin-left: 6px;
     }
@@ -48,7 +48,7 @@ img {
         border: 1px solid #f8f7f7;
         padding: 20px 0;
         &:hover {
-            box-shadow: 0 0 18px rgb(253, 247, 247) inset;
+            box-shadow: 0 0 13px rgb(250, 245, 245) inset;
         }
         p {
             padding: 12px;
@@ -66,7 +66,7 @@ img {
 footer {
     margin: 28px 0 16px 0 !important;
     text-align: center;
-    a{
+    a {
         color: #999 !important;
     }
 }

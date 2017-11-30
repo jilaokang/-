@@ -56,7 +56,7 @@ img {
 }
 
 .block .weui-flex__item:hover {
-  box-shadow: 0 0 18px #fdf7f7 inset;
+  box-shadow: 0 0 13px #faf5f5 inset;
 }
 
 .block .weui-flex__item p {
