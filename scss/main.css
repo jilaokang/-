@@ -1,7 +1,3 @@
-body {
-  background: #fafafa;
-}
-
 header {
   background: white;
   color: #333;
@@ -39,10 +35,6 @@ header span {
 
 .iconfont {
   font-size: 1.6em !important;
-}
-
-img {
-  width: 50px;
 }
 
 .block {

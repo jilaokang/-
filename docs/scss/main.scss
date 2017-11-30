@@ -6,6 +6,7 @@ $style-color__grey :#999;
 $style-color__black:rgb(66, 66, 66);
 $style-color__grey__Light:#ddd;
 $style-color__green:#1aad19;
+$style-color__bg:rgb(250, 250, 250);
 
 /*
 * style
@@ -18,7 +19,9 @@ $style-color__green:#1aad19;
     padding-right: 20px;
 }
 
-
+article{
+    background: white;
+}
 
 select{
     border-radius: 5px;
@@ -27,6 +30,10 @@ select{
 /* 
 * block
 */
+
+body {
+    background: $style-color__bg;
+}
 
 // footer
 footer {
