@@ -1,10 +1,32 @@
 -var com_title = "期待您的反馈"
 
 head    
-    include     include ../common/conf.jade
+    include ../common/conf.jade
+    link(rel="stylesheet", href="main.css")
     title 留言反馈
 
 body
     include ../common/title.jade  
     
-    .
+    .weui-cell
+        .weui-cell__hd
+            label.weui-label 联系方式
+        .weui-cell__bd
+            input.weui-input(type="number", placeholder="手机号", maxlength="11") 
+
+    .container
+        .weui-cells.weui-cells_form
+            .weui-cell
+                .weui-cell__bd
+                    textarea.weui-textarea(placeholder="输入留言吧", rows="8")
+
+    .weui-btn-area
+        a.weui-btn.weui-btn_primary(onclick="success();") 确定
+
+    include ../common/footer.jade
+    
+
+    script.
+        function success(){
+            weui.toast('留言成功', 1500);
+        }

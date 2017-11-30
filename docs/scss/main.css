@@ -4,6 +4,10 @@
 /*
 * style
 */
+.container {
+  padding: 10px 15px;
+}
+
 .weui-lable {
   color: #1aad19;
   font-size: 0.88em;
@@ -11,6 +15,7 @@
   padding-right: 20px;
 }
 
+.weui-cell,
 article {
   background: white;
 }
@@ -55,8 +60,10 @@ footer a {
   font-weight: 800 !important;
 }
 
-.weui-cells {
-  margin: 0 !important;
+.weui-cells:before,
+.weui-cell:before,
+.weui-cells:after {
+  border: none !important;
 }
  
 
