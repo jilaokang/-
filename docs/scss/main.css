@@ -3,6 +3,10 @@ footer {
   text-align: center;
 }
 
+footer a {
+  color: #999 !important;
+}
+
 .com-h2__title {
   color: #1aad19;
   margin: 60px auto 60px auto;
