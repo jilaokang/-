@@ -7,13 +7,25 @@ $style-color__black:rgb(66, 66, 66);
 $style-color__grey__Light:#ddd;
 $style-color__green:#1aad19;
 
-
 /*
 * style
 */
 
+.weui-lable {
+    font-size: 0.8em;
+    font-weight: 800;
+    padding-right: 20px;
+}
 
+.weui-select {
+    option {
+        text-align: center;
+    }
+}
 
+select{
+    border-radius: 5px;
+}
 
 /* 
 * block
@@ -23,7 +35,7 @@ $style-color__green:#1aad19;
 footer {
     margin: 28px 0 16px 0 !important;
     text-align: center;
-    a{
+    a {
         color: $style-color__grey !important;
     }
 }
@@ -35,17 +47,16 @@ footer {
     text-align: center;
 }
 
-.com-p__data{
-    color:$style-color__black;
+.com-p__data {
+    color: $style-color__black;
 }
 
-.com-p__date{
+.com-p__date {
     color: $style-color__grey__Light;
     font-size: 0.84em;
 }
 
-.green{
-    color:$style-color__green;
+.green {
+    color: $style-color__green;
     font-weight: 800 !important;
 }
-
