@@ -21,7 +21,8 @@ body
 
         each grades in grade
           .weui-flex    
-            p.weui-flex__item=grades.course
+            .weui-flex__item
+                p=grades.course
             p.weui-flex__item=grades.grade
             p.weui-flex__item=grades.credits
             p.weui-flex__item=grades.item
