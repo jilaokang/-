@@ -1,10 +1,12 @@
+include ../common/mixin.jade
+
 -var grade = [ {course:"课程",grade:"成绩",credits:"学分",item:"类别"},{course:"高等数学",grade:"89",credits:"4",item:"必修",top:"6"},{course:"计算机导论之超长课名",grade:"98",credits:"4",item:"必修"},{course:"大学英语",grade:"92",credits:"4",item:"必修"}]
 
-head
-    include ../common/conf.jade
++conf
     title 成绩查询
 
 body
+    
     .weui-cells.box-none 
         .weui-cell.weui-cell_select.weui-cell_select-after
             .weui-cell__hd 
@@ -25,6 +27,5 @@ body
 
 
 
-
-    include ../common/footer.jade
+    +footer
 

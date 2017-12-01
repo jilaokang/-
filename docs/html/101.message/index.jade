@@ -1,12 +1,10 @@
--var com_title = "期待您的反馈"
+include ../common/mixin.jade
 
-head    
-    include ../common/conf.jade
-    link(rel="stylesheet", href="main.css")
++conf
     title 留言反馈
 
 body
-    include ../common/title.jade  
+    +com-title("期待您的反馈")  
     
     .weui-cell
         .weui-cell__hd
@@ -23,7 +21,7 @@ body
     .weui-btn-area
         a.weui-btn.weui-btn_primary(onclick="success();") 确定
 
-    include ../common/footer.jade
+    +footer
     
 
     script.

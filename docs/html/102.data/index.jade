@@ -1,11 +1,10 @@
--var com_title ='更新日志'
+include ../common/mixin.jade
 
-head
-    include ../common/conf.jade
-    title #{com_title}
++conf
+    title 更新日志
     
 body
-    include ../common/title.jade
+    +com-title("更新日志")
 
     article.weui-article
         p.green.com-p__data V1.0 版本更新
@@ -18,7 +17,7 @@ body
             p.com-p__data 对接一卡通、网络报修、OA、校历、工资查询系统
 
 
-    include ../common/footer.jade
+    +footer
 
 
     
