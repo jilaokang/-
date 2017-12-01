@@ -1,6 +1,6 @@
 include ../common/mixin.jade
 
--var items = [ {pro:"维修状态",content:"等待维修"},{pro:"报修时间",content:"2017年12月1日 23：57：31"},{pro:"报修人",content:"钱博康 18086407838"},{pro:"故障类型",content:"错误代码568"}]
+-var items = [ {pro:"维修状态",content:"等待维修"},{pro:"报修时间",content:"2017年12月1日 23：57：31"},{pro:"上报人员",content:"钱博康 18086407838"},{pro:"故障类型",content:"错误代码568"}]
 
 +conf
     title 网络报修
@@ -11,7 +11,7 @@ body
     each fixs in items
         .container
           .weui-flex
-            .weui-flex__item=fixs.pro
+            .flex-two__sm=fixs.pro
             .weui-flex__item=fixs.content
 
          

@@ -1,8 +1,13 @@
 .weui-cells,
 .weui-cell,
 .weui-article,
-.weui-flex__item {
+.weui-flex__item,
+.flex-two__sm {
   font-size: 14px !important;
+}
+
+.flex-two__sm {
+  width: 130px;
 }
 
 .weui-label {
