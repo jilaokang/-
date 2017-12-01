@@ -4,5 +4,27 @@ include ../common/mixin.jade
     title 网络报修
 
 body
-
-+footer
+    .weui-cells__title 您的信息
+    .weui-cells.box-none 
+        .weui-cell
+            .weui-cell__hd
+                label.weui-label 姓名
+            .weui-cell__bd
+                input.weui-input(placeholder="钱博康")
+            .weui-cell__hd 
+                label.weui-lable(for="") 宿舍
+            .weui-cell__bd
+                select.weui-select 
+                    option(value="1") 梅菊斋
+                    option(value="2") 竹枫斋
+                    option(value="3") 兰蕙斋
+            .weui-cell__hd 
+                label.weui-lable(for="") 楼栋
+            .weui-cell__bd
+                select.weui-select 
+                    option(value="1") 1舍
+                    option(value="2") 2舍
+                    option(value="3") 3舍
+                    option(value="3") 4舍
+                
+    +footer
