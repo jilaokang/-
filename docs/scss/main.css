@@ -6,15 +6,6 @@
   font-size: 14px !important;
 }
 
-.network {
-  line-height: 1 !important;
-}
-
-.network > div {
-  padding: 0;
-  margin: 0;
-}
-
 .flex-two__sm {
   width: 100px;
 }
@@ -81,7 +72,7 @@ select {
 * block
 */
 body {
-  background: #fafafa;
+  background: #fafafa !important;
   color: #424242;
 }
 
