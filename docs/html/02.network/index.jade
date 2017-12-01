@@ -6,6 +6,17 @@ include ../common/mixin.jade
     title 网络报修
 
 body
+    .weui-cells__title 申请列表
+
+    .container
+    each fixs in items
+      .weui-flex
+        .weui-flex__item=fixs.pro
+        .weui-flex__item=fixs.content
+
+         
+
+        
     .weui-cells__title 您的信息
     .weui-cells.box-none 
         .weui-cell
@@ -56,13 +67,6 @@ body
     .weui-btn-area
         a.weui-btn.weui-btn_primary(onclick="success();") 提交成功
 
-
-    .weui-cells__title 申请列表
-
-    each fixs in items
-      .weui-flex
-        .weui-flex__item=fixs.pro
-        .weui-flex__item=fixs.content
 
 
 
