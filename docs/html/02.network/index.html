@@ -50,7 +50,59 @@
         </select>
       </div>
     </div>
+    <div class="weui-cell">
+      <div class="weui-cell__hd">
+        <label class="weui-label">宿舍号</label>
+      </div>
+      <div class="weui-cell__bd">
+        <input value="227" class="weui-input"/>
+      </div>
+      <div class="weui-cell__hd"> 
+        <label for="" class="weui-lable">常见故障</label>
+      </div>
+      <div class="weui-cell__bd">
+        <select class="weui-select"> 
+          <option value="1">611错误，无法登陆</option>
+          <option value="2">403错误，无法链接互联网</option>
+          <option value="3">966错误，身份识别错误</option>
+          <option value="3">782错误，端口被占用</option>
+        </select>
+      </div>
+    </div>
   </div>
+  <div class="container">
+    <div class="weui-cells weui-cells_form">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <textarea placeholder="故障描述" rows="3" class="weui-textarea"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="weui-btn-area"><a onclick="success();" class="weui-btn weui-btn_primary">提交成功</a></div>
+  <div class="weui-cells__title">申请列表</div>
+  <div class="weui-flex">
+    <div class="weui-flex__item">维修状态</div>
+    <div class="weui-flex__item">等待维修</div>
+  </div>
+  <div class="weui-flex">
+    <div class="weui-flex__item">报修时间</div>
+    <div class="weui-flex__item">2017年12月1日 23：57：31</div>
+  </div>
+  <div class="weui-flex">
+    <div class="weui-flex__item">报修人</div>
+    <div class="weui-flex__item">钱博康 18086407838</div>
+  </div>
+  <div class="weui-flex">
+    <div class="weui-flex__item">故障类型</div>
+    <div class="weui-flex__item">错误代码568</div>
+  </div>
+  <script>
+    function success(){
+        weui.toast('留言成功', 1500);
+    }
+            
+  </script>
   <footer class="weui-footer">
     <div>
       <p> <a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
