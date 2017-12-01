@@ -1,3 +1,46 @@
-<!--conf--><!-- footer--><!--com-title--><head lang="en"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="stylesheet" href="../../scss/main.css"/><link rel="stylesheet" href="../../../lib/weui/weui.css"/><script src="../../../lib/weui/weui.js"></script></head><body><h2 class="com-h2__title">期待您的反馈</h2><div class="weui-cell"><div class="weui-cell__hd"><label class="weui-label">联系方式</label></div><div class="weui-cell__bd"><input type="number" placeholder="手机号" maxlength="11" class="weui-input"/></div></div><div class="container"><div class="weui-cells weui-cells_form"><div class="weui-cell"><div class="weui-cell__bd"><textarea placeholder="输入留言吧" rows="8" class="weui-textarea"></textarea></div></div></div></div><div class="weui-btn-area"><a onclick="success();" class="weui-btn weui-btn_primary">确定</a></div><footer class="weui-footer"><div><p> <a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p></div><div><p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p></div></footer><script>function success(){
-    weui.toast('留言成功', 1500);
-}</script></body>
+
+<!--conf-->
+<!-- footer-->
+<!--com-title-->
+<head lang="en">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="../../scss/main.css"/>
+  <link rel="stylesheet" href="../../../lib/weui/weui.css"/>
+  <script src="../../../lib/weui/weui.js"></script>
+</head>
+<body>
+  <h2 class="com-h2__title">期待您的反馈</h2>
+  <div class="weui-cell">
+    <div class="weui-cell__hd">
+      <label class="weui-label">联系方式</label>
+    </div>
+    <div class="weui-cell__bd">
+      <input type="number" placeholder="手机号" maxlength="11" class="weui-input"/>
+    </div>
+  </div>
+  <div class="container">
+    <div class="weui-cells weui-cells_form">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <textarea placeholder="输入留言吧" rows="8" class="weui-textarea"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="weui-btn-area"><a onclick="success();" class="weui-btn weui-btn_primary">确定</a></div>
+  <footer class="weui-footer">
+    <div>
+      <p> <a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
+    </div>
+    <div>
+      <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
+    </div>
+  </footer>
+  <script>
+    function success(){
+        weui.toast('留言成功', 1500);
+    }
+  </script>
+</body>
