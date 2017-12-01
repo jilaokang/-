@@ -5,12 +5,7 @@
 }
 
 .weui-label {
-  width: auto !important;
-  padding-right: 25px;
-}
-
-input {
-  padding-left: 15px;
+  width: 70px !important;
 }
 
 /*
