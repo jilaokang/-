@@ -3,8 +3,8 @@ body {
 }
 
 header {
-  background: #393a3f;
-  color: #fff;
+  background: white;
+  color: #333;
   padding: 0 15px;
   font-size: 0.8em;
 }
@@ -16,7 +16,7 @@ header .weui-flex {
 header a,
 header font {
   line-height: 50px;
-  color: white !important;
+  color: #D11C16 !important;
 }
 
 header a {
