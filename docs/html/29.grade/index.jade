@@ -1,4 +1,4 @@
--var grade = [ {course:"课程",grade:"成绩",credits:"学分",item:"类别"},{course:"高等数学",grade:"89",credits:"4",item:"必修",top:"6"},{course:"计算机导论",grade:"98",credits:"4",item:"必修"},{course:"大学英语",grade:"92",credits:"4",item:"必修"}]
+-var grade = [ {course:"课程",grade:"成绩",credits:"学分",item:"类别"},{course:"高等数学",grade:"89",credits:"4",item:"必修",top:"6"},{course:"计算机导论之超长课名",grade:"98",credits:"4",item:"必修"},{course:"大学英语",grade:"92",credits:"4",item:"必修"}]
 
 head
     include ../common/conf.jade
@@ -13,7 +13,8 @@ body
                 select.weui-select 
                     option(value="1") 大一上学期
                     option(value="2") 大一下学期
-   
+    
+
     .container
         each grades in grade
           .weui-flex    
