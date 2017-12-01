@@ -39,6 +39,11 @@ select {
   font-size: 0.9em;
 }
 
+.grade > div:first-child {
+  font-weight: 800;
+  border-bottom: #999 1px solid;
+}
+
 .grades.course {
   width: 120px;
 }

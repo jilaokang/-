@@ -45,6 +45,10 @@ select {
 .grade {
     line-height: 3;
     font-size: 0.9em;
+    &>div:first-child {
+        font-weight: 800;
+        border-bottom: $style-color__grey 1px solid;
+    }
 }
 
 .grades.course {
