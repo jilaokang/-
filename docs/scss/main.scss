@@ -47,7 +47,7 @@ select {
     font-size: 0.9em;
     &>div:first-child {
         font-weight: 800;
-        border-bottom: $style-color__grey 1px solid;
+        border-bottom: $style-color__bg 1px solid;
     }
 }
 
