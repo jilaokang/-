@@ -10,18 +10,22 @@
 
 .weui-lable {
   color: #1aad19;
-  font-size: 0.88em;
   font-weight: 800;
-  padding-right: 20px;
+  padding-right: 25px;
 }
 
 .weui-cell,
+.weui-flex__item,
 article {
   background: white;
 }
 
 select {
   border-radius: 5px;
+}
+
+.weui-flex {
+  text-align: center;
 }
 
 /* 

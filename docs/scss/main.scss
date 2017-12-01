@@ -11,26 +11,32 @@ $style-color__bg:rgb(250, 250, 250);
 /*
 * style
 */
-.container{
+
+
+.container {
     padding: 0 15px;
 }
 
-
 .weui-lable {
     color: $style-color__green;
-    font-size: 0.88em;
     font-weight: 800;
-    padding-right: 20px;
+    padding-right: 25px;
 }
 
 .weui-cell,
-article{
+.weui-flex__item,
+article {
     background: white;
 }
 
-select{
+select {
     border-radius: 5px;
 }
+
+.weui-flex {
+    text-align: center;
+}
+
 
 /* 
 * block
@@ -72,6 +78,6 @@ footer {
 
 .weui-cells:before,
 .weui-cell:before,
-.weui-cells:after{
+.weui-cells:after {
     border: none !important;
 }
