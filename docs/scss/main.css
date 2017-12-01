@@ -4,6 +4,11 @@
 /*
 * style
 */
+.box-none {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .container {
   padding: 0 15px;
 }
