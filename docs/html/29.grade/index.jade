@@ -6,7 +6,7 @@ include ../common/mixin.jade
     title 成绩查询
 
 body
-    
+    .weui-cells__title 切换学期
     .weui-cells.box-none 
         .weui-cell.weui-cell_select.weui-cell_select-after
             .weui-cell__hd 
@@ -16,7 +16,7 @@ body
                     option(value="1") 大一上学期
                     option(value="2") 大一下学期
     
-
+    .weui-cells__title 成绩查询
     .container
         each grades in grade
           .weui-flex    
