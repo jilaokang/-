@@ -8,8 +8,8 @@ include ../common/mixin.jade
 body
     .weui-cells__title 申请列表
 
-    .container
-        each fixs in items
+    each fixs in items
+        .container
           .weui-flex
             .weui-flex__item=fixs.pro
             .weui-flex__item=fixs.content
