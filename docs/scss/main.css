@@ -1,6 +1,7 @@
 .weui-cells,
 .weui-cell,
-.weui-article {
+.weui-article,
+.weui-flex__item {
   font-size: 14px !important;
 }
 
