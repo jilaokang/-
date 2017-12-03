@@ -26,6 +26,7 @@
 $style-color__grey :#999999;
 $style-color__black:#424242;
 $style-color__grey__Light:#dddddd;
+$style-card-color__grey__Light:#eeeeee;
 $style-color__green:#1aad19;
 $style-color__bg:#fafafa;
 
@@ -66,12 +67,12 @@ select {
 
 // 卡片
 .card{
-    border: 1px solid $style-color__grey__Light;
+    border: 1px solid $style-card-color__grey__Light;
     border-radius: 3px;
     .weui-flex:nth-child(even) {
-        background: $style-color__grey__Light !important;
+        background: $style-card-color__grey__Light !important;
         div {
-            background: $style-color__grey__Light !important;
+            background: $style-card-color__grey__Light !important;
         }
     }
     .weui-flex__item {
