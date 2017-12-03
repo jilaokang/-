@@ -2,12 +2,13 @@
 .weui-cell,
 .weui-article,
 .weui-flex__item,
-.flex-two__sm {
+.weui-flex-two__sm {
   font-size: 14px !important;
 }
 
-.flex-two__sm {
+.weui-flex-two__sm {
   width: 90px !important;
+  line-height: 3;
 }
 
 .weui-label {
