@@ -55,7 +55,6 @@ select {
 }
 
 .grade {
-  line-height: 3;
   font-size: 0.9em;
 }
 
@@ -64,8 +63,26 @@ select {
   border-bottom: #fafafa 1px solid;
 }
 
-.grades.course {
+.grade > div:first-child > .grade:first-child {
   width: 120px;
+}
+
+.grade .weui-flex:nth-child(even) {
+  border-radius: 5px;
+  padding: 0 10px;
+  background: #dddddd !important;
+}
+
+.grade .weui-flex:nth-child(even) div {
+  background: #dddddd !important;
+}
+
+.grade .weui-flex__item {
+  line-height: 3;
+}
+
+.course {
+  width: 120px !important;
 }
 
 /* 

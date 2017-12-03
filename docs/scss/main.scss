@@ -2,21 +2,23 @@
 .weui-cell,
 .weui-article,
 .weui-flex__item,
-.flex-two__sm{
+.flex-two__sm {
     font-size: 14px !important;
 }
 
-
-
-.flex-two__sm{
+.flex-two__sm {
     width: 90px;
 }
-.weui-label{
+
+.weui-label {
     width: 70px !important;
 }
-.weui-flex__item{
+
+.weui-flex__item {
     line-height: 2;
 }
+
+
 /*
 * var
 */
@@ -46,6 +48,7 @@ $style-color__bg:#fafafa;
     font-weight: 800;
     padding-right: 25px;
 }
+
 .weui-cell,
 .weui-flex__item,
 article {
@@ -61,16 +64,29 @@ select {
 }
 
 .grade {
-    line-height: 3;
     font-size: 0.9em;
     &>div:first-child {
         font-weight: 800;
         border-bottom: $style-color__bg 1px solid;
     }
+    &>div:first-child>&:first-child {
+        width: 120px;
+    }
+    .weui-flex:nth-child(even) {
+        border-radius: 5px;
+        padding: 0 10px;
+        background: $style-color__grey__Light !important;
+        div {
+            background: $style-color__grey__Light !important;
+        }
+    }
+    .weui-flex__item {
+        line-height: 3;
+    }
 }
 
-.grades.course {
-    width: 120px;
+.course {
+    width: 120px !important;
 }
 
 
