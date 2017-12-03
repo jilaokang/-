@@ -55,16 +55,16 @@ select {
 }
 
 .card {
-  border: 1px solid #eeeeee;
+  border: 1px solid #fafafa;
   border-radius: 3px;
 }
 
 .card .weui-flex:nth-child(even) {
-  background: #eeeeee !important;
+  background: #fafafa !important;
 }
 
 .card .weui-flex:nth-child(even) div {
-  background: #eeeeee !important;
+  background: #fafafa !important;
 }
 
 .card .weui-flex__item {
