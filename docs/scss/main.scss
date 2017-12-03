@@ -63,14 +63,9 @@ select {
     text-align: center;
 }
 
-.grade {
-    font-size: 0.9em;
-    border-radius: 5px;
-    border: 1px solid $style-color__grey__Light;
 
-    &>div:first-child {
-        font-weight: 800;
-    }
+.card{
+    border: 1px solid $style-color__grey__Light;
     .weui-flex:nth-child(even) {
         background: $style-color__grey__Light !important;
         div {
