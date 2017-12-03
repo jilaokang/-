@@ -56,16 +56,16 @@ select {
 }
 
 .card {
-  border: 1px solid #efffef;
+  border: 1px solid #efefff;
   border-radius: 3px;
 }
 
 .card .weui-flex:nth-child(even) {
-  background: #efffef !important;
+  background: #efefff !important;
 }
 
 .card .weui-flex:nth-child(even) div {
-  background: #efffef !important;
+  background: #efefff !important;
 }
 
 .card .weui-flex__item {
