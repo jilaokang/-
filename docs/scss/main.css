@@ -56,6 +56,7 @@ select {
 
 .card {
   border: 1px solid #dddddd;
+  border-radius: 3px;
 }
 
 .card .weui-flex:nth-child(even) {

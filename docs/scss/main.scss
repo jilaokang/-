@@ -64,8 +64,10 @@ select {
 }
 
 
+// 卡片
 .card{
     border: 1px solid $style-color__grey__Light;
+    border-radius: 3px;
     .weui-flex:nth-child(even) {
         background: $style-color__grey__Light !important;
         div {
