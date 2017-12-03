@@ -69,7 +69,6 @@ select {
 }
 
 .grade .weui-flex:nth-child(even) {
-  padding: 0 10px;
   background: #dddddd !important;
 }
 
