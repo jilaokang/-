@@ -20,7 +20,6 @@
     line-height: 2;
 }
 
-
 /*
 * var
 */
@@ -46,7 +45,7 @@ $style-color__bg:#fafafa;
     background: white;
 }
 
-.weui-lable {
+label {
     color: $style-color__green;
     font-weight: 800;
     padding-right: 25px;
