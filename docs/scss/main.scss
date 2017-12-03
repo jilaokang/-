@@ -65,15 +65,15 @@ select {
 
 .grade {
     font-size: 0.9em;
+    border-radius: 5px;
+    border: 1px solid $style-color__grey__Light;
+    .weui-flex{
+        border: 1px solid $style-color__grey__Light;
+    }
     &>div:first-child {
         font-weight: 800;
-        border-bottom: $style-color__bg 1px solid;
-    }
-    &>div:first-child>&:first-child {
-        width: 120px;
     }
     .weui-flex:nth-child(even) {
-        border-radius: 5px;
         padding: 0 10px;
         background: $style-color__grey__Light !important;
         div {
@@ -82,6 +82,9 @@ select {
     }
     .weui-flex__item {
         line-height: 3;
+        &:first-child {
+            width: 120px;
+        }
     }
 }
 
