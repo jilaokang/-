@@ -20,6 +20,10 @@
   font-size: 0.84em;
 }
 
+#data p {
+  font-weight: 0.8em;
+}
+
 #network .weui-input, #network .weui-select {
   color: #999999;
   text-decoration: underline;
