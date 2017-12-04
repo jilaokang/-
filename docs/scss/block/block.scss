@@ -7,6 +7,9 @@
     .weui-cell__hd {
         width: 50px !important;
     }
+    .course {
+        width: 120px !important;
+    }
 }
 
 #data {
@@ -18,5 +21,12 @@
     .data-time {
         color: $style-color__grey__Light;
         font-size: 0.84em;
+    }
+}
+
+#network{
+    .weui-input,.weui-select{
+        color: $style-color__grey;
+        text-decoration: underline;
     }
 }

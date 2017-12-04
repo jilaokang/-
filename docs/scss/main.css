@@ -1,12 +1,36 @@
-@charset "UTF-8";
-/*
-* 整体变量部分
-* 颜色
-*/
 .weui-cells:before,
 .weui-cell:before,
 .weui-cells:after {
   border: none !important;
+}
+
+.weui-cells,
+.weui-cell,
+.weui-article,
+.weui-flex__item,
+.weui-flex-two__sm {
+  font-size: 14px !important;
+}
+
+.weui-cells:before,
+.weui-cell:before,
+.weui-cells:after {
+  border: none !important;
+}
+
+.weui-flex__item {
+  line-height: 2;
+}
+
+.box-none,
+.weui-cell__hd,
+.weui-cell__bd {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.weui-flex {
+  text-align: center;
 }
 
 #grade .card .weui-flex:first-child {
@@ -17,6 +41,10 @@
   width: 50px !important;
 }
 
+#grade .course {
+  width: 120px !important;
+}
+
 #data .data-title {
   color: #1aad19;
   font-weight: 800;
@@ -25,6 +53,11 @@
 #data .data-time {
   color: #dddddd;
   font-size: 0.84em;
+}
+
+#network .weui-input, #network .weui-select {
+  color: #999999;
+  text-decoration: underline;
 }
 
 .card {
@@ -72,32 +105,21 @@ footer a {
   color: #999999 !important;
 }
 
-/* 
-*   通用样式
-*   字体，修正
-*/
-.weui-cells,
+body {
+  background: #fafafa !important;
+  color: #424242;
+}
+
+article,
 .weui-cell,
-.weui-article,
-.weui-flex__item,
-.weui-flex-two__sm {
-  font-size: 14px !important;
+.weui-flex__item {
+  background: white;
 }
 
-.weui-cells:before,
-.weui-cell:before,
-.weui-cells:after {
-  border: none !important;
+select {
+  border-radius: 5px;
 }
 
-/* 
-*   自创样式
-*   布局，分布
-*/
-/* 
-*   板块调节
-*   
-*/
 .weui-flex-two__sm {
   width: 90px !important;
   line-height: 3;
@@ -107,57 +129,14 @@ footer a {
   width: 70px !important;
 }
 
-.weui-flex__item {
-  line-height: 2;
-}
-
-/*
-* style
-*/
-.box-none {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
 .container {
   padding: 12px 15px !important;
   background: white;
 }
 
 .weui-cell__hd {
-  color: #1aad19;
   font-weight: 800;
   padding-right: 25px;
-  padding: 0;
-  margin: 0;
-}
-
-.weui-cell__bd {
-  padding: 0;
-  margin: 0;
-}
-
-.weui-cell,
-.weui-flex__item,
-article {
-  background: white;
-}
-
-select {
-  border-radius: 5px;
-}
-
-.weui-flex {
-  text-align: center;
-}
-
-.course {
-  width: 120px !important;
-}
-
-body {
-  background: #fafafa !important;
-  color: #424242;
 }
  
 

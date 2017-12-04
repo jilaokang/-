@@ -1,45 +1,22 @@
-/*
-* 整体变量部分
-* 颜色
-*/
-
 @import 'block/var.scss';
 @import 'block/weui.scss';
 @import 'block/block.scss';
 @import 'block/diy.scss';
 
-/* 
-*   通用样式
-*   字体，修正
-*/
+body {
+    background: $style-color__bg !important;
+    color: $style-color__black;
+}
 
-.weui-cells,
+article,
 .weui-cell,
-.weui-article,
-.weui-flex__item,
-.weui-flex-two__sm {
-    font-size: 14px !important;
+.weui-flex__item {
+    background: white;
 }
 
-.weui-cells:before,
-.weui-cell:before,
-.weui-cells:after {
-    border: none !important;
+select {
+    border-radius: 5px;
 }
-
-
-/* 
-*   自创样式
-*   布局，分布
-*/
-
-// 卡片:卡片形式展示
-// h2__title：页面初始大标题
-
-/* 
-*   板块调节
-*   
-*/
 
 .weui-flex-two__sm {
     width: 90px !important;
@@ -50,59 +27,12 @@
     width: 70px !important;
 }
 
-.weui-flex__item {
-    line-height: 2;
-}
-
-
-/*
-* style
-*/
-
-.box-none {
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
 .container {
     padding: 12px 15px !important;
     background: white;
 }
 
 .weui-cell__hd {
-    color: $style-color__green;
     font-weight: 800;
     padding-right: 25px;
-    padding: 0;
-    margin: 0;
-}
-
-.weui-cell__bd {
-    padding: 0;
-    margin: 0;
-}
-
-.weui-cell,
-.weui-flex__item,
-article {
-    background: white;
-}
-
-select {
-    border-radius: 5px;
-}
-
-.weui-flex {
-    text-align: center;
-}
-
-.course {
-    width: 120px !important;
-}
-
-
-
-body {
-    background: $style-color__bg !important;
-    color: $style-color__black;
 }

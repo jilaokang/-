@@ -6,6 +6,10 @@
   width: 50px !important;
 }
 
+#grade .course {
+  width: 120px !important;
+}
+
 #data .data-title {
   color: #1aad19;
   font-weight: 800;
@@ -14,6 +18,11 @@
 #data .data-time {
   color: #dddddd;
   font-size: 0.84em;
+}
+
+#network .weui-input, #network .weui-select {
+  color: #999999;
+  text-decoration: underline;
 }
  
 

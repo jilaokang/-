@@ -5,3 +5,31 @@
 .weui-cells:after{
     border: none !important;
 }
+.weui-cells,
+.weui-cell,
+.weui-article,
+.weui-flex__item,
+.weui-flex-two__sm {
+    font-size: 14px !important;
+}
+
+.weui-cells:before,
+.weui-cell:before,
+.weui-cells:after {
+    border: none !important;
+}
+
+.weui-flex__item {
+    line-height: 2;
+}
+
+.box-none,
+.weui-cell__hd,
+.weui-cell__bd {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.weui-flex {
+    text-align: center;
+}
