@@ -10,11 +10,12 @@
 }
 
 #data {
-    .com-p__data{
-        color: red;
+
+    .data-title{
+        color: $style-color__green;
         font-weight: 800;
     }
-    .com-p__date {
+    .data-time {
         color: $style-color__grey__Light;
         font-size: 0.84em;
     }

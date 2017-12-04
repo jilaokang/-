@@ -6,12 +6,12 @@
   width: 50px !important;
 }
 
-#data .com-p__data {
-  color: red;
+#data .data-title {
+  color: #1aad19;
   font-weight: 800;
 }
 
-#data .com-p__date {
+#data .data-time {
   color: #dddddd;
   font-size: 0.84em;
 }

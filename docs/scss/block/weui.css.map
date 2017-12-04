@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,WAAW,AAAA,OAAO;AAClB,AAAA,UAAU,AAAA,OAAO;AACjB,AAAA,WAAW,AAAA,MAAM,CAAA;EACb,MAAM,EAAE,eAAe;CAC1B",
+    "sources": [
+        "weui.scss",
+        "var.scss"
+    ],
+    "names": [],
+    "file": "weui.css"
+}
