@@ -56,6 +56,15 @@
   text-align: center;
 }
 
+.com-h2__title a {
+  text-decoration: underline;
+}
+
+.com-h2__title a, .com-h2__title p {
+  font-size: 14px;
+  color: #1aad19;
+}
+
 /* 
 *   板块调节
 *   
