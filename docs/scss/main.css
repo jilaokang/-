@@ -1,3 +1,12 @@
+@charset "UTF-8";
+/*
+* 整体变量部分
+* 颜色
+*/
+/* 
+*   通用样式
+*   字体，修正
+*/
 .weui-cells,
 .weui-cell,
 .weui-article,
@@ -6,55 +15,16 @@
   font-size: 14px !important;
 }
 
-.weui-flex-two__sm {
-  width: 90px !important;
-  line-height: 3;
+.weui-cells:before,
+.weui-cell:before,
+.weui-cells:after {
+  border: none !important;
 }
 
-.weui-label {
-  width: 70px !important;
-}
-
-.weui-flex__item {
-  line-height: 2;
-}
-
-/*
-* var
+/* 
+*   自创样式
+*   布局，分布
 */
-/*
-* style
-*/
-.box-none {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.container {
-  padding: 12px 15px !important;
-  background: white;
-}
-
-label {
-  color: #1aad19;
-  font-weight: 800;
-  padding-right: 25px;
-}
-
-.weui-cell,
-.weui-flex__item,
-article {
-  background: white;
-}
-
-select {
-  border-radius: 5px;
-}
-
-.weui-flex {
-  text-align: center;
-}
-
 .card {
   border: 1px solid #efefef;
   border-radius: 3px;
@@ -74,6 +44,69 @@ select {
 
 .card .weui-flex__item:first-child {
   width: 240px;
+}
+
+.com-h2__title {
+  color: #1aad19;
+  margin: 60px auto 60px auto;
+  text-align: center;
+}
+
+/* 
+*   板块调节
+*   
+*/
+.weui-flex-two__sm {
+  width: 90px !important;
+  line-height: 3;
+}
+
+.weui-label {
+  width: 70px !important;
+}
+
+.weui-flex__item {
+  line-height: 2;
+}
+
+/*
+* style
+*/
+.box-none {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.container {
+  padding: 12px 15px !important;
+  background: white;
+}
+
+.weui-cell__hd {
+  color: #1aad19;
+  font-weight: 800;
+  padding-right: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.weui-cell__bd {
+  padding: 0;
+  margin: 0;
+}
+
+.weui-cell,
+.weui-flex__item,
+article {
+  background: white;
+}
+
+select {
+  border-radius: 5px;
+}
+
+.weui-flex {
+  text-align: center;
 }
 
 .course {
@@ -97,12 +130,6 @@ footer a {
   color: #999999 !important;
 }
 
-.com-h2__title {
-  color: #1aad19;
-  margin: 60px auto 60px auto;
-  text-align: center;
-}
-
 .com-p__data {
   color: #424242;
 }
@@ -110,17 +137,6 @@ footer a {
 .com-p__date {
   color: #dddddd;
   font-size: 0.84em;
-}
-
-.green {
-  color: #1aad19;
-  font-weight: 800 !important;
-}
-
-.weui-cells:before,
-.weui-cell:before,
-.weui-cells:after {
-  border: none !important;
 }
  
 

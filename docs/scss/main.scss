@@ -1,3 +1,20 @@
+/*
+* 整体变量部分
+* 颜色
+*/
+
+$style-color__grey :#999999;
+$style-color__black:#424242;
+$style-color__grey__Light:#dddddd;
+$style-card-color__grey__Light:#efefef;
+$style-color__green:#1aad19;
+$style-color__bg:#fafafa;
+
+/* 
+*   通用样式
+*   字体，修正
+*/
+
 .weui-cells,
 .weui-cell,
 .weui-article,
@@ -5,6 +22,47 @@
 .weui-flex-two__sm {
     font-size: 14px !important;
 }
+
+.weui-cells:before,
+.weui-cell:before,
+.weui-cells:after {
+    border: none !important;
+}
+/* 
+*   自创样式
+*   布局，分布
+*/
+
+// 卡片:卡片形式展示
+.card{
+    border: 1px solid $style-card-color__grey__Light;
+    border-radius: 3px;
+    .weui-flex:nth-child(even) {
+        background: $style-card-color__grey__Light !important;
+        div {
+            background: $style-card-color__grey__Light !important;
+        }
+    }
+    .weui-flex__item {
+        line-height: 3;
+        &:first-child {
+            width: 240px;
+        }
+    }
+}
+
+// h2__title：页面初始大标题
+.com-h2__title {
+    color: $style-color__green;
+    margin: 60px auto 60px auto;
+    text-align: center;
+}
+
+
+/* 
+*   板块调节
+*   
+*/
 
 .weui-flex-two__sm {
     width: 90px !important;
@@ -21,17 +79,6 @@
 }
 
 /*
-* var
-*/
-
-$style-color__grey :#999999;
-$style-color__black:#424242;
-$style-color__grey__Light:#dddddd;
-$style-card-color__grey__Light:#efefef;
-$style-color__green:#1aad19;
-$style-color__bg:#fafafa;
-
-/*
 * style
 */
 
@@ -45,10 +92,17 @@ $style-color__bg:#fafafa;
     background: white;
 }
 
-label {
+.weui-cell__hd {
     color: $style-color__green;
     font-weight: 800;
     padding-right: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.weui-cell__bd{
+    padding: 0;
+    margin: 0;
 }
 
 .weui-cell,
@@ -66,23 +120,6 @@ select {
 }
 
 
-// 卡片
-.card{
-    border: 1px solid $style-card-color__grey__Light;
-    border-radius: 3px;
-    .weui-flex:nth-child(even) {
-        background: $style-card-color__grey__Light !important;
-        div {
-            background: $style-card-color__grey__Light !important;
-        }
-    }
-    .weui-flex__item {
-        line-height: 3;
-        &:first-child {
-            width: 240px;
-        }
-    }
-}
 
 .course {
     width: 120px !important;
@@ -107,12 +144,7 @@ footer {
     }
 }
 
-// title
-.com-h2__title {
-    color: $style-color__green;
-    margin: 60px auto 60px auto;
-    text-align: center;
-}
+
 
 .com-p__data {
     color: $style-color__black;
@@ -123,13 +155,5 @@ footer {
     font-size: 0.84em;
 }
 
-.green {
-    color: $style-color__green;
-    font-weight: 800 !important;
-}
 
-.weui-cells:before,
-.weui-cell:before,
-.weui-cells:after {
-    border: none !important;
-}
+
