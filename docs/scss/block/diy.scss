@@ -1,0 +1,44 @@
+@import 'var.scss';
+
+//卡片
+.card{
+    border: 1px solid $style-card-color__grey__Light;
+    border-radius: 3px;
+    .weui-flex:nth-child(even) {
+        background: $style-card-color__grey__Light !important;
+        div {
+            background: $style-card-color__grey__Light !important;
+        }
+    }
+
+    .weui-flex__item {
+        line-height: 3;
+        &:first-child {
+            width: 240px;
+        }
+    }
+}
+
+// head-title
+#head-title {
+    color: $style-color__green;
+    margin: 60px auto 60px auto;
+    text-align: center;
+    a{
+        text-decoration: underline;
+    }
+    a,p{
+        font-size: 14px;
+        color:$style-color__green;
+    }
+}
+
+
+// footer
+footer {
+    margin: 28px 0 16px 0 !important;
+    text-align: center;
+    a {
+        color: $style-color__grey !important;
+    }
+}

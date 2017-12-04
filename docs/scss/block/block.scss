@@ -1,0 +1,20 @@
+@import 'var.scss';
+// 成绩查询版块
+.grade {
+    .card .weui-flex:first-child {
+        font-weight: 800;
+    }
+    .weui-cell__hd {
+        width: 50px !important;
+    }
+}
+
+#data {
+    .com-p__data {
+        color: $style-color__black;
+    }
+    .com-p__date {
+        color: $style-color__grey__Light;
+        font-size: 0.84em;
+    }
+}

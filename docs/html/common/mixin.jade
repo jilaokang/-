@@ -21,12 +21,12 @@ mixin footer
 
 //com-title
 mixin com-title(com_title,com_a,com_a__href,com_p)
-    .com-h2__title 
+    #head-title
         h2 #{com_title}
 
         if com_a
             a(href="#{com_a__href}") #{com_a}
-            
+
         if com_p
             p #{com_p}
     
