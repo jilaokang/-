@@ -43,6 +43,9 @@ $style-color__bg:#fafafa;
             background: $style-card-color__grey__Light !important;
         }
     }
+    .weui-flex:first-child{
+        font-weight: 800;
+    }
     .weui-flex__item {
         line-height: 3;
         &:first-child {
@@ -50,6 +53,7 @@ $style-color__bg:#fafafa;
         }
     }
 }
+
 
 // h2__title：页面初始大标题
 .com-h2__title {

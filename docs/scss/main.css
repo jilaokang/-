@@ -38,6 +38,10 @@
   background: #efefef !important;
 }
 
+.card .weui-flex:first-child {
+  font-weight: 800;
+}
+
 .card .weui-flex__item {
   line-height: 3;
 }
