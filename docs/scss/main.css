@@ -9,11 +9,11 @@
   border: none !important;
 }
 
-.grade .card .weui-flex:first-child {
+#grade .card .weui-flex:first-child {
   font-weight: 800;
 }
 
-.grade .weui-cell__hd {
+#grade .weui-cell__hd {
   width: 50px !important;
 }
 
@@ -154,9 +154,6 @@ select {
   width: 120px !important;
 }
 
-/* 
-* block
-*/
 body {
   background: #fafafa !important;
   color: #424242;

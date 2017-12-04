@@ -1,6 +1,6 @@
 @import 'var.scss';
 // 成绩查询版块
-.grade {
+#grade {
     .card .weui-flex:first-child {
         font-weight: 800;
     }
@@ -10,8 +10,9 @@
 }
 
 #data {
-    .com-p__data {
-        color: $style-color__black;
+    .com-p__data{
+        color: red;
+        font-weight: 800;
     }
     .com-p__date {
         color: $style-color__grey__Light;
