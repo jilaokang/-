@@ -43,9 +43,7 @@ $style-color__bg:#fafafa;
             background: $style-card-color__grey__Light !important;
         }
     }
-    .weui-flex:first-child{
-        font-weight: 800;
-    }
+
     .weui-flex__item {
         line-height: 3;
         &:first-child {
@@ -74,6 +72,20 @@ $style-color__bg:#fafafa;
 *   板块调节
 *   
 */
+
+// 成绩查询版块
+.grade{
+    .card .weui-flex:first-child{
+        font-weight: 800;
+    }
+    .weui-cell__hd{
+        width:50px !important;
+    }
+}
+
+
+
+
 
 .weui-flex-two__sm {
     width: 90px !important;

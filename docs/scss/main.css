@@ -38,10 +38,6 @@
   background: #efefef !important;
 }
 
-.card .weui-flex:first-child {
-  font-weight: 800;
-}
-
 .card .weui-flex__item {
   line-height: 3;
 }
@@ -69,6 +65,14 @@
 *   板块调节
 *   
 */
+.grade .card .weui-flex:first-child {
+  font-weight: 800;
+}
+
+.grade .weui-cell__hd {
+  width: 50px !important;
+}
+
 .weui-flex-two__sm {
   width: 90px !important;
   line-height: 3;

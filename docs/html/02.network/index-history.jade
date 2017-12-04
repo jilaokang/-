@@ -1,0 +1,18 @@
+include ../common/mixin.jade
+
+-var items = [ {pro:"维修状态",content:"等待维修"},{pro:"报修时间",content:"2017年12月1日 23：57：31"},{pro:"上报人员",content:"钱博康 18086407838"},{pro:"故障类型",content:"错误代码568"}]
+
++conf
+    title 网络报修 | 历史记录
+
+body
+
+    .container
+        .card
+            each fixs in items
+                .weui-flex
+                    .weui-flex-two__sm=fixs.pro
+                    .weui-flex__item=fixs.content
+
+         
+    +footer
