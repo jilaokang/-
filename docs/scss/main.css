@@ -4,6 +4,7 @@
   border: none !important;
 }
 
+p,
 .weui-cells,
 .weui-cell,
 .weui-article,
@@ -33,6 +34,40 @@
   text-align: center;
 }
 
+article,
+.weui-cell,
+.weui-flex__item {
+  background: white;
+}
+
+select {
+  border-radius: 5px;
+}
+
+body {
+  background: #fafafa !important;
+  color: #424242;
+}
+
+.weui-flex-two__sm {
+  width: 90px !important;
+  line-height: 3;
+}
+
+.weui-label {
+  width: 70px !important;
+}
+
+.container {
+  padding: 12px 15px !important;
+  background: white;
+}
+
+.weui-cell__hd {
+  font-weight: 800;
+  padding-right: 25px;
+}
+
 #grade .card .weui-flex:first-child {
   font-weight: 800;
 }
@@ -53,6 +88,10 @@
 #data .data-time {
   color: #dddddd;
   font-size: 0.84em;
+}
+
+#data p {
+  font-weight: 0.8em;
 }
 
 #network .weui-input, #network .weui-select {
@@ -103,40 +142,6 @@ footer {
 
 footer a {
   color: #999999 !important;
-}
-
-body {
-  background: #fafafa !important;
-  color: #424242;
-}
-
-article,
-.weui-cell,
-.weui-flex__item {
-  background: white;
-}
-
-select {
-  border-radius: 5px;
-}
-
-.weui-flex-two__sm {
-  width: 90px !important;
-  line-height: 3;
-}
-
-.weui-label {
-  width: 70px !important;
-}
-
-.container {
-  padding: 12px 15px !important;
-  background: white;
-}
-
-.weui-cell__hd {
-  font-weight: 800;
-  padding-right: 25px;
 }
  
 

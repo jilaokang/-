@@ -1,5 +1,5 @@
 @import 'var.scss';
-// 成绩查询版块
+// 29 成绩查询 
 #grade {
     .card .weui-flex:first-child {
         font-weight: 800;
@@ -12,6 +12,7 @@
     }
 }
 
+// 102 更新日志
 #data {
 
     .data-title{
@@ -27,6 +28,7 @@
     }
 }
 
+// 02网络报修
 #network{
     .weui-input,.weui-select{
         color: $style-color__grey;
