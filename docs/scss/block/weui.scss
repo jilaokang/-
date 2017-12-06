@@ -24,7 +24,9 @@ article,
     background: rgb(255, 255, 255) !important;
 }
 
-select {
+.weui-select {
+    height: auto !important;
+    line-height: 1.6 !important;
     border-radius: 5px;
 }
 

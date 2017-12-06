@@ -23,18 +23,15 @@ article,
   background: white !important;
 }
 
-select {
+.weui-select {
+  height: auto !important;
+  line-height: 1.6 !important;
   border-radius: 5px;
 }
 
 body {
   background: #f0f0f0 !important;
   color: #424242;
-}
-
-.weui-textarea:hover {
-  border: 1 solid #dddddd !important;
-  border-radius: 5px;
 }
 
 .weui-flex-two__sm {
