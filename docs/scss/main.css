@@ -32,6 +32,11 @@ body {
   color: #424242;
 }
 
+.weui-textarea:hover {
+  border: 1 solid #dddddd !important;
+  border-radius: 5px;
+}
+
 .weui-flex-two__sm {
   width: 90px !important;
   line-height: 3;
