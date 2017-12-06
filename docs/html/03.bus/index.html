@@ -1,55 +1,63 @@
-<!DOCTYPE html>
-<html>
 
-<head>
+<!--conf-->
+<!-- footer-->
+<!--com-title--><!DOCTYPE html>
+<html>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>设置比例尺的位置</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link href="../../../lib/weui/weui.css" rel="stylesheet"/>
+    <link href="../../scss/main.css" rel="stylesheet"/>
+    <script src="../../../lib/weui/weui.js"></script>
+    <link type="image/x-icon" href="http://on5ngaon4.bkt.clouddn.com/Mountain_64px_1120233_easyicon.net.ico" rel="shortcut icon"/>
+    <title>校车查询</title>
     <style type="text/css">
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-        body,
-        button,
-        input,
-        select,
-        textarea {
-            font: 12px/16px Verdana, Helvetica, Arial, sans-serif;
-        }
-        p {
-            width: 603px;
-            padding-top: 3px;
-            overflow: hidden;
-        }
-        .btn {
-            width: 142px;
-        }
+      * {
+      margin: 0px;
+      padding: 0px;
+      }
+      body,
+      button,
+      input,
+      select,
+      textarea {
+      font: 12px/16px Verdana, Helvetica, Arial, sans-serif;
+      }
+      p {
+      width: 603px;
+      padding-top: 3px;
+      overflow: hidden;
+      }
+      .btn {
+      width: 142px;
+      }
     </style>
     <script src="http://map.qq.com/api/js?v=2.exp" charset="utf-8"></script>
-
-</head>
-
-<body onload="init()">
+  </head>
+  <body onload="init()">
+    <div class="weui-cells__title">校车位置</div>
     <script>
-        var init = function() {
-            var map = new qq.maps.Map(document.getElementById("container"), {
-                center: new qq.maps.LatLng(30.441530,114.295560),
-                zoom: 15,
-                zoomControl: false,
-                panControl: false,
-                //启用比例尺
-                scaleControlOptions: {
-                    //设置控件位置相对右下角对齐，向左排列
-                    position: qq.maps.ControlPosition.BOTTOM_RIGHT
-                }
-
-            });
-
-        }
+      var init = function() {
+      var map = new qq.maps.Map(document.getElementById("container"), {
+      center: new qq.maps.LatLng(30.441530,114.295560),
+      zoom: 15,
+      zoomControl: false,
+      panControl: false,
+      //启用比例尺
+      scaleControlOptions: {
+      //设置控件位置相对右下角对齐，向左排列
+      position: qq.maps.ControlPosition.BOTTOM_RIGHT
+      }
+      });
+      }
     </script>
-    <div id="container" style="width:100%;height:380px"></div>
-
-</body>
-
+    <div class="weui-cells">
+      <div class="container">
+        <div id="container" style="width:auto;height:380px" class="container"></div>
+      </div>
+    </div>
+  </body>
 </html>
