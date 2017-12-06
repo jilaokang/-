@@ -52,12 +52,9 @@ body
                     option(value="2") 403错误，无法链接互联网
                     option(value="3") 966错误，身份识别错误
                     option(value="3") 782错误，端口被占用
-
-    .container
-        .weui-cells.weui-cells_form
-            .weui-cell
-                .weui-cell__bd
-                    textarea.weui-textarea(placeholder="故障描述", rows="3")
+        .weui-cell
+            .weui-cell__bd
+                textarea.weui-textarea(placeholder="故障描述", rows="4")
 
     .weui-btn-area
         a.weui-btn.weui-btn_primary(onclick="success();") 提交
