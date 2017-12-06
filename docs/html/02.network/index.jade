@@ -20,10 +20,7 @@ body
             .weui-cell__hd 
                 label.weui-lable(for="") 宿舍
             .weui-cell__bd
-                select.weui-select 
-                    option(value="1") 梅菊斋
-                    option(value="2") 竹枫斋
-                    option(value="3") 兰蕙斋
+                input.weui-input(value="竹枫斋 4舍 227", onclick="dorm()")
         .weui-cell
             .weui-cell__hd
                 label.weui-label 手机号
@@ -61,24 +58,26 @@ body
 
 
     script.
-        weui.picker([
-            { label: '桂檀斋'}, 
-            { label: '椿萱斋'}, 
-            { label: '梅菊斋'}
-        ], [
-            { label: '1舍'}, 
-            { label: '2舍'}, 
-            { label: '3舍'}
-        ], {
-            defaultValue: ['3', 'A'],
-            onChange: function (result) {
-                console.log(result);
-            },
-            onConfirm: function (result) {
-                console.log(result);
-            },
-            id: 'multiPickerBtn'
-        });
+        function dorm(){
+            weui.picker([
+                { label: '桂檀斋'}, 
+                { label: '椿萱斋'}, 
+                { label: '梅菊斋'}
+            ], [
+                { label: '1舍'}, 
+                { label: '2舍'}, 
+                { label: '3舍'}
+            ], {
+                defaultValue: ['3', 'A'],
+                onChange: function (result) {
+                    console.log(result);
+                },
+                onConfirm: function (result) {
+                    console.log(result);
+                },
+                id: 'multiPickerBtn'
+            });
+        }
 
 
     script(charset="UTF-8").
