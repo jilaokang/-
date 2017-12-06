@@ -5,18 +5,15 @@ include ../common/mixin.jade
 
 body
     +com-title("期待您的反馈")  
-    
-    .weui-cell
-        .weui-cell__hd
-            label.weui-label 联系方式
-        .weui-cell__bd
-            input.weui-input(type="number", placeholder="手机号", maxlength="11") 
-
-    .container
-        .weui-cells.weui-cells_form
-            .weui-cell
-                .weui-cell__bd
-                    textarea.weui-textarea(placeholder="输入留言吧", rows="8")
+    .weui-cells
+        .weui-cell
+            .weui-cell__hd
+                label.weui-label 联系方式
+            .weui-cell__bd
+                input.weui-input(type="number", placeholder="手机号", maxlength="11") 
+        .weui-cell
+            .weui-cell__bd
+                textarea.weui-textarea(placeholder="输入留言吧", rows="8")
 
     .weui-btn-area
         a.weui-btn.weui-btn_primary(onclick="success();") 确定
