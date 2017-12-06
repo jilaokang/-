@@ -46,6 +46,7 @@ body {
 
 .weui-cell__hd {
   font-weight: 800;
+  color: #1aad19;
 }
 
 #grade .card .weui-flex:first-child {
@@ -109,7 +110,8 @@ body {
   text-decoration: underline;
 }
 
-#head-title a, #head-title p {
+#head-title a,
+#head-title p {
   font-size: 14px;
   color: #1aad19;
 }

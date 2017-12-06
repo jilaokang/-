@@ -1,7 +1,6 @@
 @import 'var.scss';
-
 //卡片
-.card{
+.card {
     border: 1px solid $style-card-color__grey__Light;
     border-radius: 3px;
     .weui-flex:nth-child(even) {
@@ -10,7 +9,6 @@
             background: $style-card-color__grey__Light !important;
         }
     }
-
     .weui-flex__item {
         line-height: 3;
         &:first-child {
@@ -24,16 +22,15 @@
     color: $style-color__green;
     margin: 60px auto 60px auto;
     text-align: center;
-    a{
+    a {
         text-decoration: underline;
     }
-    a,p{
+    a,
+    p {
         font-size: 14px;
-        color:$style-color__green;
+        color: $style-color__green;
     }
 }
-
-
 
 // footer
 footer {
