@@ -11,11 +11,6 @@ p,
   line-height: 2;
 }
 
-.box-none {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
 .weui-flex {
   text-align: center;
 }
@@ -33,7 +28,7 @@ select {
 }
 
 body {
-  background: #efefef !important;
+  background: #fafafa !important;
   color: #424242;
 }
 
