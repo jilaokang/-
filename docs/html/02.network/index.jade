@@ -2,8 +2,8 @@ include ../common/mixin.jade
 
 -var items = [ {pro:"维修状态",content:"等待维修"},{pro:"报修时间",content:"2017年12月1日 23：57：31"},{pro:"上报人员",content:"钱博康 18086407838"},{pro:"故障类型",content:"错误代码568"}]
 
-+conf
-    title 网络报修
+head
+    +conf("网络报修")
 
 body
 
@@ -23,7 +23,7 @@ body
                 input.weui-input(id="dorm", value="竹枫斋 4舍", readonly="readonly", onclick="getDorm();")
         .weui-cell
             .weui-cell__hd
-                label.weui-label 宿舍号
+                label.weui-label 寝室号
             .weui-cell__bd
                 input.weui-input(value="227")        
         .weui-cell
