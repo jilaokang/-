@@ -50,15 +50,10 @@
     </div>
     <div class="weui-cell">
       <div class="weui-cell__hd"> 
-        <label for="" class="weui-lable">常见故障</label>
+        <label for="" class="weui-label">常见故障</label>
       </div>
       <div class="weui-cell__bd">
-        <select class="weui-select"> 
-          <option value="1">611，无法登陆</option>
-          <option value="2">403，无法链接互联网</option>
-          <option value="3">966，身份识别错误</option>
-          <option value="3">782，端口被占用</option>
-        </select>
+        <input value="601，网络无法连接" readonly="readonly" onclick="getFix();" class="weui-input"/>
       </div>
     </div>
     <div class="weui-cell">
@@ -93,17 +88,31 @@
     
                 var dorm_dom = document.getElementById("dorm");
                 dorm_dom.value= str;
-            },
-            id: 'multiPickerBtn'
+            }
         });
     }
     
-    
-  </script>
-  <script charset="UTF-8">
     function success(){
         weui.toast('报修成功', 1500);
     }
+    
+    function getFix(){
+        weui.picker([
+            { label: '601，网络无法连接'}, 
+            { label: '722，能登QQ，不能上网'},
+            { label: '930，可以登录客户端，但没网'}, 
+            { label: '935，没啥毛病，就想报一下'},
+            { label: '635，没啥毛病，就想报一下'}
+        ], 
+            {
+            onConfirm: function (result) {
+                console.log(result);
+                fix=result[0].label;
+    
+                this.value= fix;
+            }
+        });
+    }        
             
   </script>
   <footer class="weui-footer">

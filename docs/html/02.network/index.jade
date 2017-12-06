@@ -33,13 +33,9 @@ body
                 input.weui-input(value="18086407838") 
         .weui-cell
             .weui-cell__hd 
-                label.weui-lable(for="") 常见故障
+                label.weui-label(for="") 常见故障
             .weui-cell__bd
-                select.weui-select 
-                    option(value="1") 611，无法登陆
-                    option(value="2") 403，无法链接互联网
-                    option(value="3") 966，身份识别错误
-                    option(value="3") 782，端口被占用
+                input.weui-input(value="601，网络无法连接", readonly="readonly", onclick="getFix();")
         .weui-cell
             .weui-cell__bd
                 textarea.weui-textarea(placeholder="故障描述", rows="5")
@@ -73,15 +69,30 @@ body
 
                     var dorm_dom = document.getElementById("dorm");
                     dorm_dom.value= str;
-                },
-                id: 'multiPickerBtn'
+                }
             });
         }
 
-
-    script(charset="UTF-8").
         function success(){
             weui.toast('报修成功', 1500);
         }
+
+        function getFix(){
+            weui.picker([
+                { label: '601，网络无法连接'}, 
+                { label: '722，能登QQ，不能上网'},
+                { label: '930，可以登录客户端，但没网'}, 
+                { label: '935，没啥毛病，就想报一下'},
+                { label: '635，没啥毛病，就想报一下'}
+            ], 
+                {
+                onConfirm: function (result) {
+                    console.log(result);
+                    fix=result[0].label;
+
+                    this.value= fix;
+                }
+            });
+        }        
                 
     +footer
