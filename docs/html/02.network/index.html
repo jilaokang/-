@@ -1,25 +1,110 @@
-<!--conf--><!-- footer--><!--com-title--><head lang="en"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="stylesheet" href="../../../lib/weui/weui.css"/><link rel="stylesheet" href="../../scss/main.css"/><script src="../../../lib/weui/weui.js"></script></head><body></body><div id="network"><div id="head-title"><h2>在线报修</h2><a href="index-history.html">历史记录</a></div><div class="weui-cells"><div class="weui-cell"><div class="weui-cell__hd"><label class="weui-label">姓名</label></div><div class="weui-cell__bd"><input value="钱博康" class="weui-input"/></div></div><div class="weui-cell"><div class="weui-cell__hd"> <label for="" class="weui-lable">宿舍</label></div><div class="weui-cell__bd"><input value="竹枫斋 4舍 227" onclick="dorm()" class="weui-input"/></div></div><div class="weui-cell"><div class="weui-cell__hd"><label class="weui-label">手机号</label></div><div class="weui-cell__bd"><input value="18086407838" class="weui-input"/></div></div><div class="weui-cell">         <div class="weui-cell__hd"> <label for="" class="weui-lable">楼栋</label></div><div class="weui-cell__bd"><select class="weui-select"> <option value="1">1舍</option><option value="2">2舍</option><option value="3">3舍</option><option value="3">4舍</option></select></div></div><div class="weui-cell"><div class="weui-cell__hd"><label class="weui-label">宿舍号</label></div><div class="weui-cell__bd"><input value="227" class="weui-input"/></div></div><div class="weui-cell"><div class="weui-cell__hd"> <label for="" class="weui-lable">常见故障</label></div><div class="weui-cell__bd"><select class="weui-select"> <option value="1">611错误，无法登陆</option><option value="2">403错误，无法链接互联网</option><option value="3">966错误，身份识别错误</option><option value="3">782错误，端口被占用</option></select></div></div><div class="weui-cell"><div class="weui-cell__bd"><textarea placeholder="故障描述" rows="4" class="weui-textarea"></textarea></div></div></div><div class="weui-btn-area"><a onclick="success();" class="weui-btn weui-btn_primary">提交</a></div><script>function dorm(){
-    weui.picker([
-        { label: '桂檀斋'}, 
-        { label: '椿萱斋'}, 
-        { label: '梅菊斋'}
-    ], [
-        { label: '1舍'}, 
-        { label: '2舍'}, 
-        { label: '3舍'}
-    ], {
-        defaultValue: ['3', 'A'],
-        onChange: function (result) {
-            console.log(result);
-        },
-        onConfirm: function (result) {
-            console.log(result);
-        },
-        id: 'multiPickerBtn'
-    });
-}
 
-</script><script charset="UTF-8">function success(){
-    weui.toast('报修成功', 1500);
-}
-        </script><footer class="weui-footer"><div><p> <a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p></div><div><p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p></div></footer></div>
+<!--conf-->
+<!-- footer-->
+<!--com-title-->
+<head lang="en">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="../../../lib/weui/weui.css"/>
+  <link rel="stylesheet" href="../../scss/main.css"/>
+  <script src="../../../lib/weui/weui.js"></script>
+</head>
+<body></body>
+<div id="network">
+  <div id="head-title">
+    <h2>在线报修</h2><a href="index-history.html">历史记录</a>
+  </div>
+  <div class="weui-cells">
+    <div class="weui-cell">
+      <div class="weui-cell__hd">
+        <label class="weui-label">姓名</label>
+      </div>
+      <div class="weui-cell__bd">
+        <input value="钱博康" class="weui-input"/>
+      </div>
+    </div>
+    <div class="weui-cell">
+      <div class="weui-cell__hd"> 
+        <label class="weui-label">宿舍</label>
+      </div>
+      <div class="weui-cell__bd">
+        <input value="竹枫斋 4舍" onclick="dorm();" class="weui-input"/>
+      </div>
+    </div>
+    <div class="weui-cell">
+      <div class="weui-cell__hd">
+        <label class="weui-label">宿舍号</label>
+      </div>
+      <div class="weui-cell__bd">
+        <input value="227" class="weui-input"/>
+      </div>
+    </div>
+    <div class="weui-cell">
+      <div class="weui-cell__hd">
+        <label class="weui-label">手机号</label>
+      </div>
+      <div class="weui-cell__bd">
+        <input value="18086407838" class="weui-input"/>
+      </div>
+    </div>
+    <div class="weui-cell">
+      <div class="weui-cell__hd"> 
+        <label for="" class="weui-lable">常见故障</label>
+      </div>
+      <div class="weui-cell__bd">
+        <select class="weui-select"> 
+          <option value="1">611，无法登陆</option>
+          <option value="2">403，无法链接互联网</option>
+          <option value="3">966，身份识别错误</option>
+          <option value="3">782，端口被占用</option>
+        </select>
+      </div>
+    </div>
+    <div class="weui-cell">
+      <div class="weui-cell__bd">
+        <textarea placeholder="故障描述" rows="5" class="weui-textarea"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="weui-btn-area"><a onclick="success();" class="weui-btn weui-btn_primary">提交</a></div>
+  <script>
+    function dorm(){
+        weui.picker([
+            { label: '桂檀斋'}, 
+            { label: '竹枫斋'},
+            { label: '椿萱斋'}, 
+            { label: '梅菊斋'}
+        ], [
+            { label: '1舍'}, 
+            { label: '2舍'}, 
+            { label: '3舍'},
+            { label: '4舍'}
+        ], {
+            onChange: function (result) {
+                console.log(result);
+            },
+            onConfirm: function (result) {
+                console.log(result);
+            },
+            id: 'multiPickerBtn'
+        });
+    }
+    
+    
+  </script>
+  <script charset="UTF-8">
+    function success(){
+        weui.toast('报修成功', 1500);
+    }
+            
+  </script>
+  <footer class="weui-footer">
+    <div>
+      <p> <a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
+    </div>
+    <div>
+      <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
+    </div>
+  </footer>
+</div>
