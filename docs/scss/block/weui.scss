@@ -1,5 +1,4 @@
 @import 'var.scss';
-
 p,
 .weui-cells,
 .weui-cell,
@@ -9,15 +8,12 @@ p,
     font-size: 14px !important;
 }
 
-
-
 .weui-flex__item {
     line-height: 2;
 }
 
-.box-none,
-.weui-cell__hd,
-.weui-cell__bd {
+.box-none
+ {
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -25,7 +21,6 @@ p,
 .weui-flex {
     text-align: center;
 }
-
 
 article,
 .weui-cell,
@@ -49,10 +44,6 @@ body {
     line-height: 3;
 }
 
-.weui-label {
-    width: 70px !important;
-}
-
 .container {
     padding: 12px 15px !important;
     background: white;
@@ -60,5 +51,5 @@ body {
 
 .weui-cell__hd {
     font-weight: 800;
-    padding-right: 25px;
 }
+

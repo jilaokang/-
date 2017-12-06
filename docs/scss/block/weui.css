@@ -11,9 +11,7 @@ p,
   line-height: 2;
 }
 
-.box-none,
-.weui-cell__hd,
-.weui-cell__bd {
+.box-none {
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -44,10 +42,6 @@ body {
   line-height: 3;
 }
 
-.weui-label {
-  width: 70px !important;
-}
-
 .container {
   padding: 12px 15px !important;
   background: white;
@@ -55,7 +49,6 @@ body {
 
 .weui-cell__hd {
   font-weight: 800;
-  padding-right: 25px;
 }
  
 
