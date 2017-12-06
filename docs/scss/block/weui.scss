@@ -1,11 +1,5 @@
 @import 'var.scss';
 
-.weui-cells:before,
-.weui-cell:before,
-.weui-cells:after{
-    border: none !important;
-}
-
 p,
 .weui-cells,
 .weui-cell,
@@ -15,11 +9,7 @@ p,
     font-size: 14px !important;
 }
 
-.weui-cells:before,
-.weui-cell:before,
-.weui-cells:after {
-    border: none !important;
-}
+
 
 .weui-flex__item {
     line-height: 2;
@@ -39,8 +29,10 @@ p,
 
 article,
 .weui-cell,
+.weui-cells,
+.weui-cell__hd,
 .weui-flex__item {
-    background: white;
+    background: rgb(255, 255, 255) !important;
 }
 
 select {

@@ -1,9 +1,3 @@
-.weui-cells:before,
-.weui-cell:before,
-.weui-cells:after {
-  border: none !important;
-}
-
 p,
 .weui-cells,
 .weui-cell,
@@ -11,12 +5,6 @@ p,
 .weui-flex__item,
 .weui-flex-two__sm {
   font-size: 14px !important;
-}
-
-.weui-cells:before,
-.weui-cell:before,
-.weui-cells:after {
-  border: none !important;
 }
 
 .weui-flex__item {
@@ -36,8 +24,10 @@ p,
 
 article,
 .weui-cell,
+.weui-cells,
+.weui-cell__hd,
 .weui-flex__item {
-  background: white;
+  background: white !important;
 }
 
 select {
