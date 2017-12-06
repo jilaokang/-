@@ -29,7 +29,7 @@
         <label class="weui-label">宿舍</label>
       </div>
       <div class="weui-cell__bd">
-        <input value="竹枫斋 4舍" readonly="readonly" onclick="dorm();" class="weui-input"/>
+        <input value="竹枫斋 4舍" id="dorm" readonly="readonly" onclick="getDorm();" class="weui-input"/>
       </div>
     </div>
     <div class="weui-cell">
@@ -69,7 +69,9 @@
   </div>
   <div class="weui-btn-area"><a onclick="success();" class="weui-btn weui-btn_primary">提交</a></div>
   <script>
-    function dorm(){
+    var dorm;
+    var dorm_num;
+    function getDorm(){
         weui.picker([
             { label: '桂檀斋'}, 
             { label: '竹枫斋'},
@@ -81,11 +83,16 @@
             { label: '3舍'},
             { label: '4舍'}
         ], {
-            onChange: function (result) {
-                console.log(result);
-            },
+    
             onConfirm: function (result) {
                 console.log(result);
+                dorm=result[0].label;
+                dorm_num=result[1].label;
+    
+                var str = dorm +" "+dorm_num;
+    
+                var dorm_dom = document.getElementById("dorm");
+                dorm_dom.value= str;
             },
             id: 'multiPickerBtn'
         });
