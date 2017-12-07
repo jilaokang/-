@@ -13,4 +13,15 @@ body
                 input.weui-input(value="姓名/腾讯通",onclick="this.value=''")
             .weui-cell__hd
                 input(class="weui-btn weui-btn_mini weui-btn_primary",type="button",value="查询")
+
+    -var info = [{class:"姓名",content:"赵四"},{class:"性别",content:"男"},{class:"腾讯通",content:"8219"},{class:"手机号",content:"18086407838"}]
+    .container
+        .card
+            each item in info
+                .weui-flex
+                    .weui-flex-two__sm=item.class
+                    .weui-flex__item=item.content
+
+    .weui-btn-area
+        a(class="weui-btn weui-btn_default",onclick="success();") 复制电话号码到粘贴板
     +footer
