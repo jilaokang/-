@@ -84,11 +84,11 @@ body {
 }
 
 .card .weui-flex:nth-child(even) {
-  background: #efefef !important;
+  background: #f8f8f8 !important;
 }
 
 .card .weui-flex:nth-child(even) div {
-  background: #efefef !important;
+  background: #f8f8f8 !important;
 }
 
 .card .weui-flex__item {
