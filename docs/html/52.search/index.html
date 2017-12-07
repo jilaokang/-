@@ -55,7 +55,8 @@
       </div>
     </div>
   </div>
-  <div class="weui-btn-area"><a onclick="success();" class="weui-btn weui-btn_plain-primary">复制电话号码</a></div>
+  <!--.weui-btn-area//a(class="weui-btn weui-btn_plain-primary",onclick="success();") 复制电话号码
+  -->
   <footer class="weui-footer">
     <div>
       <p> <a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
@@ -67,9 +68,6 @@
   <script>
     function success(){
         var phone = document.getElementsByClassName("weui-flex__item")[3];
-        phone.select();
-        document.execCommand("Copy");
-        alert("已复制好，可贴粘。");
         weui.toast('复制成功', 1500);
     }
   </script>
