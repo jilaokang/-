@@ -34,6 +34,8 @@ html
       var init = function() {
       var map = new qq.maps.Map(document.getElementById("container"), {
       center: new qq.maps.LatLng(30.441530,114.295560),
+      minZoom: 11,
+      maxZoom: 18,
       zoom: 15,
       zoomControl: false,
       panControl: false,
