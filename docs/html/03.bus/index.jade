@@ -34,7 +34,7 @@ html
       var init = function() {
       var map = new qq.maps.Map(document.getElementById("container"), {
       center: new qq.maps.LatLng(30.441530,114.295560),
-      minZoom: 11,
+      minZoom: 12,
       maxZoom: 18,
       zoom: 15,
       zoomControl: false,
@@ -44,6 +44,14 @@ html
       //设置控件位置相对右下角对齐，向左排列
       position: qq.maps.ControlPosition.BOTTOM_RIGHT
       }
+      setTimeout(function(){
+        var marker=new qq.maps.Marker({
+            position:center,
+			      animation:qq.maps.MarkerAnimation.DROP,
+            map:map
+        });
+        //marker.setAnimation(qq.maps.Animation.DROP);
+    },2000);
       });
       }
     .weui-cells
