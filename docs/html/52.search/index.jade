@@ -4,6 +4,7 @@ head
     +conf("电话查询")
 
 body
+
     +com-title("联系方式查询","","","支持模糊查询") 
     .weui-cells
         .weui-cell
@@ -30,5 +31,8 @@ body
     script.
         function success(){
             var phone = document.getElementsByClassName("weui-flex__item")[3];
+            phone.select();
+            document.execCommand("Copy");
+            alert("已复制好，可贴粘。");
             weui.toast('复制成功', 1500);
         }
