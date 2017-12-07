@@ -1,7 +1,7 @@
 @import 'var.scss';
 //卡片
 .card {
-    border: 1px solid $style-card-color__grey__Light;
+    padding: 8px 12px;
     border-radius: 3px;
     .weui-flex:nth-child(even) {
         background: $style-card-color__grey__Light !important;

@@ -78,12 +78,8 @@ body {
   font-weight: 0.8em;
 }
 
-#network .weui-input, #network .weui-select {
-  color: #999999;
-}
-
 .card {
-  border: 1px solid #efefef;
+  padding: 8px 12px;
   border-radius: 3px;
 }
 
