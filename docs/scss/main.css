@@ -79,7 +79,6 @@ body {
 }
 
 .card {
-  padding: 8px 12px;
   border-radius: 3px;
 }
 
@@ -113,6 +112,10 @@ body {
 #head-title p {
   font-size: 14px;
   color: #1aad19;
+}
+
+.container {
+  padding: 15px 12px;
 }
 
 footer {
