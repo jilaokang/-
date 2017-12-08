@@ -16,14 +16,19 @@ body
                 input(class="weui-btn weui-btn_mini weui-btn_default",type="button",value="查询" )
 
     .weui-cells__title 查询结果
-    -var info = [{class:"姓名",content:"赵四"},{class:"性别",content:"男"},{class:"腾讯通",content:"8219"},{class:"邮箱",content:"516764216@qq.com"},{class:"手机号",content:"18086407838"}]
+    -var info = [{content:"赵四"},{class:"性别",content:"男"},{class:"腾讯通",content:"8219"},{class:"邮箱",content:"516764216@qq.com"},{class:"手机号",content:"18086407838"}]
 
     .container
-        .card
-            each item in info
-                .weui-flex
-                    .weui-flex-two__sm=item.class
-                    .weui-flex__item=item.content
+        .card-small
+            .box
+                each item in info
+                    .weui-flex
+                        if item.class
+                            .weui-flex-two__sm=item.class
+                            .weui-flex__item=item.content
+
+                          else
+                            .weui-flex__item=item.content
 
     //.weui-btn-area
         //a(class="weui-btn weui-btn_plain-primary",onclick="success();") 复制电话号码
