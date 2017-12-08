@@ -35,10 +35,10 @@ body
             .weui-cell__hd
                 label.weui-label 错误类型
             .weui-cell__bd
-                input.weui-input(name="err", placeholder="选择故障类型（必选）")
+                input.weui-input(name="err", placeholder="选择故障类型（必选）",readonly="readonly")
         .weui-cell
             .weui-cell__bd
-                textarea.weui-textarea(name="err", placeholder="请详细描述故障情况（必填）",readonly="readonly", rows="6")
+                textarea.weui-textarea(name="err", placeholder="请详细描述故障情况（必填）", rows="6")
 
     .weui-btn-area
         a.weui-btn.weui-btn_primary(onclick="Info()") 提交
