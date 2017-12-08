@@ -126,12 +126,6 @@ footer a {
 .container {
   padding: 15px 12px;
 }
-
-.important input::-webkit-input-placeholder,
-.important textarea::-webkit-textarea-placeholder {
-  color: #d4625f !important;
-  text-align: left !important;
-}
  
 
  /*# sourceMappingURL= main.css.map */
