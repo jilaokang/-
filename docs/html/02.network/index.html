@@ -23,7 +23,7 @@
         <label class="weui-label">姓名</label>
       </div>
       <div class="weui-cell__bd">
-        <input value="钱博康" class="weui-input"/>
+        <input name="base" value="钱博康" class="weui-input"/>
       </div>
     </div>
     <div class="weui-cell">
@@ -31,7 +31,7 @@
         <label class="weui-label">宿舍</label>
       </div>
       <div class="weui-cell__bd">
-        <input id="dorm" value="竹枫斋 4舍" readonly="readonly" onclick="getDorm();" class="weui-input"/>
+        <input name="base" value="竹枫斋 4舍" readonly="readonly" class="weui-input"/>
       </div>
     </div>
     <div class="weui-cell">
@@ -39,7 +39,7 @@
         <label class="weui-label">寝室号</label>
       </div>
       <div class="weui-cell__bd">
-        <input value="227" class="weui-input"/>
+        <input name="base" value="227" class="weui-input"/>
       </div>
     </div>
     <div class="weui-cell">
@@ -47,27 +47,28 @@
         <label class="weui-label">手机号</label>
       </div>
       <div class="weui-cell__bd">
-        <input value="18086407838" class="weui-input"/>
+        <input name="tel" value="18086407838" class="weui-input"/>
       </div>
     </div>
     <div class="weui-cell">
       <div class="weui-cell__hd">
-        <label class="weui-label">错误码</label>
+        <label class="weui-label">错误类型</label>
       </div>
       <div class="weui-cell__bd">
-        <input value="903" class="weui-input"/>
+        <input name="err" placeholder="选择故障类型（必选）" class="weui-input"/>
       </div>
     </div>
     <div class="weui-cell">
       <div class="weui-cell__bd">
-        <textarea placeholder="在此描述断网情况" rows="6" class="weui-textarea"></textarea>
+        <textarea name="err" placeholder="请详细描述故障情况（必填）" rows="6" class="weui-textarea"></textarea>
       </div>
     </div>
   </div>
-  <div class="weui-btn-area"><a onclick="success();" class="weui-btn weui-btn_primary">提交</a></div>
+  <div class="weui-btn-area"><a onclick="Info()" class="weui-btn weui-btn_primary">提交</a></div>
   <script>
-    var dorm;
-    var dorm_num;
+    var net={ "base":"", "tel":"", "err":"" };
+    
+    
     function getDorm(){
         weui.picker([
             { label: '桂檀斋'}, 
@@ -80,25 +81,68 @@
             { label: '3舍'},
             { label: '4舍'}
         ], {
-    
             onConfirm: function (result) {
-                console.log(result);
-                dorm=result[0].label;
-                dorm_num=result[1].label;
+       
+                var dorm=result[0].label;
+                var dorm_num=result[1].label;
     
                 var str = dorm +" "+dorm_num;
-    
-                var dorm_dom = document.getElementById("dorm");
-                dorm_dom.value= str;
+                base[1].value= str;
             }
         });
     }
     
-    function success(){
-        weui.toast('报修成功', 1500);
+    function getErr__number(){
+        weui.picker([
+            { label: '登录提示错误代码651'}, 
+            { label: '登录提示错误代码691,629'},
+            { label: '登录提示错误代码734'}, 
+            { label: '其他错误代码，请在描述里标明'},
+            { label: '网速慢，不稳定'},
+            { label: '网线接口有问题'}
+        ],{
+            onConfirm: function (result) {
+                err[0].value= result[0].label;
+            }
+        });
+    }        
+    
+    
+    window.onload=function(){
+    
+        // base 监听事件
+        base = document.getElementsByName("base");
+        tel = document.getElementsByName("tel");
+        err = document.getElementsByName("err");
+    
+        base[1].onclick=getDorm;
+        err[0].onclick=getErr__number;
+    
     }
     
-            
+    function Info(){
+        net.base = base[0].value + " " + base[1].value + " " + base[2].value;
+    
+        net.tel = tel[0].value;
+    
+        net.err = err[0].value + " " + err[1].value;
+    
+        // 是否填充
+        if(!(net.base&&net.tel&&net.err)){
+            weui.dialog({
+                content: "您有未填的内容",
+                className: 'custom-classname',
+                buttons: [ {
+                    label: '确定',
+                    type: 'default'
+                }]
+              });
+            }
+        else {
+            weui.toast('报修成功', 1500);
+          }
+        }
+    
   </script>
   <footer class="weui-footer">
     <div>
