@@ -41,20 +41,19 @@
     <div class="weui-cells__title">校车位置</div>
     <script>
       var init = function() {
-      var map = new qq.maps.Map(document.getElementById("container"), {
-      center: new qq.maps.LatLng(30.441530,114.295560),
-      minZoom: 11,
-      maxZoom: 18,
-      zoom: 15,
-      zoomControl: false,
-      panControl: false,
-      //启用比例尺
-      scaleControlOptions: {
-      //设置控件位置相对右下角对齐，向左排列
-      position: qq.maps.ControlPosition.BOTTOM_RIGHT
-      }
-      
-      });
+        var center = new qq.maps.LatLng(30.438707,114.295422);
+        var map = new qq.maps.Map(document.getElementById('container'), {
+            center: center,
+            maxZoom:18,
+            minZoom:8,
+            zoom: 15,
+            zoomControl: false
+        });
+          var marker = new qq.maps.Marker({
+          position: center,
+          map: map,
+          content:"Dd"
+        });
       }
     </script>
     <div class="weui-cells">
