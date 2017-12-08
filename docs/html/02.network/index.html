@@ -60,7 +60,7 @@
     </div>
     <div class="weui-cell">
       <div class="weui-cell__bd">
-        <textarea name="err" placeholder="请详细描述故障情况（必填）" rows="6" class="weui-textarea"></textarea>
+        <textarea name="err" placeholder="请详细描述故障情况（必填）" readonly="readonly" rows="6" class="weui-textarea"></textarea>
       </div>
     </div>
   </div>
@@ -125,7 +125,7 @@
     
         net.tel = tel[0].value;
     
-        net.err = err[0].value + " " + err[1].value;
+        net.err = err[0].value + err[1].value;
     
         // 是否填充
         if(!(net.base&&net.tel&&net.err)){

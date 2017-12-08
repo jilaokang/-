@@ -38,7 +38,7 @@ body
                 input.weui-input(name="err", placeholder="选择故障类型（必选）")
         .weui-cell
             .weui-cell__bd
-                textarea.weui-textarea(name="err", placeholder="请详细描述故障情况（必填）", rows="6")
+                textarea.weui-textarea(name="err", placeholder="请详细描述故障情况（必填）",readonly="readonly", rows="6")
 
     .weui-btn-area
         a.weui-btn.weui-btn_primary(onclick="Info()") 提交
@@ -104,7 +104,7 @@ body
 
             net.tel = tel[0].value;
 
-            net.err = err[0].value + " " + err[1].value;
+            net.err = err[0].value + err[1].value;
 
             // 是否填充
             if(!(net.base&&net.tel&&net.err)){

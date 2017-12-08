@@ -34,10 +34,6 @@
   color: #1aad19;
 }
 
-.container {
-  padding: 15px 12px;
-}
-
 footer {
   margin: 28px 0 16px 0 !important;
   text-align: center;
@@ -45,6 +41,10 @@ footer {
 
 footer a {
   color: #999999 !important;
+}
+
+.container {
+  padding: 15px 12px;
 }
  
 
