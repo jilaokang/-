@@ -107,6 +107,7 @@ body {
 
 .card-small .weui-flex__item {
   background: #19a512 !important;
+  font-weight: 800;
   line-height: 3;
 }
 
