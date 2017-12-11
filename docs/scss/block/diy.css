@@ -26,18 +26,18 @@
 }
 
 .card-small .weui-flex__item {
-  background: #38d430 !important;
+  background: #19a512 !important;
   line-height: 3;
 }
 
 .card-small .weui-flex:first-child .weui-flex__item {
   background: white !important;
-  color: #38d430;
+  color: #19a512;
   font-weight: 800;
 }
 
 #head-title {
-  color: #21c21e;
+  color: #1d9918;
   margin: 32px auto 38px auto;
   text-align: center;
 }
@@ -49,7 +49,7 @@
 #head-title a,
 #head-title p {
   font-size: 14px;
-  color: #21c21e;
+  color: #1d9918;
 }
 
 footer {
