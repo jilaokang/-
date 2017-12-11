@@ -29,6 +29,24 @@ html
     script(src='http://map.qq.com/api/js?v=2.exp', charset='utf-8')
   body(onload='init()')
 
+    .weui-cells__title 切换时间
+    .weui-cells
+        .weui-cell
+            .weui-cell__hd 
+                label.weui-lable(for="") 时间
+            .weui-cell__bd
+                select.weui-select 
+                    option(value="1") 周一，周二，周三，周四
+                    option(value="2") 周五
+                    option(value="3") 周六
+                    option(value="3") 周日
+
+    .weui-cells__title 班次列表
+
+    .weui-cells__title 行驶路线
+
+    .weui-cells__title 联系方式
+
     .weui-cells__title 校车位置
     script.
           var init = function() {
