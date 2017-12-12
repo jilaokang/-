@@ -37,7 +37,8 @@
     </style>
     <script src="http://map.qq.com/api/js?v=2.exp" charset="utf-8"></script>
   </head>
-  <body onload="init()">
+  <body onload="init()"></body>
+  <div id="bus">
     <div class="weui-cells__title">切换时间</div>
     <div class="weui-cells">
       <div class="weui-cell">
@@ -58,7 +59,9 @@
     <div class="container">
       <div class="card">
         <div class="weui-flex">
-          <div class="weui-flex__item">上午</div>
+          <div class="weui-flex__item">
+            <div class="time">上午</div>
+          </div>
           <div class="weui-flex__item">8:30</div>
           <div class="weui-flex__item">9:00</div>
           <div class="weui-flex__item">9:30</div>
@@ -67,7 +70,9 @@
           <div class="weui-flex__item">11:30</div>
         </div>
         <div class="weui-flex">
-          <div class="weui-flex__item">下午</div>
+          <div class="weui-flex__item"> 
+            <div class="time">下午</div>
+          </div>
           <div class="weui-flex__item">12:30</div>
           <div class="weui-flex__item">13:30</div>
           <div class="weui-flex__item">14:30</div>
@@ -134,7 +139,7 @@
         <div id="container" style="width:auto;height:380px" class="container"></div>
       </div>
     </div>
-  </body>
+  </div>
   <footer class="weui-footer">
     <div>
       <p> <a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>

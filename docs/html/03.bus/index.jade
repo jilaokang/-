@@ -27,8 +27,9 @@ html
       width: 142px;
       }
     script(src='http://map.qq.com/api/js?v=2.exp', charset='utf-8')
-  body(onload='init()')
 
+  body(onload='init()')
+  #bus
     .weui-cells__title 切换时间
     .weui-cells
         .weui-cell
@@ -46,7 +47,8 @@ html
     .container
         .card
             .weui-flex
-                    .weui-flex__item 上午
+                    .weui-flex__item
+                      .time 上午
                     .weui-flex__item 8:30
                     .weui-flex__item 9:00
                     .weui-flex__item 9:30
@@ -54,7 +56,8 @@ html
                     .weui-flex__item 10:30
                     .weui-flex__item 11:30
             .weui-flex
-                    .weui-flex__item 下午
+                    .weui-flex__item 
+                      .time 下午
                     .weui-flex__item 12:30
                     .weui-flex__item 13:30
                     .weui-flex__item 14:30

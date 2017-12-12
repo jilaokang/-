@@ -14,7 +14,7 @@
 
 // 102 更新日志
 #data {
-    .data-title{
+    .data-title {
         color: $style-color__green;
         font-weight: 800;
     }
@@ -22,7 +22,14 @@
         color: $style-color__grey__Light;
         font-size: 0.84em;
     }
-    p{
+    p {
         font-weight: 0.8em;
+    }
+}
+
+#bus {
+    .time {
+        font-weight: 800;
+        width: 60px;
     }
 }

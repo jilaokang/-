@@ -23,6 +23,11 @@
 #data p {
   font-weight: 0.8em;
 }
+
+#bus .time {
+  font-weight: 800;
+  width: 60px;
+}
  
 
  /*# sourceMappingURL= block.css.map */
