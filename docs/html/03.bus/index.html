@@ -91,10 +91,26 @@
     week_option = week_select.getElementsByTagName("option");
     
     function busTime() {
-      var time_am = document.getElementsByClassName("weui-flex")[0];
-      var time_pm = document.getElementsByClassName("weui-flex")[1];
+      time_am = document.getElementsByClassName("weui-flex")[0];
+      time_pm = document.getElementsByClassName("weui-flex")[1];
+    
+      item_am_item = time_am.getElementsByClassName("weui-flex__item");
+      item_pm_item = time_pm.getElementsByClassName("weui-flex__item");
+    
+     //   Boolean(item[1])?time_am.removeChild(item[j]):c=1;
+        while (Boolean(item_am_item[1])){
+          time_am.removeChild(item_am_item[1]);
+        }
+    
+        while (Boolean(item_pm_item[1])){
+          time_pm.removeChild(item_pm_item[1]);
+        }          
+    
+      
     
       for(var i = 0; i < (time[getWeekNum()].am.length); i++){
+    
+        
         // 创建Dom
         var para=document.createElement("div");
         // Dom属性
