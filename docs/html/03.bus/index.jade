@@ -36,67 +36,130 @@ html
             .weui-cell__hd 
                 label.weui-lable(for="") 时间
             .weui-cell__bd
-                select.weui-select 
-                    option(value="1") 周一，周二，周三，周四
-                    option(value="2") 周五
-                    option(value="3") 周六
-                    option(value="3") 周日
+                select.weui-select(onclick="week();") 
+                    option 周一，周二，周三，周四
+                    option 周五
+                    option 周六
+                    option 周日
 
     .weui-cells__title 班次列表
 
     .container
         .card
-            .weui-flex
+            .weui-flex#am
                     .weui-flex__item
                       .time 上午
-                    .weui-flex__item 8:30
-                    .weui-flex__item 9:00
-                    .weui-flex__item 9:30
-                    .weui-flex__item 10:00
-                    .weui-flex__item 10:30
-                    .weui-flex__item 11:30
-            .weui-flex
+            .weui-flex#pm
                     .weui-flex__item 
                       .time 下午
-                    .weui-flex__item 12:30
-                    .weui-flex__item 13:30
-                    .weui-flex__item 14:30
-                    .weui-flex__item 15:30
-                    .weui-flex__item 16:30
-                    .weui-flex__item 17:30                    
+
+    .weui-cells__title=校车路线
+          
+    .weui-cells__title 校车位置
 
 
-    script.
+    .weui-cells
+        .container
+            #container.container(style='width:auto;height:380px')
+
+  +footer
+
+  script.
+
+      week_select = document.getElementsByTagName("select")[0];
+      week_option = week_select.getElementsByTagName("option");
+
+      function busTime() {
+        var time_am = document.getElementsByClassName("weui-flex")[0];
+        var time_pm = document.getElementsByClassName("weui-flex")[1];
+
+        for(var i = 0; i < (time[getWeekNum()].am.length); i++){
+          // 创建Dom
+          var para=document.createElement("div");
+          // Dom属性
+          para.setAttribute("class","weui-flex__item")
+          
+          var node=document.createTextNode(time[getWeekNum()].am[i]);
+          // 封装Dom        
+          para.appendChild(node);
+          time_am.appendChild(para);
+        }
+
+        for(var i = 0; i < (time[getWeekNum()].pm.length); i++){
+          // 创建Dom
+          var para=document.createElement("div");
+          // Dom属性
+          para.setAttribute("class","weui-flex__item")
+          
+          var node=document.createTextNode(time[getWeekNum()].pm[i]);
+          // 封装Dom        
+          para.appendChild(node);
+          time_pm.appendChild(para);
+        }        
+
+      }  
+
+      // 获取用户选择位置 0-周一-四 1-周五 2- 周六 3-周日 
+      function getWeekNum(){
+        week_select__value = week_select.selectedIndex;
+        week_option[week_select__value] = true;
+        return week_select__value;
+      }
+
+      function week(){
+        getWeekNum();
+        busTime();
+      }
+
+
+      // 依据默认时间矫正当前星期
+      function defaultWeek(){
+        // 获取当前 星期几
+        var week_now = new Date().getDay();
+
+        switch (week_now) {
+          case 1,2,3,4: 
+            week_option[0].selected =true;
+            break;
+          case 5:
+            week_option[1].selected =true;
+            break;
+          case 6:
+            week_option[2].selected =true;
+            break;
+          case 0:
+            week_option[3].selected =true;
+            break;
+        }
+      }
+
+      window.onload = function(){
+        defaultWeek();
+        busTime();
+      }      
+
+
+  script.
       time = {
-            "1":{
+            "0":{
               "am":["8:30", "10:30"],
               "pm":["12:30", "15:30", "17:30"]
             },
-            "2":{
+            "1":{
               "am":["8:30", "9:30", "10:30", "11:30"],
               "pm":["12:30", "13:30", "14:30", "15:30", "16:30", "17:30"]
             },
-            "3":{
+            "2":{
               "am":["8:30", "9:00", "9:30", "10:00", "10:30", "11:00", "11:30"],
               "pm":["12:00", "13:00", "14:00", "15:00", "16:00", "17:00"]
             },
-            "4":{
+            "3":{
               "am":["8:30", "9:30", "10:30", "11:30"],
               "pm":["13:00", "14:00", "14:00", "15:00", "16:00", "17:00"]
             }                        
           }
-       
-        
-      -+
-
-
-    .weui-cells__title=校车路线
-
-    .weui-cells__title 联系方式
-          
-    .weui-cells__title 校车位置
-
-    script.
+    
+  script.
           var init = function() {
             var center = new qq.maps.LatLng(30.438707,114.295422);
             var cssC={color:"#ff3333",fontSize:"12px",fontWeight:"bold",margin:"-55px 0 0 -25px",border:"none",background:"none"};
@@ -118,9 +181,3 @@ html
             });
               label.setStyle(cssC);
           }
-
-    .weui-cells
-        .container
-            #container.container(style='width:auto;height:380px')
-
-  +footer
