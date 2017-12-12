@@ -49,8 +49,8 @@
 
 #head-title a,
 #head-title p {
-  font-size: 14px;
   color: #1d9918;
+  font-size: 14px;
 }
 
 footer {
@@ -58,7 +58,9 @@ footer {
   text-align: center;
 }
 
-footer a {
+footer a,
+footer p {
+  width: auto !important;
   color: #999999 !important;
 }
 

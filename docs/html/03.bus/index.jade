@@ -43,19 +43,25 @@ html
 
     .weui-cells__title 班次列表
 
-    -var info = [{content:"5元/人 （校车卡、微信）"},{class:"上午",content:["8:30", "9:30", "10:30", "11:30"]},{class:"下午",content:["8:30", "9:00", "9:30", "10:00"]}]
-
     .container
-        .card-small
-            .box
-                each item in info
-                    .weui-flex
-                        if item.class
-                            .weui-flex__item=item.class
-                            .weui-flex__item=item.content
+        .card
+            .weui-flex
+                    .weui-flex__item 上午
+                    .weui-flex__item 8:30
+                    .weui-flex__item 9:00
+                    .weui-flex__item 9:30
+                    .weui-flex__item 10:00
+                    .weui-flex__item 10:30
+                    .weui-flex__item 11:30
+            .weui-flex
+                    .weui-flex__item 下午
+                    .weui-flex__item 12:30
+                    .weui-flex__item 13:30
+                    .weui-flex__item 14:30
+                    .weui-flex__item 15:30
+                    .weui-flex__item 16:30
+                    .weui-flex__item 17:30                    
 
-                          else
-                            .weui-flex__item=item.content
 
     script.
       time = {
@@ -78,13 +84,13 @@ html
           }
        
         
-      
+      -+
 
 
     .weui-cells__title=校车路线
 
     .weui-cells__title 联系方式
-
+          
     .weui-cells__title 校车位置
 
     script.
@@ -113,3 +119,5 @@ html
     .weui-cells
         .container
             #container.container(style='width:auto;height:380px')
+
+  +footer

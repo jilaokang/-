@@ -45,8 +45,8 @@
     }
     a,
     p {
-        font-size: 14px;
         color: $style-color__green;
+        font-size: 14px;
     }
 }
 
@@ -54,7 +54,9 @@
 footer {
     margin: 28px 0 16px 0 !important;
     text-align: center;
-    a {
+    a,
+    p {
+        width: auto !important;
         color: $style-color__grey !important;
     }
 }
