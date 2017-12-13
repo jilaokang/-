@@ -36,7 +36,7 @@ html
             .weui-cell__hd 
                 label.weui-lable(for="") 时间
             .weui-cell__bd
-                select.weui-select(onclick="week();") 
+                select.weui-select
                     option 周一，周二，周三，周四
                     option 周五
                     option 周六
@@ -135,7 +135,7 @@ html
         return week_select__value;
       }
 
-      function week(){
+      week_select.onclick = function week(){
         getWeekNum();
         busTime();
       }
