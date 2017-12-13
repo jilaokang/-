@@ -86,54 +86,47 @@ html
 
   script.
 
-      week_select = document.getElementsByTagName("select")[0];
-      week_option = week_select.getElementsByTagName("option");
+      // 获取select, option Dom
+      var week_select = document.getElementsByTagName("select")[0];
+      var week_option = week_select.getElementsByTagName("option");
 
       function busTime() {
-        time_am = document.getElementsByClassName("weui-flex")[0];
-        time_pm = document.getElementsByClassName("weui-flex")[1];
+        // 获取显示的am，pm 列表
+        var time_am = document.getElementById("am");
+        var time_pm = document.getElementById("pm");
 
-        item_am_item = time_am.getElementsByClassName("weui-flex__item");
-        item_pm_item = time_pm.getElementsByClassName("weui-flex__item");
+        // 获取显示的am，pm 列表
+        var item_am_item = time_am.getElementsByClassName("weui-flex__item");
+        var item_pm_item = time_pm.getElementsByClassName("weui-flex__item");
 
-       //   Boolean(item[1])?time_am.removeChild(item[j]):c=1;
+          // 清空am, pm 数据
           while (Boolean(item_am_item[1])){
             time_am.removeChild(item_am_item[1]);
           }
-
           while (Boolean(item_pm_item[1])){
             time_pm.removeChild(item_pm_item[1]);
           }          
 
-        
-
+  
+        //数据渲染 am, pm
         for(var i = 0; i < (time[getWeekNum()].am.length); i++){
-
-          
-          // 创建Dom
           var para=document.createElement("div");
-          // Dom属性
           para.setAttribute("class","weui-flex__item")
-          
           var node=document.createTextNode(time[getWeekNum()].am[i]);
-          // 封装Dom        
+
           para.appendChild(node);
           time_am.appendChild(para);
         }
 
         for(var i = 0; i < (time[getWeekNum()].pm.length); i++){
-          // 创建Dom
           var para=document.createElement("div");
-          // Dom属性
           para.setAttribute("class","weui-flex__item")
-          
           var node=document.createTextNode(time[getWeekNum()].pm[i]);
-          // 封装Dom        
+        
           para.appendChild(node);
           time_pm.appendChild(para);
-        }        
-
-      }  
+          }        
+        }  
 
       // 获取用户选择位置 0-周一-四 1-周五 2- 周六 3-周日 
       function getWeekNum(){
