@@ -101,12 +101,21 @@ html
               "pm":["13:00", "14:00", "14:00", "15:00", "16:00", "17:00"]
             }                        
           }
-          
+
   script(type="text/javascript").
 
       week_select = document.getElementsByTagName("select")[0];
       week_option = week_select.getElementsByTagName("option");
 
+
+      // 获取用户选择位置 0-周一-四 1-周五 2- 周六 3-周日 
+      function getWeekNum() {
+        week_select__value = week_select.selectedIndex;
+        week_option[week_select__value] = true;
+
+        return week_select__value;
+      }
+      
       function busTime() {
         var time_am = document.getElementsByClassName("weui-flex")[0];
         var time_pm = document.getElementsByClassName("weui-flex")[1];
@@ -144,14 +153,6 @@ html
           time_pm.appendChild(para);
         }        
       }  
-
-      // 获取用户选择位置 0-周一-四 1-周五 2- 周六 3-周日 
-      function getWeekNum(){
-        week_select__value = week_select.selectedIndex;
-        week_option[week_select__value] = true;
-
-        return week_select__value;
-      }
 
       function week(){
         getWeekNum();
