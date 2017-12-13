@@ -135,10 +135,7 @@ html
         return week_select__value;
       }
 
-      week_select.onclick = function week(){
-        getWeekNum();
-        busTime();
-      }
+
 
 
       // 依据默认时间矫正当前星期
@@ -169,6 +166,11 @@ html
         defaultWeek();
         //渲染当前数据
         busTime();
+        
+        week_select.onclick = function week(){
+          getWeekNum();
+          busTime();
+        }
       }      
 
 
