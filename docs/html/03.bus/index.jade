@@ -56,8 +56,8 @@ html
     .weui-cells__title 校车路线
     article.weui-article
       section
-        p 往： 南门（上车） -> 白沙洲大道 -> 烽胜路 -> 首义路C出口
-        p 反： 首义路C出口（上车）-> 武昌站 -> 武汉理工大 -> 华农 -> 南门
+        p 往： 南门—白沙洲大道—烽胜路—首义路C出口
+        p 反： 首义路C出口—武昌站—武汉理工大—华农—南门
         p 注：校车出发30分钟后开始返程
 
           
@@ -117,7 +117,7 @@ html
         //数据渲染 am, pm
         for(var i = 0; i < (time[getWeekNum()].am.length); i++){
           var para=document.createElement("div");
-          para.setAttribute("class","weui-flex__item")
+          para.setAttribute(class,weui-flex__item)
            var node=document.createTextNode(time[getWeekNum()].am[i]);
 
           para.appendChild(node);
@@ -126,7 +126,7 @@ html
 
         for(var i = 0; i < (time[getWeekNum()].pm.length); i++){
           var para=document.createElement("div");
-          para.setAttribute("class","weui-flex__item")
+          para.setAttribute(class,weui-flex__item)
           var node=document.createTextNode(time[getWeekNum()].pm[i]);
         
           para.appendChild(node);
