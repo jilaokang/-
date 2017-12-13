@@ -72,35 +72,32 @@
     </div>
     <div class="weui-cells__title"></div>
     <div class="weui-cells__title">校车位置</div>
-    <script>
-      var init = function() {
-        var center = new qq.maps.LatLng(30.438707,114.295422);
-        var cssC={color:"#ff3333",fontSize:"12px",fontWeight:"bold",margin:"-55px 0 0 -25px",border:"none",background:"none"};
-        var map = new qq.maps.Map(document.getElementById('container'), {
-            center: center,
-            maxZoom:18,
-            minZoom:8,
-            zoom: 15,
-            zoomControl: false
-        });
-          var marker = new qq.maps.Marker({
-          position: center,
-          map: map
-        });
-          var label = new qq.maps.Label({
-          position: center,
-          map: map,
-          content:'校园巴士'
-        });
-          label.setStyle(cssC);
-      }
-      
-    </script>
     <div class="weui-cells">
       <div class="container">
         <div id="container" style="width:auto;height:380px" class="container"></div>
       </div>
     </div>
+    <script>
+      function init(){
+      var center=new qq.maps.LatLng(30.438878,114.295439);
+      var map=new qq.maps.Map(document.getElementById("container"),{
+      center:center,
+      zoom:16
+      });
+      //添加定时器
+      setTimeout(function(){
+      var marker=new qq.maps.Marker({
+      position:center,
+      animation:qq.maps.MarkerAnimation.DROP,
+      map:map
+      });
+      //marker.setAnimation(qq.maps.Animation.DROP);
+      },2000);
+      }
+      window.onload=init;
+      
+      
+    </script>
   </div>
   <footer class="weui-footer">
     <div>
@@ -195,7 +192,11 @@
     }
     
     window.onload = function(){
+      //地图函数
+      init();
+      //根据当前日期确定时间
       defaultWeek();
+      //渲染当前数据
       busTime();
     }      
     
