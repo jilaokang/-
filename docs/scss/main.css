@@ -49,7 +49,11 @@ body {
 
 .weui-cell__hd {
   font-weight: 800;
-  color: #1d9918;
+  color: #4737a5;
+}
+
+.weui-btn_primary {
+  background: #f2a65a;
 }
 
 #grade .card .weui-flex:first-child {
@@ -65,7 +69,7 @@ body {
 }
 
 #data .data-title {
-  color: #1d9918;
+  color: #4737a5;
   font-weight: 800;
 }
 
@@ -123,7 +127,7 @@ body {
 }
 
 #head-title {
-  color: #1d9918;
+  color: #4737a5;
   margin: 32px auto 38px auto;
   text-align: center;
 }
@@ -134,7 +138,7 @@ body {
 
 #head-title a,
 #head-title p {
-  color: #1d9918;
+  color: #4737a5;
   font-size: 14px;
 }
 
