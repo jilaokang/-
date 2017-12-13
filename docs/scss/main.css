@@ -49,11 +49,11 @@ body {
 
 .weui-cell__hd {
   font-weight: 800;
-  color: #2980d9;
+  color: rgba(41, 129, 217, 0.877);
 }
 
 .weui-btn_primary {
-  background: #2980d9 !important;
+  background: rgba(41, 129, 217, 0.877) !important;
 }
 
 #grade .card .weui-flex:first-child {
@@ -69,7 +69,7 @@ body {
 }
 
 #data .data-title {
-  color: #2980d9;
+  color: rgba(41, 129, 217, 0.877);
   font-weight: 800;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 #head-title {
-  color: #2980d9;
+  color: rgba(41, 129, 217, 0.877);
   margin: 32px auto 38px auto;
   text-align: center;
 }
@@ -138,7 +138,7 @@ body {
 
 #head-title a,
 #head-title p {
-  color: #2980d9;
+  color: rgba(41, 129, 217, 0.877);
   font-size: 14px;
 }
 

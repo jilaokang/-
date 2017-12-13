@@ -49,11 +49,11 @@ body {
 
 .weui-cell__hd {
   font-weight: 800;
-  color: #2980d9;
+  color: rgba(41, 129, 217, 0.877);
 }
 
 .weui-btn_primary {
-  background: #2980d9 !important;
+  background: rgba(41, 129, 217, 0.877) !important;
 }
  
 
