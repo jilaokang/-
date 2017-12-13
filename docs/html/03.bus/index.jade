@@ -108,7 +108,6 @@ html
       var week_select = document.getElementsByTagName("select")[0];
       var week_option = week_select.getElementsByTagName("option");
 
-<<<<<<< HEAD
       function busTime() {
         // 获取显示的am，pm 列表
         var time_am = document.getElementById("am");
@@ -133,7 +132,6 @@ html
           para.setAttribute("class","weui-flex__item")
           var node=document.createTextNode(time[getWeekNum()].am[i]);
 
-=======
 
       // 获取用户选择位置 0-周一-四 1-周五 2- 周六 3-周日 
       function getWeekNum() {
@@ -164,30 +162,19 @@ html
           para.setAttribute("class","weui-flex__item");
 
           var node=document.createTextNode(time[getWeekNum()].am[i]);
->>>>>>> 47322ea08769192ed20cce4f2e79a6fbde2a6b2b
           para.appendChild(node);
           time_am.appendChild(para);
         }
 
-<<<<<<< HEAD
         for(var i = 0; i < (time[getWeekNum()].pm.length); i++){
-=======
-        for(var i = 0; i < (time[getWeekNum()].pm.length); i++) {
-          // 创建Dom
->>>>>>> 47322ea08769192ed20cce4f2e79a6fbde2a6b2b
           var para=document.createElement("div");
           para.setAttribute("class","weui-flex__item")
           var node=document.createTextNode(time[getWeekNum()].pm[i]);
         
           para.appendChild(node);
           time_pm.appendChild(para);
-<<<<<<< HEAD
           }        
         }  
-=======
-        }        
-      }  
->>>>>>> 47322ea08769192ed20cce4f2e79a6fbde2a6b2b
 
       function week(){
         getWeekNum();

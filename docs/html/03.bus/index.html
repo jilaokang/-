@@ -107,8 +107,28 @@
       <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
     </div>
   </footer>
-<<<<<<< HEAD
-  <script>
+  <script type="text/javascript">
+    time = {
+          "0":{
+            "am":["8:30", "10:30"],
+            "pm":["12:30", "15:30", "17:30"]
+          },
+          "1":{
+            "am":["8:30", "9:30", "10:30", "11:30"],
+            "pm":["12:30", "13:30", "14:30", "15:30", "16:30", "17:30"]
+          },
+          "2":{
+            "am":["8:30", "9:00", "9:30", "10:00", "10:30", "11:00", "11:30"],
+            "pm":["12:00", "13:00", "14:00", "15:00", "16:00", "17:00"]
+          },
+          "3":{
+            "am":["8:30", "9:30", "10:30", "11:30"],
+            "pm":["13:00", "14:00", "14:00", "15:00", "16:00", "17:00"]
+          }                        
+        }
+    
+  </script>
+  <script type="text/javascript">
     // 获取select, option Dom
     var week_select = document.getElementsByTagName("select")[0];
     var week_option = week_select.getElementsByTagName("option");
@@ -136,32 +156,6 @@
         var para=document.createElement("div");
         para.setAttribute("class","weui-flex__item")
         var node=document.createTextNode(time[getWeekNum()].am[i]);
-    
-=======
-  <script type="text/javascript">
-    time = {
-          "0":{
-            "am":["8:30", "10:30"],
-            "pm":["12:30", "15:30", "17:30"]
-          },
-          "1":{
-            "am":["8:30", "9:30", "10:30", "11:30"],
-            "pm":["12:30", "13:30", "14:30", "15:30", "16:30", "17:30"]
-          },
-          "2":{
-            "am":["8:30", "9:00", "9:30", "10:00", "10:30", "11:00", "11:30"],
-            "pm":["12:00", "13:00", "14:00", "15:00", "16:00", "17:00"]
-          },
-          "3":{
-            "am":["8:30", "9:30", "10:30", "11:30"],
-            "pm":["13:00", "14:00", "14:00", "15:00", "16:00", "17:00"]
-          }                        
-        }
-    
-  </script>
-  <script type="text/javascript">
-    week_select = document.getElementsByTagName("select")[0];
-    week_option = week_select.getElementsByTagName("option");
     
     
     // 获取用户选择位置 0-周一-四 1-周五 2- 周六 3-周日 
@@ -193,30 +187,19 @@
         para.setAttribute("class","weui-flex__item");
     
         var node=document.createTextNode(time[getWeekNum()].am[i]);
->>>>>>> 47322ea08769192ed20cce4f2e79a6fbde2a6b2b
         para.appendChild(node);
         time_am.appendChild(para);
       }
     
-<<<<<<< HEAD
       for(var i = 0; i < (time[getWeekNum()].pm.length); i++){
-=======
-      for(var i = 0; i < (time[getWeekNum()].pm.length); i++) {
-        // 创建Dom
->>>>>>> 47322ea08769192ed20cce4f2e79a6fbde2a6b2b
         var para=document.createElement("div");
         para.setAttribute("class","weui-flex__item")
         var node=document.createTextNode(time[getWeekNum()].pm[i]);
       
         para.appendChild(node);
         time_pm.appendChild(para);
-<<<<<<< HEAD
         }        
       }  
-=======
-      }        
-    }  
->>>>>>> 47322ea08769192ed20cce4f2e79a6fbde2a6b2b
     
     function week(){
       getWeekNum();
