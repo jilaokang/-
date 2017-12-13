@@ -61,7 +61,7 @@ html
       .container
         #container.container(style='width:auto;height:380px')
   
-    script.
+    script(type="text/javascript").
       // 地图函数
       function init(){
         var center=new qq.maps.LatLng(30.438878,114.295439);
@@ -83,7 +83,7 @@ html
 
   +footer
 
-  script.
+  script(type="text/javascript").
 
       week_select = document.getElementsByTagName("select")[0];
       week_option = week_select.getElementsByTagName("option");
@@ -172,7 +172,7 @@ html
 
       week();
 
-  script.
+  script(type="text/javascript").
       time = {
             "0":{
               "am":["8:30", "10:30"],
