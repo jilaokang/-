@@ -46,7 +46,7 @@
           <label for="" class="weui-lable">时间</label>
         </div>
         <div class="weui-cell__bd">
-          <select class="weui-select">
+          <select onclick="week();" class="weui-select"> 
             <option>周一，周二，周三，周四</option>
             <option>周五</option>
             <option>周六</option>
@@ -70,38 +70,31 @@
         </div>
       </div>
     </div>
-    <div class="weui-cells__title">校车路线</div>
-    <article class="weui-article">
-      <section>
-        <p>往： 南门—白沙洲大道—烽胜路—首义路C出口</p>
-        <p>反： 首义路C出口—武昌站—武汉理工大—华农—南门</p>
-        <p>注：校车出发30分钟后开始返程</p>
-      </section>
-    </article>
+    <div class="weui-cells__title"></div>
     <div class="weui-cells__title">校车位置</div>
     <div class="weui-cells">
       <div class="container">
         <div id="container" style="width:auto;height:380px" class="container"></div>
       </div>
     </div>
-    <script>
+    <script type="text/javascript">
+      // 地图函数
       function init(){
-      var center=new qq.maps.LatLng(30.438878,114.295439);
-      var map=new qq.maps.Map(document.getElementById("container"),{
-      center:center,
-      zoom:16
-      });
-      //添加定时器
-      setTimeout(function(){
-      var marker=new qq.maps.Marker({
-      position:center,
-      animation:qq.maps.MarkerAnimation.DROP,
-      map:map
-      });
-      //marker.setAnimation(qq.maps.Animation.DROP);
-      },2000);
+        var center=new qq.maps.LatLng(30.438878,114.295439);
+        var map=new qq.maps.Map(document.getElementById("container"),{
+          center:center,
+          zoom:16
+        });
+        //添加定时器
+        setTimeout(function(){
+          var marker=new qq.maps.Marker({
+            position:center,
+            animation:qq.maps.MarkerAnimation.DROP,
+            map:map
+        });
+        //marker.setAnimation(qq.maps.Animation.DROP);
+        },2000);
       }
-      window.onload=init;
       
       
     </script>
@@ -114,57 +107,82 @@
       <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
     </div>
   </footer>
-  <script>
-    // 获取select, option Dom
-    var week_select = document.getElementsByTagName("select")[0];
-    var week_option = week_select.getElementsByTagName("option");
+  <script type="text/javascript">
+    time = {
+          "0":{
+            "am":["8:30", "10:30"],
+            "pm":["12:30", "15:30", "17:30"]
+          },
+          "1":{
+            "am":["8:30", "9:30", "10:30", "11:30"],
+            "pm":["12:30", "13:30", "14:30", "15:30", "16:30", "17:30"]
+          },
+          "2":{
+            "am":["8:30", "9:00", "9:30", "10:00", "10:30", "11:00", "11:30"],
+            "pm":["12:00", "13:00", "14:00", "15:00", "16:00", "17:00"]
+          },
+          "3":{
+            "am":["8:30", "9:30", "10:30", "11:30"],
+            "pm":["13:00", "14:00", "14:00", "15:00", "16:00", "17:00"]
+          }                        
+        }
+    
+  </script>
+  <script type="text/javascript">
+    week_select = document.getElementsByTagName("select")[0];
+    week_option = week_select.getElementsByTagName("option");
+    
+    
+    // 获取用户选择位置 0-周一-四 1-周五 2- 周六 3-周日 
+    function getWeekNum() {
+      week_select__value = week_select.selectedIndex;
+      week_option[week_select__value] = true;
+    
+      return week_select__value;
+    }
     
     function busTime() {
-      // 获取显示的am，pm 列表
-      var time_am = document.getElementById("am");
-      var time_pm = document.getElementById("pm");
+      var time_am = document.getElementsByClassName("weui-flex")[0];
+      var time_pm = document.getElementsByClassName("weui-flex")[1];
     
-      // 获取显示的am，pm 列表
       var item_am_item = time_am.getElementsByClassName("weui-flex__item");
       var item_pm_item = time_pm.getElementsByClassName("weui-flex__item");
     
-        // 清空am, pm 数据
-        while (Boolean(item_am_item[1])){
-          time_am.removeChild(item_am_item[1]);
-        }
-        while (Boolean(item_pm_item[1])){
-          time_pm.removeChild(item_pm_item[1]);
-        }          
+      // 数据渲染前清空数据
+      while (Boolean(item_am_item[1])) {
+        time_am.removeChild(item_am_item[1]);
+      }
     
+      while (Boolean(item_pm_item[1])) {
+        time_pm.removeChild(item_pm_item[1]);
+      }          
     
-      //数据渲染 am, pm
-      for(var i = 0; i < (time[getWeekNum()].am.length); i++){
-        var para=document.createElement("div");
-        para.setAttribute("class", "weui-flex__item")
+      for(var i = 0; i < (time[getWeekNum()].am.length); i++) {
+        var para = document.createElement("div");
+        para.setAttribute("class","weui-flex__item");
+    
         var node=document.createTextNode(time[getWeekNum()].am[i]);
-    
         para.appendChild(node);
         time_am.appendChild(para);
       }
     
-      for(var i = 0; i < (time[getWeekNum()].pm.length); i++){
+      for(var i = 0; i < (time[getWeekNum()].pm.length); i++) {
+        // 创建Dom
         var para=document.createElement("div");
-        para.setAttribute("class", "weui-flex__item")
+        // Dom属性
+        para.setAttribute("class","weui-flex__item")
+        
         var node=document.createTextNode(time[getWeekNum()].pm[i]);
-      
+        // 封装Dom        
         para.appendChild(node);
         time_pm.appendChild(para);
-        }        
-      }  
+      }        
+    }  
     
-    // 获取用户选择位置 0-周一-四 1-周五 2- 周六 3-周日 
-    function getWeekNum(){
-      week_select__value = week_select.selectedIndex;
-      week_option[week_select__value] = true;
-      return week_select__value;
+    function week(){
+      getWeekNum();
+      busTime();
     }
-    
-    
     
     
     // 依据默认时间矫正当前星期
@@ -188,40 +206,13 @@
       }
     }
     
-    window.onload = function(){
+    window.onload = function (){
       //地图函数
       init();
       //根据当前日期确定时间
       defaultWeek();
       //渲染当前数据
-      busTime();
-    
-      week_select.onchange = function (){
-        getWeekNum();
-        busTime();
-      }
+      week();
     }      
-    
-    
-  </script>
-  <script>
-    time = {
-          "0":{
-            "am":["8:30", "10:30"],
-            "pm":["12:30", "15:30", "17:30"]
-          },
-          "1":{
-            "am":["8:30", "9:30", "10:30", "11:30"],
-            "pm":["12:30", "13:30", "14:30", "15:30", "16:30", "17:30"]
-          },
-          "2":{
-            "am":["8:30", "9:00", "9:30", "10:00", "10:30", "11:00", "11:30"],
-            "pm":["12:00", "13:00", "14:00", "15:00", "16:00", "17:00"]
-          },
-          "3":{
-            "am":["8:30", "9:30", "10:30", "11:30"],
-            "pm":["13:00", "14:00", "14:00", "15:00", "16:00", "17:00"]
-          }                        
-        }
   </script>
 </html>

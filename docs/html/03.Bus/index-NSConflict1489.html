@@ -140,8 +140,8 @@
       //数据渲染 am, pm
       for(var i = 0; i < (time[getWeekNum()].am.length); i++){
         var para=document.createElement("div");
-        para.setAttribute("class", "weui-flex__item")
-        var node=document.createTextNode(time[getWeekNum()].am[i]);
+        para.setAttribute(class,weui-flex__item)
+         var node=document.createTextNode(time[getWeekNum()].am[i]);
     
         para.appendChild(node);
         time_am.appendChild(para);
@@ -149,7 +149,7 @@
     
       for(var i = 0; i < (time[getWeekNum()].pm.length); i++){
         var para=document.createElement("div");
-        para.setAttribute("class", "weui-flex__item")
+        para.setAttribute(class,weui-flex__item)
         var node=document.createTextNode(time[getWeekNum()].pm[i]);
       
         para.appendChild(node);
