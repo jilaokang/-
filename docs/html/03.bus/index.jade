@@ -117,7 +117,7 @@ html
         //数据渲染 am, pm
         for(var i = 0; i < (time[getWeekNum()].am.length); i++){
           var para=document.createElement("div");
-          para.setAttribute(class,weui-flex__item)
+          para.setAttribute("class","weui-flex__item")
            var node=document.createTextNode(time[getWeekNum()].am[i]);
 
           para.appendChild(node);
@@ -126,7 +126,7 @@ html
 
         for(var i = 0; i < (time[getWeekNum()].pm.length); i++){
           var para=document.createElement("div");
-          para.setAttribute(class,weui-flex__item)
+          para.setAttribute("class","weui-flex__item")
           var node=document.createTextNode(time[getWeekNum()].pm[i]);
         
           para.appendChild(node);
@@ -140,8 +140,6 @@ html
         week_option[week_select__value] = true;
         return week_select__value;
       }
-
-
 
 
       // 依据默认时间矫正当前星期
