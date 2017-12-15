@@ -6,9 +6,19 @@ head
 body
     .weui-cells__title 校历时间
     .container
-        img(src="img/year__last.jpg", alt="" width="100%")
+        img(name="time__img", src="img/year__last.jpg", alt="" width="100%")
     .weui-cells__title 作息时间
     .container
         img(src="img/01.jpg", alt="" width="100%")
 
     +footer
+    script.
+
+        window.onload=function (){
+            var myDate = new Date();  
+            var month =  myDate.getMonth();
+
+            var time__img = document.getElementsByName("time__img")[0];
+
+            Boolean(2 < month && month < 7)?time__img.setAttribute("src","img/year__first.jpg"):time__img.setAttribute("src","img/year__last.jpg");
+        }

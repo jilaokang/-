@@ -14,7 +14,7 @@
 </head>
 <body>
   <div class="weui-cells__title">校历时间</div>
-  <div class="container"><img src="img/year__last.jpg" alt="" width="100%"/></div>
+  <div class="container"><img name="time__img" src="img/year__last.jpg" alt="" width="100%"/></div>
   <div class="weui-cells__title">作息时间</div>
   <div class="container"><img src="img/01.jpg" alt="" width="100%"/></div>
   <footer class="weui-footer">
@@ -25,4 +25,14 @@
       <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
     </div>
   </footer>
+  <script>
+    window.onload=function (){
+        var myDate = new Date();  
+        var month =  myDate.getMonth();
+    
+        var time__img = document.getElementsByName("time__img")[0];
+    
+        Boolean(2 < month && month < 7)?time__img.setAttribute("src","img/year__first.jpg"):time__img.setAttribute("src","img/year__last.jpg");
+    }
+  </script>
 </body>
