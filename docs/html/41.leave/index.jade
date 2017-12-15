@@ -1,4 +1,39 @@
 include ../common/mixin.jade
 
 head 
-    +conf("在线请假","请假列表","index-list.html")
+    +conf("在线请假")
+
+    +com-title("在线请假","请假列表","index-list.html")
+
+    .weui-cells
+        .weui-cell
+            .weui-cell__hd
+                label.weui-label 姓名
+            .weui-cell__bd
+                input.weui-input(value="钱博康")
+        .weui-cell
+            .weui-cell__hd 
+                label.weui-label 班级
+            .weui-cell__bd
+                input.weui-input( value="软件工程 1501班", readonly="readonly")
+        .weui-cell
+            .weui-cell__hd
+                label.weui-label 寝室号
+            .weui-cell__bd
+                input.weui-input( value="227")        
+        .weui-cell
+            .weui-cell__hd
+                label.weui-label 手机号
+            .weui-cell__bd
+                input.weui-input(name="tel", value="18086407838") 
+        .weui-cell
+            .weui-cell__hd
+                label.weui-label 错误类型
+            .weui-cell__bd
+                input.weui-input(name="err", placeholder="选择故障类型（必选）",readonly="readonly")
+        .weui-cell
+            .weui-cell__bd
+                textarea.weui-textarea(name="err", placeholder="请详细描述故障情况（必填）", rows="6")
+
+    .weui-btn-area
+        a.weui-btn.weui-btn_primary(onclick="Info()") 提交
