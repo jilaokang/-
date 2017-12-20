@@ -2,23 +2,26 @@ include ../common/mixin.jade
 
 head
     +conf("二手市场")
-    script(src="https://res.wx.qq.com/open/libs/zepto/1.1.6/zepto.js")
+    style.
+        html {
+            height: 100% !important;
+        
+        }
+   
 body
+    +footer
+    .weui-tab
+        .weui-tab__panel    
+            p Page 1
+            p Page 1
+            p Page 1
+        .weui-tabbar
+            a.weui-tabbar__item.weui-bar__item_on
+                p.weui-tabbar__label hello
+            a.weui-tabbar__item.weui-bar__item_on
+                p.weui-tabbar__label hello
+            a.weui-tabbar__item.weui-bar__item_on
+                p.weui-tabbar__label hello                                        
 
-        +footer
-
-        .weui-tab
-            .weui-tabbar
-                a.weui-tabbar__item(href="#")
-                    img.weui-tabbar__icon(src="img/商城.svg")
-                    p.weui-tabbar__label 商品列表
-                a.weui-tabbar__item(href="#")
-                    img.weui-tabbar__icon(src="img/订单.svg")
-                    p.weui-tabbar__label 订单列l
-                a.weui-tabbar__item(href="#")
-                    img.weui-tabbar__icon(src="img/订单.svg")
-                    p.weui-tabbar__label 订单列w
-                a.weui-tabbar__item(href="#")
-                    img.weui-tabbar__icon(src="img/订单.svg")
-                    p.weui-tabbar__label 订单列a  
+    
                     
