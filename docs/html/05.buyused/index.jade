@@ -5,6 +5,24 @@ head
 
 body
     #buyused
+
+        #search_bar.weui-search-bar      
+            form.weui-search-bar__form
+                .weui-search-bar__box
+                    i.weui-icon-search
+                    input:Search#search_input.weui-search-bar__input(placeholder="搜索")
+                    a#search_clea.weui-icon-clear
+                label#search_text.weui-search-bar__label(for="search_input")
+                    i.weui-icon-search
+                    span 搜索
+            a#search_cancel.weui-search-bar__cancel-btn 取消
+        
+        #search_show.weui-cells.weui-cells_access.search_show
+            .weui-cell
+                .weui-cell__bd.weui-cell_primary
+                    p 搜索到的文本
+        +footer
+
         .weui-tab
             .weui-tabbar
                 a.weui-tabbar__item(href="#")
@@ -18,4 +36,5 @@ body
                     p.weui-tabbar__label 订单列w
                 a.weui-tabbar__item(href="#")
                     img.weui-tabbar__icon(src="img/订单.svg")
-                    p.weui-tabbar__label 订单列a                         
+                    p.weui-tabbar__label 订单列a  
+

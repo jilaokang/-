@@ -14,12 +14,35 @@
 </head>
 <body>
   <div id="buyused">
+    <div id="search_bar" class="weui-search-bar">     
+      <form class="weui-search-bar__form">
+        <div class="weui-search-bar__box"><i class="weui-icon-search"></i>
+          <input:Search id="search_input" placeholder="搜索" class="weui-search-bar__input"></input:Search><a id="search_clea" class="weui-icon-clear"></a>
+        </div>
+        <label id="search_text" for="search_input" class="weui-search-bar__label"><i class="weui-icon-search"></i><span>搜索</span></label>
+      </form><a id="search_cancel" class="weui-search-bar__cancel-btn">取消</a>
+    </div>
+    <div id="search_show" class="weui-cells weui-cells_access search_show">
+      <div class="weui-cell">
+        <div class="weui-cell__bd weui-cell_primary">
+          <p>搜索到的文本</p>
+        </div>
+      </div>
+    </div>
+    <footer class="weui-footer">
+      <div>
+        <p> <a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
+      </div>
+      <div>
+        <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
+      </div>
+    </footer>
     <div class="weui-tab">
       <div class="weui-tabbar"><a href="#" class="weui-tabbar__item"><img src="img/商城.svg" class="weui-tabbar__icon"/>
           <p class="weui-tabbar__label">商品列表</p></a><a href="#" class="weui-tabbar__item"><img src="img/订单.svg" class="weui-tabbar__icon"/>
           <p class="weui-tabbar__label">订单列l</p></a><a href="#" class="weui-tabbar__item"><img src="img/订单.svg" class="weui-tabbar__icon"/>
           <p class="weui-tabbar__label">订单列w</p></a><a href="#" class="weui-tabbar__item"><img src="img/订单.svg" class="weui-tabbar__icon"/>
-          <p class="weui-tabbar__label">订单列a                         </p></a></div>
+          <p class="weui-tabbar__label">订单列a  </p></a></div>
     </div>
   </div>
 </body>
