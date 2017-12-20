@@ -2,24 +2,9 @@ include ../common/mixin.jade
 
 head
     +conf("二手市场")
-    script.
-        window.onload = function (){
-            weui.searchBar('#searchBar');
-        }
-
+    script(src="https://res.wx.qq.com/open/libs/zepto/1.1.6/zepto.js")
 body
-    #buyused
-        #searchBar.weui-search-bar
-            form.weui-search-bar__form
-                .weui-search-bar__box
-                    i.weui-icon-search
-                    input.weui-search-bar__input(type='search', placeholder='搜索', required='')
-                    a.weui-icon-clear(href='javascript:')
-                label.weui-search-bar__label
-                    i.weui-icon-search
-                    span 搜索
-                a.weui-search-bar__cancel-btn(href='javascript:') 取消
-    
+
         +footer
 
         .weui-tab
@@ -36,3 +21,4 @@ body
                 a.weui-tabbar__item(href="#")
                     img.weui-tabbar__icon(src="img/订单.svg")
                     p.weui-tabbar__label 订单列a  
+                    
