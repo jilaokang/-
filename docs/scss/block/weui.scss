@@ -15,8 +15,6 @@ p,
     height: 24px;
 }
 
-
-
 .weui-flex__item {
     line-height: 2;
 }
@@ -27,6 +25,12 @@ p,
 
 .weui-input {
     color: $style-color__grey !important;
+}
+
+// 去除高德地图Logo 对不起，o(╥﹏╥)o
+.amap-logo,
+.amap-copyright {
+    display: none !important; 
 }
 
 article,

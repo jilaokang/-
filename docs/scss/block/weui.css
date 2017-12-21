@@ -26,6 +26,11 @@ p,
   color: #999999 !important;
 }
 
+.amap-logo,
+.amap-copyright {
+  display: none !important;
+}
+
 article,
 .weui-cell,
 .weui-cells,

@@ -26,6 +26,11 @@ p,
   color: #999999 !important;
 }
 
+.amap-logo,
+.amap-copyright {
+  display: none !important;
+}
+
 article,
 .weui-cell,
 .weui-cells,
@@ -163,3 +168,6 @@ footer p {
 .container {
   padding: 15px 12px;
 }
+ 
+
+ /*# sourceMappingURL= main.css.map */
