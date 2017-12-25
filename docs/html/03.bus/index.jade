@@ -17,6 +17,11 @@ html
       .amap-container{height: 100%;}
   body
   #bus
+    .weui-cells
+      .weui-cell.weui-cell_switch
+          .weui-cell__bd 切换教师班车
+          .weui-cell__ft
+              input.weui-switch(type="checkbox")
     .weui-cells__title 切换时间
     .weui-cells
         .weui-cell
@@ -41,7 +46,13 @@ html
                       .time 下午
             .weui-flex
                     .weui-flex__item 出发30分钟后 首义路c出口 返程，5元/人
-                      
+    script.
+      var switchbus = document.getElementsByClassName("weui-switch")[0];
+
+      switchbus.onclick = function () {
+        window.location.href="teacher.html"; 
+      } 
+
     script.
 
       // 获取select, option Dom

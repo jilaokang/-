@@ -1,20 +1,12 @@
+include ../common/mixin.jade
 
-<!--conf-->
-<!-- footer-->
-<!--com-title--><!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link href="../../../lib/weui/weui.css" rel="stylesheet"/>
-    <link href="../../scss/main.css" rel="stylesheet"/>
-    <script src="../../../lib/weui/weui.js"></script>
-    <link type="image/x-icon" href="http://on5ngaon4.bkt.clouddn.com/Mountain_64px_1120233_easyicon.net.ico" rel="shortcut icon"/>
-    <title>校车查询</title>
-    <style>
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    +conf("校车查询")
+    style.
       .my-map { margin: 0 auto; height: 360px; }
       .my-map .icon { background: url(http://lbs.amap.com/console/public/show/marker.png) no-repeat; }
       .my-map .icon-pot { height: 23px; width: 31px; }
@@ -23,74 +15,60 @@
       .my-map .icon-cir { height: 31px; width: 28px; }
       .my-map .icon-cir-red { background-position: -11px -5px; }
       .amap-container{height: 100%;}
-    </style>
-  </head>
-  <body></body>
-  <div id="bus">
-    <div class="weui-cells">
-      <div class="weui-cell weui-cell_switch">
-        <div class="weui-cell__bd">切换教师班车</div>
-        <div class="weui-cell__ft">
-          <input type="checkbox" class="weui-switch">
-        </div>
-      </div>
-    </div>
-    <div class="weui-cells__title">切换时间</div>
-    <div class="weui-cells">
-      <div class="weui-cell">
-        <div class="weui-cell__hd"> 
-          <label for="" class="weui-lable">时间</label>
-        </div>
-        <div class="weui-cell__bd">
-          <select class="weui-select">
-            <option>周一，周二，周三，周四</option>
-            <option>周五</option>
-            <option>周六</option>
-            <option>周日</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div class="weui-cells__title">班次列表</div>
-    <div class="container">
-      <div class="card">
-        <div id="am" class="weui-flex">
-          <div class="weui-flex__item">
-            <div class="time">上午</div>
-          </div>
-        </div>
-        <div id="pm" class="weui-flex">
-          <div class="weui-flex__item"> 
-            <div class="time">下午</div>
-          </div>
-        </div>
-        <div class="weui-flex">
-          <div class="weui-flex__item">出发30分钟后 首义路c出口 返程，5元/人</div>
-        </div>
-      </div>
-    </div>
-    <script>
+  body
+  #bus
+    .weui-cells
+        .weui-cell.weui-cell_switch
+            .weui-cell__bd 学生校车
+            .weui-cell__ft
+                input.weui-switch(type="checkbox")
+
+    .weui-cells__title 切换时间
+    .weui-cells
+        .weui-cell
+            .weui-cell__hd 
+                label.weui-lable(for="") 时间
+            .weui-cell__bd
+                select.weui-select
+                    option 周一，周二，周三，周四
+                    option 周五
+                    option 周六
+                    option 周日
+
+    .weui-cells__title 班次列表
+
+    .container
+        .card
+            .weui-flex#am
+                    .weui-flex__item
+                      .time 上午
+            .weui-flex#pm
+                    .weui-flex__item 
+                      .time 下午
+            .weui-flex
+                    .weui-flex__item 出发30分钟后 首义路c出口 返程，5元/人
+    script.
       var switchbus = document.getElementsByClassName("weui-switch")[0];
-      
+
       switchbus.onclick = function () {
-        window.location.href="teacher.html"; 
-      } 
-      
-    </script>
-    <script>
+        window.location.href="index.html"; 
+      }    
+                     
+    script.
+
       // 获取select, option Dom
       var week_select = document.getElementsByTagName("select")[0];
       var week_option = week_select.getElementsByTagName("option");
-      
+
       function busTime() {
         // 获取显示的am，pm 列表
         var time_am = document.getElementById("am");
         var time_pm = document.getElementById("pm");
-      
+
         // 获取显示的am，pm 列表
         var item_am_item = time_am.getElementsByClassName("weui-flex__item");
         var item_pm_item = time_pm.getElementsByClassName("weui-flex__item");
-      
+
           // 清空am, pm 数据
           while (Boolean(item_am_item[1])){
             time_am.removeChild(item_am_item[1]);
@@ -98,18 +76,18 @@
           while (Boolean(item_pm_item[1])){
             time_pm.removeChild(item_pm_item[1]);
           }          
-      
-      
+
+  
         //数据渲染 am, pm
         for(var i = 0; i < (time[getWeekNum()].am.length); i++){
           var para=document.createElement("div");
           para.setAttribute("class","weui-flex__item")
            var node=document.createTextNode(time[getWeekNum()].am[i]);
-      
+
           para.appendChild(node);
           time_am.appendChild(para);
         }
-      
+
         for(var i = 0; i < (time[getWeekNum()].pm.length); i++){
           var para=document.createElement("div");
           para.setAttribute("class","weui-flex__item")
@@ -119,20 +97,20 @@
           time_pm.appendChild(para);
           }        
         }  
-      
+
       // 获取用户选择位置 0-周一-四 1-周五 2- 周六 3-周日 
       function getWeekNum(){
         week_select__value = week_select.selectedIndex;
         week_option[week_select__value] = true;
         return week_select__value;
       }
-      
-      
+
+
       // 依据默认时间矫正当前星期
       function defaultWeek(){
         // 获取当前 星期几
         var week_now = new Date().getDay();
-      
+
         switch (week_now) {
           case 1,2,3,4: 
             week_option[0].selected =true;
@@ -148,21 +126,20 @@
             break;
         }
       }
-      
+
       window.onload = function(){
         //根据当前日期确定时间
         defaultWeek();
         //渲染当前数据
         busTime();
-      
+
         week_select.onchange = function (){
           getWeekNum();
           busTime();
         }
       }      
-      
-    </script>
-    <script>
+
+    script.
       time = {
             "0":{
               "am":["8:30", "10:30"],
@@ -181,19 +158,20 @@
               "pm":["13:00", "14:00", "15:00", "16:00", "17:00"]
             }                        
           }
-      
-    </script>
-    <div class="weui-cells__title">校车位置</div>
-    <div class="container">
-      <div id="wrap" class="my-map">
-        <div id="mapContainer"></div>
-      </div>
-    </div>
-    <script src="https://webapi.amap.com/maps?v=1.3&amp;key=8325164e247e15eea68b59e89200988b"></script>
-    <script>
+
+    .weui-cells__title 校车位置
+
+    .container
+      #wrap.my-map
+        #mapContainer
+
+    script(src='https://webapi.amap.com/maps?v=1.3&key=8325164e247e15eea68b59e89200988b')
+
+
+    script.
       ! function () {
           var infoWindow, map, level = 15,
-      
+
               center = {
                   lng: 114.296115,
                   lat: 30.441589
@@ -406,8 +384,8 @@
                       }
                   }
               ];
-      
-      
+
+
           function loadFeatures() {
               for (var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++) {
                   data = features[i];
@@ -461,7 +439,7 @@
                   }
               }
           }
-      
+
           function mapFeatureClick(e) {
               if (!infoWindow) {
                   infoWindow = new AMap.InfoWindow({
@@ -478,16 +456,7 @@
           });
           loadFeatures();
       }();
-      
-      
-    </script>
-    <footer class="weui-footer">
-      <div>
-        <p> <a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
-      </div>
-      <div>
-        <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
-      </div>
-    </footer>
-  </div>
-</html>
+
+
+    +footer
+
