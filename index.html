@@ -67,13 +67,13 @@
                         var a_sum = $("#wel a").length;
                         setInterval(function() {
                             $( $("#wel a")[a_list]  ).fadeIn(500);
-                            $( $("#wel a")[a_list-1]).fadeOut();
+                            $( $("#wel a")[a_list-1]).fadeOut(0);
 
                             a_list++;
                             
                             if(a_list > a_sum){
                                 a_list = 0;
-                                $( $("#wel a")[a_sum-1]).fadeOut();
+                                $( $("#wel a")[a_sum-1]).fadeOut(0);
                                 $( $("#wel a")[0]).fadeIn();
                             }
                            
