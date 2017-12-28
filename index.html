@@ -33,36 +33,12 @@
             <div class="weui-flex">
                 <div class="weui-flex__item">
                     <font class="iconfont icon-tongzhi" style="font-weight:800"></font>
-                    <a style="" href="#">请各单位迅速上交思想报告1</a>
-                    <a style="display:none" href="#">请各单位迅速上交思想报告2</a>
-                    <a style="display:none" href="#">请各单位迅速上交思想报告3</a>
+                    <a style="" href="#">请各单位迅速上交思想报告</a>
+                    <a style="display:none" href="#">信息中心，超级帅气</a>
+                    <a style="display:none" href="#">新年快乐啊！</a>
 
                     <script>
-                       /* 
-                        $(document).ready(function () {
-                            var num = 0;
-                        
-                            $( $("#wel a")[0] ).fadeIn(300)
-                            
-                            var changea = function () {
-                                $( $("#wel a")[num] ).fadeIn(300);
-
-                                if(num>0){
-                                    $( $("#wel a")[num-1] ).fadeOut();
-                                }
-                                num ++ ;
-
-                                if(num == 3) {
-                                    num=0;
-                                    $( $("#wel a")[2] ).fadeOut(0);
-                                    $( $("#wel a")[0] ).fadeIn(0);
-                                }
-                            }
-                             window.setInterval(changea,3000); 
-            
-                        });
-                        */
-
+                        // 消息轮播版块
                         var a_list = 1;
                         var a_sum = $("#wel a").length;
                         setInterval(function() {
@@ -76,7 +52,6 @@
                                 $( $("#wel a")[a_sum-1]).fadeOut(0);
                                 $( $("#wel a")[0]).fadeIn();
                             }
-                           
                         }                        
                         ,3000); 
                     </script>
