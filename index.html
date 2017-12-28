@@ -45,12 +45,12 @@
                             
                             var changea = function (){
                                 if(num>0){
-                                $( $("#wel a")[num-1] ).fadeOut(0);
+                                    $( $("#wel a")[num-1] ).fadeOut(0);
                                 }
                                 $( $("#wel a")[num] ).fadeIn(1000);
 
                                 num ++ ;
-                                num === 2? num===0:num;
+                                if(num === 3)num=0;
                             }
 
                             window.setInterval(changea,3000); 
