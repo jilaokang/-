@@ -50,7 +50,11 @@
                                 $( $("#wel a")[num] ).fadeIn(1000);
 
                                 num ++ ;
-                                if(num === 3)num=0;
+                                if(num === 3)
+                                {num=0;
+                                    $( $("#wel a")["3"] ).fadeOut(0);
+                                }
+                                ;
                             }
 
                             window.setInterval(changea,3000); 
