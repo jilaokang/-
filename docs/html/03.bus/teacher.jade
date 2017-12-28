@@ -59,6 +59,7 @@ html
                         },
                         {
                             label: '徐东平价',
+                            value: 5
                         }
                     ]
                 },
@@ -98,10 +99,12 @@ html
                         },
                         {
                             label: '徐东平价',
+                            value: 5
                         }
                     ]
                 }
                 ],{  
+                    defaultValue: [0, 1],
                     onConfirm: function (result) {
                         // 获取value为result[0] result[1]
                         var str = result[0].label + "  " + result[1].label
