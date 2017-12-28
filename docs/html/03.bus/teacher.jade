@@ -34,7 +34,22 @@ html
    
 
     script.
-        
+        // 自动校对时间
+        var time;
+        window.onloade = function() {
+            var myDate = new Date();  
+            var hours  =  myDate.getHours();
+
+            if( hours < 8 || hours > 21 ) {
+                time = 0;
+              } else if( 8 <= hours || hours <= 13 ) {
+                    time = 1;
+              } else {
+                    time = 2;
+              }
+          }
+         
+
         function getDorm(){
             weui.picker([
                 {
@@ -104,7 +119,11 @@ html
                     ]
                 }
                 ],{  
-                    defaultValue: [0, 1],
+                   
+
+
+                    defaultValue: [time, 1],
+
                     onConfirm: function (result) {
                         // 获取value为result[0] result[1]
                         var str = result[0].label + "  " + result[1].label
