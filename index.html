@@ -47,17 +47,16 @@
                                 if(num>0){
                                     $( $("#wel a")[num-1] ).fadeOut(0);
                                 }
-                                $( $("#wel a")[num] ).fadeIn(1000);
 
+                                $( $("#wel a")[num] ).fadeIn(1000);
                                 num ++ ;
+
                                 if(num === 3)
                                 {
                                     num=0;
                                     $( $("#wel a")[2] ).fadeOut(0);
                                 }
-                                ;
                             }
-
                             window.setInterval(changea,3000); 
             
                         });
