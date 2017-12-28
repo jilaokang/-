@@ -45,7 +45,7 @@
           <label class="weui-label">路线</label>
         </div>
         <div class="weui-cell__bd">
-          <input onclick="getDorm();" name="err" placeholder="早班 首义路" readonly="readonly" class="weui-input">
+          <input onclick="getDorm();" name="err" placeholder="早班 财大首义校区路线1" readonly="readonly" class="weui-input">
         </div>
       </div>
     </div>
@@ -116,15 +116,13 @@
                       }
                   ]
               }
-              ],{
-              onConfirm: function (result) {
-         
-                  var dorm=result[0].label;
-                  var dorm_num=result[1].label;
+              ],{  
+                  onConfirm: function (result) {
+                      // 获取value为result[0] result[1]
+                      var str = result[0].label + "  " + result[1].label
       
-                  var str = dorm +" "+dorm_num;
-                  base[1].value= str;
-              }
+                      $(".weui-input")[0].value = str;
+                  },
           });
       }
       
