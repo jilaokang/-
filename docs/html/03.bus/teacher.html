@@ -45,34 +45,48 @@
           <label class="weui-label">路线</label>
         </div>
         <div class="weui-cell__bd">
-          <input onclick="getDorm();" name="err" placeholder="早班 财大首义校区路线1" readonly="readonly" class="weui-input">
+          <input onclick="getRoute();" name="err" readonly="readonly" class="weui-input">
         </div>
       </div>
     </div>
     <script>
-      // 自动校对时间
-      var time;
-      window.onloade = function() {
-          var myDate = new Date();  
-          var hours  =  myDate.getHours();
+      // 定义 时间 路线
+      var time, tim_cn;
+      var route;
       
-          if( hours < 8 || hours > 21 ) {
-              time = 0;
-            } else if( 8 <= hours || hours <= 13 ) {
-                  time = 1;
-            } else {
-                  time = 2;
-            }
-        }
-       
+      function defaultTime() {
+          // 自动更新当前时间 time
+          var myDate = new Date();
+          var hours = myDate.getHours();
+          //time解析 早0，中1，晚2
+          if (hours < 8 || hours > 21) {
+              time_cn = "早班";
+              time = 0;                
+          } else if (8 <= hours || hours <= 13) {
+              time_cn = "中班";
+              time = 1;
+          } else {
+              time_cn = "晚班";
+              time = 2;
+          }
+      }
       
-      function getDorm(){
-          weui.picker([
-              {
+      function defaultInfo() {
+          route = time_cn + " " + "财大首义校区 路线1";
+          $(".weui-input")[0].value = route;
+      }
+      
+      
+      window.onload = function () {
+          defaultTime();
+          defaultInfo();
+      }
+      
+      function getRoute() {
+          weui.picker([{
                   label: '早班',
                   value: 0,
-                  children: [
-                      {
+                  children: [{
                           label: '财大首义校区 路线1',
                           value: 1
                       },
@@ -97,8 +111,7 @@
               {
                   label: '中班',
                   value: 1,
-                  children: [
-                      {
+                  children: [{
                           label: '武汉理工大学',
                           value: 1,
                       },
@@ -111,8 +124,7 @@
               {
                   label: '晚班',
                   value: 3,
-                  children: [
-                      {
+                  children: [{
                           label: '财大首义校区 路线1',
                           value: 1
                       },
@@ -134,20 +146,17 @@
                       }
                   ]
               }
-              ],{  
-                 
+          ], {
       
+              defaultValue: [time, 1],
       
-                  defaultValue: [time, 1],
-      
-                  onConfirm: function (result) {
-                      // 获取value为result[0] result[1]
-                      var str = result[0].label + "  " + result[1].label
-      
-                      $(".weui-input")[0].value = str;
-                  },
+              onConfirm: function (result) {
+                  // 获取value为result[0] result[1]
+                  route = result[0].label + "  " + result[1].label
+                  $(".weui-input")[0].value = route;
+              },
           });
-      }
+      }     
       
     </script>
     <div class="weui-cells__title">行驶路线</div>

@@ -5,7 +5,7 @@
             lng: 114.296115,
             lat: 30.441589
         },
-        
+
         // 标记及路线图
         features = [{
                 type: "Polygon",
@@ -285,3 +285,5 @@
     });
     loadFeatures();
 }();
+
+
