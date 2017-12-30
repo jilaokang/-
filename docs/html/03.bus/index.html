@@ -12,7 +12,9 @@
     <link href="../../../lib/weui/weui.css" rel="stylesheet"/>
     <link href="../../scss/main.css" rel="stylesheet"/>
     <script src="../../../lib/weui/weui.js"></script>
+    <script src="../../../lib/vue/vue.js"></script>
     <link type="image/x-icon" href="http://on5ngaon4.bkt.clouddn.com/Mountain_64px_1120233_easyicon.net.ico" rel="shortcut icon"/>
+    <script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script>
     <title>校车查询</title>
     <style>
       .my-map { margin: 0 auto; height: 360px; }
@@ -190,7 +192,13 @@
         <div id="mapContainer"></div>
       </div>
     </div>
-    <script src="https://webapi.amap.com/maps?v=1.3&amp;key=8325164e247e15eea68b59e89200988b"></script>
+    <script src="http://webapi.amap.com/maps?v=1.4.0&amp;key=ccd246a376313ca38a649a9edd48131c"></script>
+    <script>
+      var map = new AMap.Map('mapDiv', {
+          mapStyle: 'amap://styles/macaron'//样式URL
+      });
+      
+    </script>
     <script>
       ! function () {
           var infoWindow, map, level = 15,
