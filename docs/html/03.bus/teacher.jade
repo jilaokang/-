@@ -87,13 +87,12 @@ html
             function defaultInfo() {
                 route_cn = time_cn + " " + "财大首义校区 路线1";
                 $(".weui-input")[0].value = route_cn;
+
+                route_en = {};
+                route_en.time = 'am';
+                route_en.route = '1';
             }
 
-
-            window.onload = function () {
-                defaultTime();
-                defaultInfo();
-            }
 
             function getRoute() {
                 weui.picker([{
@@ -160,20 +159,18 @@ html
                         ]
                     }
                 ], {
-
                     defaultValue: [time_en, 1],
-
                     onConfirm: function (result) {
                         // 获取value为result[0] result[1]
 
                         // 建立数组
-                        route_en = {};
                         route_en.time = result[0].value; 
                         route_en.route = result[1].value;
 
                         route_cn = result[0].label + " " + result[1].label;
                         $(".weui-input")[0].value = route_cn;
                         console.log(route_cn,route_en);
+                        vm.dd();
                     },
                 });
             }
@@ -184,10 +181,8 @@ html
 
         .container
             #road.card
-                h2(@click="dd()") 55
                 .weui-flex(v-for = "item of active")
                     .weui-flex__item {{item}}
-
 
         script.
             var vm= new Vue({
@@ -209,8 +204,13 @@ html
                 },
                 methods:{
                     dd: function(){
-                        // route_en  eg:route_en.time="am" route_cn.route="1"
-                        this.active = 
+                        // route_en  eg:route_en.time="am" route_en.route="1"
+                        if(route_en.time==='am'){
+                            this.active = this.am[route_en.route];
+                        } else {
+                            (route_en.time==='noon')?this.active = this.noon[route_en.route]:this.active = this.pm[route_en.route];
+                        }
+                        
                     }
                 }
             })
@@ -218,13 +218,12 @@ html
 
 
         .weui-cells__title 校车位置
-
         .container
             #wrap.my-map
                 #mapContainer
 
+        // 地图
         script(src='http://webapi.amap.com/maps?v=1.4.0&key=ccd246a376313ca38a649a9edd48131c')
-
         script.
             !function () {
                 var infoWindow, map, level = 15,
@@ -397,10 +396,9 @@ html
             }();
 
 
-
+        // 车型
         script.
             var switchbus = document.getElementsByClassName("weui-switch")[0];
-
             switchbus.onclick = function () {
                 window.location.href = "index.html";
             }
@@ -408,4 +406,11 @@ html
 
 
         +footer
+
+        script.
+            window.onload = function () {
+                defaultTime();
+                defaultInfo();
+                vm.dd();
+            }
 

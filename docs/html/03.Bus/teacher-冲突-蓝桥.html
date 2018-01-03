@@ -104,12 +104,13 @@
       function defaultInfo() {
           route_cn = time_cn + " " + "财大首义校区 路线1";
           $(".weui-input")[0].value = route_cn;
-      
-          route_en = {};
-          route_en.time = 'am';
-          route_en.route = '1';
       }
       
+      
+      window.onload = function () {
+          defaultTime();
+          defaultInfo();
+      }
       
       function getRoute() {
           weui.picker([{
@@ -176,18 +177,20 @@
                   ]
               }
           ], {
+      
               defaultValue: [time_en, 1],
+      
               onConfirm: function (result) {
                   // 获取value为result[0] result[1]
       
                   // 建立数组
+                  route_en = {};
                   route_en.time = result[0].value; 
                   route_en.route = result[1].value;
       
                   route_cn = result[0].label + " " + result[1].label;
                   $(".weui-input")[0].value = route_cn;
                   console.log(route_cn,route_en);
-                  vm.dd();
               },
           });
       }
@@ -198,6 +201,7 @@
     <div class="weui-cells__title">行驶路线</div>
     <div class="container">
       <div id="road" class="card">
+        <h2 @click="dd()">55</h2>
         <div v-for="item of active" class="weui-flex">
           <div class="weui-flex__item">{{item}}</div>
         </div>
@@ -226,6 +230,7 @@
                   // route_en  eg:route_en.time="am" route_en.route="1"
                   if(route_en.time==='am'){
                       this.active = this.am[route_en.route];
+      
                   } else {
                       (route_en.time==='noon')?this.active = this.noon[route_en.route]:this.active = this.pm[route_en.route];
                   }
@@ -243,7 +248,6 @@
         <div id="mapContainer"></div>
       </div>
     </div>
-    <!-- 地图-->
     <script src="http://webapi.amap.com/maps?v=1.4.0&amp;key=ccd246a376313ca38a649a9edd48131c"></script>
     <script>
       !function () {
@@ -417,10 +421,11 @@
       }();
       
       
+      
     </script>
-    <!-- 车型-->
     <script>
       var switchbus = document.getElementsByClassName("weui-switch")[0];
+      
       switchbus.onclick = function () {
           window.location.href = "index.html";
       }
@@ -436,12 +441,5 @@
         <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
       </div>
     </footer>
-    <script>
-      window.onload = function () {
-          defaultTime();
-          defaultInfo();
-          vm.dd();
-      }
-    </script>
   </div>
 </html>
