@@ -1,0 +1,42 @@
+include ../common/mixin.jade
+
+head
+    +conf('Vue')
+
+body
+    #route
+        h1(@click="add()") 5 
+        div {{active}}
+            
+    
+    script.
+        
+       var vm= new Vue({
+            el:'#route',
+            data:{
+                active:[],
+                base:{
+                    am:{
+                        1:{
+                            display: true,
+                            road: ['财大首义校区（7:00）','首义地铁B出口（7:15）','烽火村公交站（7:20）','白沙四路（7:25）','大学城校区（8:10前）']
+                        },
+                        2:{
+                            display: false,
+                            road: ['财大首义校区（7:00）','金马家具（7:02）','京韵大舞台（7:07）','街道口假日酒店（7:09）','武汉理工大学地下通道（7:10）','—中百仓储（7:12）','洪山区委（7:18）','壕沟华农对面（7:28）','大学城校区（8：10 前）']
+                        }
+                    }
+                }
+            },
+            methods:{
+                add: function(){
+                    var time_tmp = ['am','noon','pm'];
+                    var route_tmp = [1,2,3,4,5];
+                    
+                    this.active.push('am','1'); 
+                   
+                }
+            }
+        })
+
+    +footer

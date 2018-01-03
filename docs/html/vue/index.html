@@ -1,0 +1,60 @@
+
+<!--conf-->
+<!-- footer-->
+<!-- com-title-->
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link href="../../../lib/weui/weui.css" rel="stylesheet"/>
+  <link href="../../scss/main.css" rel="stylesheet"/>
+  <script src="../../../lib/weui/weui.js"></script>
+  <script src="../../../lib/vue/vue.js"></script>
+  <link type="image/x-icon" href="http://on5ngaon4.bkt.clouddn.com/Mountain_64px_1120233_easyicon.net.ico" rel="shortcut icon"/>
+  <script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script>
+  <title>Vue</title>
+</head>
+<body>
+  <div id="route">
+    <h1 @click="add()">5 </h1>
+    <div>{{active}}</div>
+  </div>
+  <script>
+    var vm= new Vue({
+         el:'#route',
+         data:{
+             active:[],
+             base:{
+                 am:{
+                     1:{
+                         display: true,
+                         road: ['财大首义校区（7:00）','首义地铁B出口（7:15）','烽火村公交站（7:20）','白沙四路（7:25）','大学城校区（8:10前）']
+                     },
+                     2:{
+                         display: false,
+                         road: ['财大首义校区（7:00）','金马家具（7:02）','京韵大舞台（7:07）','街道口假日酒店（7:09）','武汉理工大学地下通道（7:10）','—中百仓储（7:12）','洪山区委（7:18）','壕沟华农对面（7:28）','大学城校区（8：10 前）']
+                     }
+                 }
+             }
+         },
+         methods:{
+             add: function(){
+                 var time_tmp = ['am','noon','pm'];
+                 var route_tmp = [1,2,3,4,5];
+                 
+                 this.active.push('am','1'); 
+                
+             }
+         }
+     })
+    
+  </script>
+  <footer class="weui-footer">
+    <div>
+      <p><a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
+    </div>
+    <div>
+      <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
+    </div>
+  </footer>
+</body>

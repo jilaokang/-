@@ -1,0 +1,27 @@
+{
+  "scripts": {
+    "start": "jade docs/html/*/*.jade -Pw"
+  },
+  "name": "college_info",
+  "description": "2017年11月20号",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jilaokang/college_info.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jilaokang/college_info/issues"
+  },
+  "homepage": "https://github.com/jilaokang/college_info#readme"
+}
