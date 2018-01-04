@@ -83,11 +83,11 @@
       // route_en eg:noon1
       var route_cn, route_en;
       
-       // 自动更新当前时间 time_en
+      // 自动更新当前时间 time_en
       function defaultTime() {
           var myDate = new Date();
           var hours = myDate.getHours();
-       
+      
           if (hours < 8 || hours > 21) {
               time_cn = "早班";
               time_en = 'am';
@@ -142,7 +142,7 @@
                   value: 'noon',
                   children: [{
                       label: '武汉理工大学',
-                      value: 1,
+                      value: 1
                   },
                       {
                           label: '财大津发小区',
@@ -158,20 +158,16 @@
                       value: 1
                   },
                       {
-                          label: '财大首义校区 路线2',
+                          label: '森林公园',
                           value: 2
                       },
                       {
-                          label: '森林公园',
+                          label: '光谷校区',
                           value: 3
                       },
                       {
-                          label: '光谷校区',
-                          value: 4
-                      },
-                      {
                           label: '徐东平价',
-                          value: 5
+                          value: 4
                       }
                   ]
               }
@@ -181,14 +177,14 @@
                   // 获取value为result[0] result[1]
       
                   // 建立数组
-                  route_en.time = result[0].value; 
+                  route_en.time = result[0].value;
                   route_en.route = result[1].value;
       
                   route_cn = result[0].label + " " + result[1].label;
                   $(".weui-input")[0].value = route_cn;
-                  console.log(route_cn,route_en);
+                  console.log(route_cn, route_en);
                   vm.dd();
-              },
+              }
           });
       }
       
@@ -204,250 +200,248 @@
       </div>
     </div>
     <script>
-      var vm= new Vue({
-          el:"#road",
-          data:{
-              active:[],
-              am:{
-                  1:["aa1",'mm1'],
-                  2:['aa2','mm2'],
-                  3:['aa3','mm3'],
-                  4:['aa4','mm4'],
-                  5:['aa5','mm5'],
+      var vm = new Vue({
+          el: '#road',
+          data: {
+              active: [],
+              am: {
+                  1: ['财大首义校区（7:10 财大大门内大巴停车场）', '首义地铁 B 出口（7:15 中百仓储对面）', '烽火村公交站（7:20）', '白沙四路凌吴墩公交车站（7:25）', '大学城校区（8:10 前）'],
+                  2: ['财大首义校区（7:00）', '金马家居（7：02）', '京韵大舞台（7:07）', '街道口假日酒店（7:09）', '武汉理工大学地下通道（7:10）', '中百仓储（7:12）', '洪山区委（7:18）', '壕沟华农对面（7:28）', '大学城校区（8：10 前）'],
+                  3: ['森林公园（6:45，珞瑜东路森林公园公交站）', '城建学院（6:47，珞瑜东路佳园路公交站）', '华工体育馆（6:50，珞瑜东路叶麻店公交站）', '关山口（6:52，关山大道汽发社区公交站）', '雄楚大街交汇口（6:55，关山大道三医院门口公交站）', '当代学生公寓（7:00）', '中南民大门口（7:02）', '东林外庐（7:08）', '津发小区（7:12）', '锦绣龙城（7:16）', '东湖学院南门（7:30）', '大学城校区（8:10 前）'],
+                  4: ['光谷校区（6:50）', '杨家湾(6:53，蓝箭酒店门口）', '雄楚大道名都花园（6:55，青年职业学院门口）', '雄楚大道民政厅（6：58，民政厅旁红绿灯路口）', '文化大道世贸林屿岸（7:30，文化大道马嘴村公交站）', '大学城校区（8:10 前）'],
+                  5: ['徐东平价（6:40，徐东大街欧亚达正门公交站）', '麦德龙（6:44，徐东大街岳家嘴公交站）', '东亭地铁站 D 出口（6:46）', '楚河汉街（6:50，中北路楚河汉街公交站）', '中南商业大楼（7:00，省水利厅地铁出口）', '丁字桥（7:10，丁字桥路城市印象小区门口）', '沈家湾（7:12，雄楚大街沈家湾公交站）', '图书城（7:18，书城路金地格林小城武汉市农村商业银行门口）', '南湖（7:25，南湖大道花木城公交站）', '金樱街（7:38，海天大厦对面）', '大学城校区（8:10 前）']
               },
-              noon:{
-                  1:["nn1",'oo1'],
-                  2:['nn2','oo2']
+              noon: {
+                  1: ['大学城校区', '壕沟', '洪山区委', '理工大学', '大学城校区(12:05 从学院楼发车，12:10 从行政楼发车)直达街道口（武汉理工大学门口，返程时间为 12:35）'],
+                  2: ['大学城校区', '世贸林屿', '锦绣龙城', '财大津发小区', '大学城校区(12:05 从学院楼发车，12:10 从行政楼发车)直达财大津发小区（返程时间为 12:35）']
               },
-              pm:{
-                  1:["pp1",'mm1'],
-                  2:['pp2','mm2'],
-                  3:['pp3','mm3'],
-                  4:['pp4','mm4'],
-                  5:['pp5','mm5']
+              pm: {
+                  1: ['财大首义校区', '首义地铁 B 出口', '烽火村公交站', '白沙四路凌吴墩公交车站', '大学城校区'],
+                  2: ['森林公园', '城建学院', '华工体育馆', '关山口', '雄楚大街交汇口', '当代学生公寓', '中南民大门口', '东林外庐', '津发小区', '锦绣龙城', '东湖学院南门', '大学城校区'],
+                  3: ['光谷校区', '杨家湾', '雄楚大道名都花园', '雄楚大道民政厅', '文化大道马嘴村公交站', '大学城校区'],
+                  4: ['徐东平价', '麦德龙', '东亭地铁站 D 出口', '楚河汉街', '中南商业大楼', '石牌岭公交站', '沈家湾', '图书城', '南湖', '金樱街）', '大学城校区']
               }
           },
-          methods:{
-              dd: function(){
-                  // route_en  eg:route_en.time="am" route_en.route="1"
-                  if(route_en.time==='am'){
+          methods: {
+              dd: function () {
+                  // route_en  eg:route_en.time='am' route_en.route='1'
+                  if (route_en.time === 'am') {
                       this.active = this.am[route_en.route];
                   } else {
-                      (route_en.time==='noon')?this.active = this.noon[route_en.route]:this.active = this.pm[route_en.route];
+                      (route_en.time === 'noon') ? this.active = this.noon[route_en.route] : this.active = this.pm[route_en.route];
                   }
-                  
               }
           }
-      })
+      });
       
       
       
     </script>
-    <div class="weui-cells__title">校车位置</div>
-    <div class="container">
-      <div id="wrap" class="my-map">
-        <div id="mapContainer"></div>
-      </div>
-    </div>
-    <!-- 地图-->
-    <script src="http://webapi.amap.com/maps?v=1.4.0&amp;key=ccd246a376313ca38a649a9edd48131c"></script>
-    <script>
-      !function () {
-          var infoWindow, map, level = 15,
-      
-              center = {
-                  lng: 114.296115,
-                  lat: 30.441589
-              },
-      
-              // 标记及路线图
-              features = [{
+  </div>
+</html>
+<div class="weui-cells__title">校车位置</div>
+<div class="container">
+  <div id="wrap" class="my-map">
+    <div id="mapContainer"></div>
+  </div>
+</div>
+<!-- 地图-->
+<script src="http://webapi.amap.com/maps?v=1.4.0&amp;key=ccd246a376313ca38a649a9edd48131c"></script>
+<script>
+  !function () {
+      var infoWindow, map, level = 15,
+  
+          center = {
+              lng: 114.296115,
+              lat: 30.441589
+          },
+  
+          // 标记及路线图
+          features = [{
+              type: "Marker",
+              name: "财大首义校区",
+              desc: "",
+              color: "red",
+              icon: "cir",
+              offset: {x: -9, y: -31},
+              lnglat: {lng: 114.314109, lat: 30.537912}
+          },
+              {
                   type: "Marker",
-                  name: "财大首义校区",
+                  name: "首义路地铁站B口",
                   desc: "",
                   color: "red",
                   icon: "cir",
                   offset: {x: -9, y: -31},
-                  lnglat: {lng: 114.314109, lat: 30.537912}
+                  lnglat: {lng: 114.309839, lat: 30.53374}
               },
-                  {
-                      type: "Marker",
-                      name: "首义路地铁站B口",
-                      desc: "",
-                      color: "red",
-                      icon: "cir",
-                      offset: {x: -9, y: -31},
-                      lnglat: {lng: 114.309839, lat: 30.53374}
-                  },
-                  {
-                      type: "Marker",
-                      name: "白沙洲大道烽火村(公交站)",
-                      desc: "",
-                      color: "red",
-                      icon: "cir",
-                      offset: {x: -9, y: -31},
-                      lnglat: {lng: 114.298914, lat: 30.508873}
-                  },
-                  {
-                      type: "Marker",
-                      name: "白沙四路",
-                      desc: "",
-                      color: "red",
-                      icon: "cir",
-                      offset: {x: -9, y: -31},
-                      lnglat: {lng: 114.275199, lat: 30.478149}
-                  },
-      
-                  {
-                      type: "Marker",
-                      name: "武汉学院",
-                      desc: "",
-                      color: "red",
-                      icon: "cir",
-                      offset: {x: -9, y: -31},
-                      lnglat: {lng: 114.2974, lat: 30.442026}
-                  },
-      
-                  {
-                      type: "Polyline",
-                      name: "班车路线",
-                      desc: "",
-                      strokeWeight: 5,
-                      strokeColor: "#F0202F",
-                      strokeOpacity: 0.8,
-                      lnglat: [{lng: 114.314352, lat: 30.538089}, {
-                          lng: 114.309717,
-                          lat: 30.533653
-                      }, {lng: 114.301563, lat: 30.534393}, {lng: 114.301306, lat: 30.52212}, {
-                          lng: 114.301392,
-                          lat: 30.519754
-                      }, {lng: 114.300276, lat: 30.518053}, {lng: 114.299332, lat: 30.511916}, {
-                          lng: 114.299203,
-                          lat: 30.511214
-                      }, {lng: 114.298602, lat: 30.509993}, {lng: 114.296027, lat: 30.505446}, {
-                          lng: 114.287315,
-                          lat: 30.496127
-                      }, {lng: 114.286757, lat: 30.495277}, {lng: 114.285084, lat: 30.493576}, {
-                          lng: 114.283453,
-                          lat: 30.491283
-                      }, {lng: 114.274741, lat: 30.478339}, {lng: 114.273486, lat: 30.4764}, {
-                          lng: 114.277091,
-                          lat: 30.474698
-                      }, {lng: 114.283614, lat: 30.472997}, {lng: 114.291854, lat: 30.473367}, {
-                          lng: 114.29297,
-                          lat: 30.473367
-                      }, {lng: 114.293056, lat: 30.473367}, {lng: 114.293313, lat: 30.463897}, {
-                          lng: 114.293313,
-                          lat: 30.46116
-                      }, {lng: 114.291682, lat: 30.458867}, {lng: 114.293828, lat: 30.457831}, {
-                          lng: 114.298206,
-                          lat: 30.455981
-                      }, {lng: 114.301038, lat: 30.455241}, {lng: 114.300266, lat: 30.444956}, {
-                          lng: 114.300695,
-                          lat: 30.441478
-                      }, {lng: 114.297433, lat: 30.441996}]
-                  }];
-      
-          function loadFeatures() {
-              for (var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++) {
-                  data = features[i];
-                  switch (data.type) {
-                      case "Marker":
-                          feature = new AMap.Marker({
-                              map: map,
-                              position: new AMap.LngLat(data.lnglat.lng, data.lnglat.lat),
-                              zIndex: 3,
-                              extData: data,
-                              offset: new AMap.Pixel(data.offset.x, data.offset.y),
-                              title: data.name,
-                              content: '<div class="icon icon-' + data.icon + ' icon-' + data.icon + '-' + data.color + '"></div>'
-                          });
-                          break;
-                      case "Polyline":
-                          for (j = 0, jl = data.lnglat.length, path = []; j < jl; j++) {
-                              path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
-                          }
-                          feature = new AMap.Polyline({
-                              map: map,
-                              path: path,
-                              extData: data,
-                              zIndex: 2,
-                              strokeWeight: data.strokeWeight,
-                              strokeColor: data.strokeColor,
-                              strokeOpacity: data.strokeOpacity
-                          });
-                          break;
-                      case "Polygon":
-                          for (j = 0, jl = data.lnglat.length, path = []; j < jl; j++) {
-                              path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
-                          }
-                          feature = new AMap.Polygon({
-                              map: map,
-                              path: path,
-                              extData: data,
-                              zIndex: 1,
-                              strokeWeight: data.strokeWeight,
-                              strokeColor: data.strokeColor,
-                              strokeOpacity: data.strokeOpacity,
-                              fillColor: data.fillColor,
-                              fillOpacity: data.fillOpacity
-                          });
-                          break;
-                      default:
-                          feature = null;
-                  }
-                  if (feature) {
-                      AMap.event.addListener(feature, "click", mapFeatureClick);
-                  }
+              {
+                  type: "Marker",
+                  name: "白沙洲大道烽火村(公交站)",
+                  desc: "",
+                  color: "red",
+                  icon: "cir",
+                  offset: {x: -9, y: -31},
+                  lnglat: {lng: 114.298914, lat: 30.508873}
+              },
+              {
+                  type: "Marker",
+                  name: "白沙四路",
+                  desc: "",
+                  color: "red",
+                  icon: "cir",
+                  offset: {x: -9, y: -31},
+                  lnglat: {lng: 114.275199, lat: 30.478149}
+              },
+  
+              {
+                  type: "Marker",
+                  name: "武汉学院",
+                  desc: "",
+                  color: "red",
+                  icon: "cir",
+                  offset: {x: -9, y: -31},
+                  lnglat: {lng: 114.2974, lat: 30.442026}
+              },
+  
+              {
+                  type: "Polyline",
+                  name: "班车路线",
+                  desc: "",
+                  strokeWeight: 5,
+                  strokeColor: "#F0202F",
+                  strokeOpacity: 0.8,
+                  lnglat: [{lng: 114.314352, lat: 30.538089}, {
+                      lng: 114.309717,
+                      lat: 30.533653
+                  }, {lng: 114.301563, lat: 30.534393}, {lng: 114.301306, lat: 30.52212}, {
+                      lng: 114.301392,
+                      lat: 30.519754
+                  }, {lng: 114.300276, lat: 30.518053}, {lng: 114.299332, lat: 30.511916}, {
+                      lng: 114.299203,
+                      lat: 30.511214
+                  }, {lng: 114.298602, lat: 30.509993}, {lng: 114.296027, lat: 30.505446}, {
+                      lng: 114.287315,
+                      lat: 30.496127
+                  }, {lng: 114.286757, lat: 30.495277}, {lng: 114.285084, lat: 30.493576}, {
+                      lng: 114.283453,
+                      lat: 30.491283
+                  }, {lng: 114.274741, lat: 30.478339}, {lng: 114.273486, lat: 30.4764}, {
+                      lng: 114.277091,
+                      lat: 30.474698
+                  }, {lng: 114.283614, lat: 30.472997}, {lng: 114.291854, lat: 30.473367}, {
+                      lng: 114.29297,
+                      lat: 30.473367
+                  }, {lng: 114.293056, lat: 30.473367}, {lng: 114.293313, lat: 30.463897}, {
+                      lng: 114.293313,
+                      lat: 30.46116
+                  }, {lng: 114.291682, lat: 30.458867}, {lng: 114.293828, lat: 30.457831}, {
+                      lng: 114.298206,
+                      lat: 30.455981
+                  }, {lng: 114.301038, lat: 30.455241}, {lng: 114.300266, lat: 30.444956}, {
+                      lng: 114.300695,
+                      lat: 30.441478
+                  }, {lng: 114.297433, lat: 30.441996}]
+              }];
+  
+      function loadFeatures() {
+          for (var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++) {
+              data = features[i];
+              switch (data.type) {
+                  case "Marker":
+                      feature = new AMap.Marker({
+                          map: map,
+                          position: new AMap.LngLat(data.lnglat.lng, data.lnglat.lat),
+                          zIndex: 3,
+                          extData: data,
+                          offset: new AMap.Pixel(data.offset.x, data.offset.y),
+                          title: data.name,
+                          content: '<div class="icon icon-' + data.icon + ' icon-' + data.icon + '-' + data.color + '"></div>'
+                      });
+                      break;
+                  case "Polyline":
+                      for (j = 0, jl = data.lnglat.length, path = []; j < jl; j++) {
+                          path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                      }
+                      feature = new AMap.Polyline({
+                          map: map,
+                          path: path,
+                          extData: data,
+                          zIndex: 2,
+                          strokeWeight: data.strokeWeight,
+                          strokeColor: data.strokeColor,
+                          strokeOpacity: data.strokeOpacity
+                      });
+                      break;
+                  case "Polygon":
+                      for (j = 0, jl = data.lnglat.length, path = []; j < jl; j++) {
+                          path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                      }
+                      feature = new AMap.Polygon({
+                          map: map,
+                          path: path,
+                          extData: data,
+                          zIndex: 1,
+                          strokeWeight: data.strokeWeight,
+                          strokeColor: data.strokeColor,
+                          strokeOpacity: data.strokeOpacity,
+                          fillColor: data.fillColor,
+                          fillOpacity: data.fillOpacity
+                      });
+                      break;
+                  default:
+                      feature = null;
+              }
+              if (feature) {
+                  AMap.event.addListener(feature, "click", mapFeatureClick);
               }
           }
-      
-          function mapFeatureClick(e) {
-              if (!infoWindow) {
-                  infoWindow = new AMap.InfoWindow({
-                      autoMove: true
-                  });
-              }
-              var extData = e.target.getExtData();
-              infoWindow.setContent("<h5>" + extData.name + "</h5><div>" + extData.desc + "</div>");
-              infoWindow.open(map, e.lnglat);
+      }
+  
+      function mapFeatureClick(e) {
+          if (!infoWindow) {
+              infoWindow = new AMap.InfoWindow({
+                  autoMove: true
+              });
           }
-      
-          map = new AMap.Map("mapContainer", {
-              center: new AMap.LngLat(center.lng, center.lat),
-              level: level
-          });
-          loadFeatures();
-      
-      
-      }();
-      
-      
-    </script>
-    <!-- 车型-->
-    <script>
-      var switchbus = document.getElementsByClassName("weui-switch")[0];
-      switchbus.onclick = function () {
-          window.location.href = "index.html";
+          var extData = e.target.getExtData();
+          infoWindow.setContent("<h5>" + extData.name + "</h5><div>" + extData.desc + "</div>");
+          infoWindow.open(map, e.lnglat);
       }
-      
-      
-      
-    </script>
-    <footer class="weui-footer">
-      <div>
-        <p><a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
-      </div>
-      <div>
-        <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
-      </div>
-    </footer>
-    <script>
-      window.onload = function () {
-          defaultTime();
-          defaultInfo();
-          vm.dd();
-      }
-    </script>
+  
+      map = new AMap.Map("mapContainer", {
+          center: new AMap.LngLat(center.lng, center.lat),
+          level: level
+      });
+      loadFeatures();
+  
+  
+  }();
+  
+  
+</script>
+<!-- 车型-->
+<script>
+  var switchbus = document.getElementsByClassName("weui-switch")[0];
+  switchbus.onclick = function () {
+      window.location.href = "index.html";
+  }
+  
+  
+  
+</script>
+<footer class="weui-footer">
+  <div>
+    <p><a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
   </div>
-</html>
+  <div>
+    <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
+  </div>
+</footer>
+<script>
+  window.onload = function () {
+      defaultTime();
+      defaultInfo();
+      vm.dd();
+  }
+</script>
