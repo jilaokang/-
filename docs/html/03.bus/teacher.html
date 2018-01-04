@@ -36,8 +36,14 @@
           <label class="weui-label">路线</label>
         </div>
         <div class="weui-cell__bd">
-          <input onclick="getRoute();" name="err" readonly="readonly" class="weui-input">
+          <input onclick="getRoute()" name="err" readonly="readonly" class="weui-input">
         </div>
+      </div>
+    </div>
+    <div class="weui-cells__title">校车位置</div>
+    <div class="container">
+      <div id="wrap" class="my-map">
+        <div id="mapContainer"></div>
       </div>
     </div>
     <div class="weui-cells__title">班车信息</div>
@@ -51,12 +57,6 @@
             <div class="weui-flex__item">鄂AJE715                     </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="weui-cells__title">校车位置</div>
-    <div class="container">
-      <div id="wrap" class="my-map">
-        <div id="mapContainer"></div>
       </div>
     </div>
     <div class="weui-cells__title">行驶路线</div>
