@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf0c1b1b-1896-4b1d-aa45-49663ea21657" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/docs/html/03.bus/js/location.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/html/03.bus/teacher.html" afterPath="$PROJECT_DIR$/docs/html/03.bus/teacher.html" />
       <change beforePath="$PROJECT_DIR$/docs/html/03.bus/teacher.jade" afterPath="$PROJECT_DIR$/docs/html/03.bus/teacher.jade" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -71,19 +73,13 @@
       <file leaf-file-name="teacher.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/html/03.bus/teacher.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="202" column="113" lean-forward="false" selection-start-line="202" selection-start-column="113" selection-end-line="202" selection-end-column="113" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="road.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/html/03.bus/js/road.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="416">
+              <caret line="361" column="45" lean-forward="true" selection-start-line="361" selection-start-column="45" selection-end-line="361" selection-end-column="45" />
+              <folding>
+                <element signature="n#script#0;n#div#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#2;n#div#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#3;n#div#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -168,7 +164,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="width" value="1227" />
     <option name="height" value="1040" />
   </component>
@@ -215,14 +211,6 @@
               <item name="docs" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="03.bus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="college_info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="college_info" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="03.bus" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -287,18 +275,17 @@
       <workItem from="1514947182183" duration="164000" />
       <workItem from="1514971991083" duration="2000000" />
       <workItem from="1514994738051" duration="3000" />
-      <workItem from="1515028562290" duration="914000" />
+      <workItem from="1515028562290" duration="2145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11126000" />
+    <option name="totallyTimeSpent" value="12357000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1227" height="1040" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1227" height="1040" extended-state="1" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25820017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25820017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22797357" sideWeight="0.5744323" order="8" side_tool="true" content_ui="tabs" />
@@ -568,9 +555,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/html/03.bus/teacher.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="202" column="113" lean-forward="false" selection-start-line="202" selection-start-column="113" selection-end-line="202" selection-end-column="113" />
-          <folding />
+        <state relative-caret-position="416">
+          <caret line="361" column="45" lean-forward="true" selection-start-line="361" selection-start-column="45" selection-end-line="361" selection-end-column="45" />
+          <folding>
+            <element signature="n#script#0;n#div#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#div#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#3;n#div#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
