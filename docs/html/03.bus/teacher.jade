@@ -7,6 +7,8 @@ html
         meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
         +conf("校车查询")
         link(rel="stylesheet", href="main.css")
+        
+        
     body
     #bus
         .weui-cells__title 切换车型
@@ -15,7 +17,6 @@ html
                 .weui-cell__bd 切换到学生校车
                 .weui-cell__hd
                     input.weui-switch(type="checkbox")
-
         .weui-cells__title 切换时间
         .weui-cells
             .weui-cell
@@ -23,12 +24,10 @@ html
                     label.weui-label 路线
                 .weui-cell__bd
                     input.weui-input(onclick="getRoute()", name="err", readonly="readonly")
-
         .weui-cells__title 校车位置
         .container
             #wrap.my-map
                 #mapContainer
-
         .weui-cells__title 班车信息
         .container
             .card-small
@@ -36,19 +35,20 @@ html
                     .weui-flex
                         .weui-flex__item 王师傅：1806407838
                     .weui-flex
-                        .weui-flex__item 鄂AJE715                     
+                        .weui-flex__item 鄂AJE715 
 
-
-
-
+        /// Vue渲染路线                  
         .weui-cells__title 行驶路线
-
         .container
             #road.card
                 .weui-flex(v-for="item of active")
                     .weui-flex__item {{item}}
         +footer
 
+
+
+
+        script(src="js/teacher/json.js")
         script(src='js/teacher/defaultInfo.js')
         script(src='js/teacher/defaultTime.js')
         script(src='js/teacher/getRoute.js')
@@ -59,13 +59,17 @@ html
             switchbus.onclick = function () {
                 window.location.href = "index.html";
             }
-        // 地图
+
+        // 高德地图-地图链接
         script(src='http://webapi.amap.com/maps?v=1.4.0&key=ccd246a376313ca38a649a9edd48131c')
+        // 高德地图-JS开发
+        script(src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11")
         script(src="js/teacher/map.js")
+
         script.
             window.onload = function () {
                 defaultTime();
                 defaultInfo();
-                vm.dd();
+                vm.chioce();
             }
 

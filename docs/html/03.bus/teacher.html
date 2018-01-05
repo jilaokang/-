@@ -54,11 +54,12 @@
             <div class="weui-flex__item">王师傅：1806407838</div>
           </div>
           <div class="weui-flex">
-            <div class="weui-flex__item">鄂AJE715                     </div>
+            <div class="weui-flex__item">鄂AJE715 </div>
           </div>
         </div>
       </div>
     </div>
+    <!--/ Vue渲染路线                  -->
     <div class="weui-cells__title">行驶路线</div>
     <div class="container">
       <div id="road" class="card">
@@ -75,6 +76,7 @@
         <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
       </div>
     </footer>
+    <script src="js/teacher/json.js"></script>
     <script src="js/teacher/defaultInfo.js"></script>
     <script src="js/teacher/defaultTime.js"></script>
     <script src="js/teacher/getRoute.js"></script>
@@ -85,15 +87,18 @@
       switchbus.onclick = function () {
           window.location.href = "index.html";
       }
+      
     </script>
-    <!-- 地图-->
+    <!-- 高德地图-地图链接-->
     <script src="http://webapi.amap.com/maps?v=1.4.0&amp;key=ccd246a376313ca38a649a9edd48131c"></script>
+    <!-- 高德地图-JS开发-->
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
     <script src="js/teacher/map.js"></script>
     <script>
       window.onload = function () {
           defaultTime();
           defaultInfo();
-          vm.dd();
+          vm.chioce();
       }
     </script>
   </div>

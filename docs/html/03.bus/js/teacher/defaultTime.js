@@ -1,23 +1,19 @@
-// time_en  eg:am
-var time_en, tim_cn;
+var route_cn, route_cn_time, route_cn_route;
+var route_en, route_en_time, route_en_route;
 
-// route_cn eg:中班 武汉理工大学
-// route_en eg:noon1
-var route_cn, route_en;
-
-// 自动更新当前时间 time_en
+// 自动更新当前时间 route_en_time
 function defaultTime() {
     var myDate = new Date();
     var hours = myDate.getHours();
 
     if (hours < 8 || hours > 21) {
-        time_cn = "早班";
-        time_en = 'am';
+        route_cn_time = "早班";
+        route_en_time = 'am';
     } else if (8 <= hours && hours <= 13) {
-        time_cn = "中班";
-        time_en = 'noon';
+        route_cn_time = "中班";
+        route_en_time = 'noon';
     } else {
-        time_cn = "晚班";
-        time_en = 'pm';
+        route_cn_time = "晚班";
+        route_en_time = 'pm';
     }
 }

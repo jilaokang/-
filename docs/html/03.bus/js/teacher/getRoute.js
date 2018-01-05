@@ -59,18 +59,19 @@ function getRoute() {
             ]
         }
     ], {
-        defaultValue: [time_en, 1],
+        defaultValue: [route_en_time, 1],
         onConfirm: function (result) {
             // 获取value为result[0] result[1]
 
             // 建立数组
-            route_en.time = result[0].value;
-            route_en.route = result[1].value;
+            route_en_time = result[0].value;
+            route_en_route = result[1].value;
 
             route_cn = result[0].label + " " + result[1].label;
             $(".weui-input")[0].value = route_cn;
             console.log(route_cn, route_en);
-            vm.dd();
+
+            vm.chioce();
         }
     });
 }
