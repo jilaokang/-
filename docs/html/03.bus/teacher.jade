@@ -24,25 +24,20 @@ html
                     label.weui-label 路线
                 .weui-cell__bd
                     input.weui-input(onclick="getRoute()", name="err", readonly="readonly")
+        .weui-cells__title 班车信息
+        .container
+            .card-small
+                #road.box
+                    .weui-flex
+                        .weui-flex__item {{active[1]}}
+                    .weui-flex
+                        .weui-flex__item {{active[0][0]}}：{{active[0][1]}}
         .weui-cells__title 校车位置
         .container
             #wrap.my-map
                 #mapContainer
-        .weui-cells__title 班车信息
-        .container
-            .card-small
-                .box
-                    .weui-flex
-                        .weui-flex__item 王师傅：1806407838
-                    .weui-flex
-                        .weui-flex__item 鄂AJE715 
 
-        /// Vue渲染路线                  
-        .weui-cells__title 行驶路线
-        .container
-            #road.card
-                .weui-flex(v-for="item of active")
-                    .weui-flex__item {{item}}
+
         +footer
 
 

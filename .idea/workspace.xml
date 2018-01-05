@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf0c1b1b-1896-4b1d-aa45-49663ea21657" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change beforePath="$PROJECT_DIR$/docs/html/03.bus/js/teacher/map.js" afterPath="$PROJECT_DIR$/docs/html/03.bus/js/teacher/map.js" />
-      <change beforePath="$PROJECT_DIR$/docs/scss/block/var.scss" afterPath="$PROJECT_DIR$/docs/scss/block/var.scss" />
+      <change beforePath="$PROJECT_DIR$/docs/html/03.bus/teacher.html" afterPath="$PROJECT_DIR$/docs/html/03.bus/teacher.html" />
+      <change beforePath="$PROJECT_DIR$/docs/html/03.bus/teacher.jade" afterPath="$PROJECT_DIR$/docs/html/03.bus/teacher.jade" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,9 +21,9 @@
         <entry file="file://$PROJECT_DIR$/docs/html/03.bus/teacher.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
-              <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+              <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
               <folding>
-                <marker date="1515121634599" expanded="true" signature="56:337" ph="..." />
+                <marker date="1515131758244" expanded="true" signature="56:337" ph="..." />
               </folding>
             </state>
           </provider>
@@ -186,7 +185,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="width" value="1227" />
     <option name="height" value="1040" />
   </component>
@@ -336,15 +335,15 @@
       <workItem from="1514947182183" duration="164000" />
       <workItem from="1514971991083" duration="2000000" />
       <workItem from="1514994738051" duration="3000" />
-      <workItem from="1515028562290" duration="6688000" />
+      <workItem from="1515028562290" duration="7456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16900000" />
+    <option name="totallyTimeSpent" value="17668000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1227" height="1040" extended-state="0" />
+    <frame x="0" y="0" width="1227" height="1040" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30277544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -607,9 +606,9 @@
     <entry file="file://$PROJECT_DIR$/docs/html/03.bus/teacher.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
-          <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+          <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
           <folding>
-            <marker date="1515121634599" expanded="true" signature="56:337" ph="..." />
+            <marker date="1515131758244" expanded="true" signature="56:337" ph="..." />
           </folding>
         </state>
       </provider>
