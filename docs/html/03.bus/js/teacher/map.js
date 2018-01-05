@@ -1,7 +1,6 @@
 
 var map = new AMap.Map('mapContainer', {
-    zoom: 15,
-    mapStyle: 'amap://styles/whitesmoke'
+    zoom: 15
 });
 
 AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
@@ -14,6 +13,10 @@ AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
             return pathData.path;
         },
         renderOptions: {
+            pathLineStyle: {
+                strokeStyle: '#2981D9',
+                lineWidth: 7
+            },
             renderAllPointsIfNumberBelow: 8 //绘制路线节点，如不需要可设置为-1
         }
     });
