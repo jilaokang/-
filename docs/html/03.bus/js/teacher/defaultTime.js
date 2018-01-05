@@ -1,5 +1,7 @@
 
 
+// 优先级 0
+
 var route_cn, route_cn_time, route_cn_route;
 var route_en, route_en_time, route_en_route;
 

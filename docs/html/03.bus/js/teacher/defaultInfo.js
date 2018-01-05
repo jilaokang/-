@@ -1,5 +1,8 @@
 
 
+// 优先级 1
+// 依赖于 defalutTime() -route_cn_time
+
 function defaultInfo() {
     // 路线中文
     route_cn = route_cn_time + " " + "财大首义校区 路线1";
