@@ -1,4 +1,5 @@
 
+function addMap(){
 var map = new AMap.Map('mapContainer', {
     zoom: 15
 });
@@ -27,7 +28,7 @@ AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
     pathSimplifierIns.setData([{
         name: '路线0',
         // 从json获取数据渲染地图
-        path: json.am[1].path
+        path: vm.path
     }]);
 
     //对第一条线路（即索引 0）创建一个巡航器
@@ -38,3 +39,4 @@ AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
   
     navg1.start();
 });
+}

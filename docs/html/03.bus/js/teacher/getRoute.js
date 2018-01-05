@@ -72,6 +72,7 @@ function getRoute() {
             console.log(route_cn, route_en);
 
             vm.chioce();
+            addMap();
         }
     });
 }
