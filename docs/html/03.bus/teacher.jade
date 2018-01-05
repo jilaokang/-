@@ -40,11 +40,6 @@ html
 
         +footer
 
-
-        script.
-            var route_cn, route_cn_time, route_cn_route;
-            var route_en, route_en_time, route_en_route;
-
         // 这是一辆教师车
         script.
             var switchbus = document.getElementsByClassName("weui-switch")[0];
@@ -52,9 +47,11 @@ html
                 window.location.href = "index.html";
             }
 
-        script(src='js/teacher/defaultTime.js')
-
         script(src="js/teacher/json.js")
+
+
+
+        script(src='js/teacher/defaultTime.js')
 
         script(src='js/teacher/defaultInfo.js')
         script(src='js/teacher/vmVue.js')
