@@ -1,5 +1,7 @@
+
 var map = new AMap.Map('mapContainer', {
-    zoom: 15
+    zoom: 15,
+    mapStyle: 'amap://styles/grey'
 });
 
 AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
