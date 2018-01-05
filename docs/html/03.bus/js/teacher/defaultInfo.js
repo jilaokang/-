@@ -1,4 +1,6 @@
 // 默认显示框信息
+var route_cn, route_cn_time, route_cn_route;
+var route_en, route_en_time, route_en_route;
 
 function defaultInfo() {
     // 路线中文
