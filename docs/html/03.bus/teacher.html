@@ -67,12 +67,12 @@
         <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
       </div>
     </footer>
-    <script src="js/teacher/json.js"></script>
-    <script src="js/teacher/defaultInfo.js"></script>
-    <script src="js/teacher/defaultTime.js"></script>
-    <script src="js/teacher/getRoute.js"></script>
-    <script src="js/teacher/vmVue.js"></script>
-    <!-- 车型-->
+    <script>
+      var route_cn, route_cn_time, route_cn_route;
+      var route_en, route_en_time, route_en_route;
+      
+    </script>
+    <!-- 这是一辆教师车-->
     <script>
       var switchbus = document.getElementsByClassName("weui-switch")[0];
       switchbus.onclick = function () {
@@ -80,6 +80,11 @@
       }
       
     </script>
+    <script src="js/teacher/defaultTime.js"></script>
+    <script src="js/teacher/json.js"></script>
+    <script src="js/teacher/defaultInfo.js"></script>
+    <script src="js/teacher/getRoute.js"></script>
+    <script src="js/teacher/vmVue.js"></script>
     <!-- 高德地图-地图链接-->
     <script src="http://webapi.amap.com/maps?v=1.4.0&amp;key=ccd246a376313ca38a649a9edd48131c"></script>
     <!-- 高德地图-JS开发-->
@@ -87,8 +92,8 @@
     <script src="js/teacher/map.js"></script>
     <script>
       window.onload = function () {
-          defaultInfo();
           defaultTime();
+          defaultInfo();
           vm.chioce();
           addMap();
       }
