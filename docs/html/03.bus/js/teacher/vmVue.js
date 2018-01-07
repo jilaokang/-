@@ -6,17 +6,20 @@ var vm = new Vue({
     },
     methods: {
         chioce: function () {
-            if (route_en_time === 'am') {
-                this.active = json.am[route_en_route].info;
-                this.path = json.am[route_en_route].path;                
-            }
-            else if (route_en_time === 'noon') {
-                this.active = json.noon[route_en_route].info;
-                this.path = json.noon[route_en_route].path;
-            } else {
-                this.active = json.pm[route_en_route].info;
-                this.path = json.pm[route_en_route].path;
-            }
+            sb.then(value => {
+                console.log(value);
+                if (route_en_time === 'am') {
+                    this.active = value.bus.am[route_en_route].info;
+                    this.path = value.bus.am[route_en_route].path;
+                }
+                else if (route_en_time === 'noon') {
+                    this.active = value.bus.noon[route_en_route].info;
+                    this.path = value.bus.noon[route_en_route].path;
+                } else {
+                    this.active = value.bus.pm[route_en_route].info;
+                    this.path = value.bus.pm[route_en_route].path;
+                }
+            }, err => console.error(err))
         }
     }
 });
