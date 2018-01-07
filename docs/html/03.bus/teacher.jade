@@ -24,6 +24,7 @@ html
                     label.weui-label 路线
                 .weui-cell__bd
                     input.weui-input(onclick="getRoute()", name="err", readonly="readonly")
+        
         .weui-cells__title 班车信息
         .container
             .card-small
@@ -37,8 +38,11 @@ html
             #wrap.my-map
                 #mapContainer
 
-
         +footer
+
+  
+        script(src="../../../lib/vue/vue.js")
+        script(src='js/teacher/vmVue.js')
 
         // 这是一辆教师车
         script.
@@ -56,8 +60,8 @@ html
 
         script(src='js/teacher/defaultInfo.js')
 
-        script(src="../../../lib/vue/vue.js")
-        script(src='js/teacher/vmVue.js')
+
+
         script(src='js/teacher/getRoute.js')
 
         // 高德地图-地图链接
@@ -66,11 +70,14 @@ html
         script(src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11")
         script(src="js/teacher/map.js")
         script.
-            getJson();
             window.onload = function () {
-                getJson();
+           
                 defaultTime();
                 defaultInfo();
+                vm.chioce();
+                addMap();
+                //
+            
                 vm.chioce();
                 addMap();
             }

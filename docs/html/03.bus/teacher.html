@@ -66,6 +66,8 @@
         <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
       </div>
     </footer>
+    <script src="../../../lib/vue/vue.js"></script>
+    <script src="js/teacher/vmVue.js"></script>
     <!-- 这是一辆教师车-->
     <script>
       var switchbus = document.getElementsByClassName("weui-switch")[0];
@@ -78,8 +80,6 @@
     <script src="js/teacher/json.js"></script>
     <script src="js/teacher/defaultTime.js"></script>
     <script src="js/teacher/defaultInfo.js"></script>
-    <script src="../../../lib/vue/vue.js"></script>
-    <script src="js/teacher/vmVue.js"></script>
     <script src="js/teacher/getRoute.js"></script>
     <!-- 高德地图-地图链接-->
     <script src="http://webapi.amap.com/maps?v=1.4.0&amp;key=ccd246a376313ca38a649a9edd48131c"></script>
@@ -87,11 +87,14 @@
     <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
     <script src="js/teacher/map.js"></script>
     <script>
-      getJson();
       window.onload = function () {
-          getJson();
+      
           defaultTime();
           defaultInfo();
+          vm.chioce();
+          addMap();
+          //
+      
           vm.chioce();
           addMap();
       }
