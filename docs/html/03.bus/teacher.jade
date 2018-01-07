@@ -47,7 +47,6 @@ html
                 window.location.href = "index.html";
             }
 
-        script(src="../../../lib/vue/vue.js")
 
         script(src="js/teacher/json.js")
 
@@ -56,6 +55,8 @@ html
         script(src='js/teacher/defaultTime.js')
 
         script(src='js/teacher/defaultInfo.js')
+
+        script(src="../../../lib/vue/vue.js")
         script(src='js/teacher/vmVue.js')
         script(src='js/teacher/getRoute.js')
 
@@ -64,10 +65,13 @@ html
         // 高德地图-JS开发
         script(src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11")
         script(src="js/teacher/map.js")
-
         script.
             window.onload = function () {
                 defaultTime();
+                defaultInfo();
+                vm.chioce();
+                addMap();
+                                defaultTime();
                 defaultInfo();
                 vm.chioce();
                 addMap();
