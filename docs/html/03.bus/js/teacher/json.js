@@ -1,6 +1,5 @@
 var json;
-
-$(document).ready(function () {
+function getJson() {
     $.getJSON("data.json", function (result) {
         $.each(result, function (i,val) {
             json = this;
@@ -8,4 +7,4 @@ $(document).ready(function () {
             console.log(json);
         })
     });
-});
+}
