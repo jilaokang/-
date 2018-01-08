@@ -37,7 +37,7 @@
 #buy {
     #goods {
         padding: 2px;
-        .weui-flex{
+        .weui-flex {
             border-bottom: 3px solid $style-color__bg;
         }
         .weui-flex__item {
@@ -48,18 +48,31 @@
             &:first-child {
                 border-right: 3px solid $style-color__bg;
             }
-            span{
-                &:first-child{
-                    background: #ec3535ea;
-                    color:white;
-                    font-size:12px;
-                    border-radius: 5px;
-                    padding: 2px 4px;
+            div {
+                padding: 0 8px 8px 8px;
+                text-align: left !important;
+                span {
+                    text-align: left !important;
+                    &:first-child {
+                        background: #5d35ec;
+                        color: white;
+                        font-size: 12px;
+                        border-radius: 5px;
+                        padding: 2px 4px;
+                        margin-right: 5px;
+                    }
+                    &:last-child {
+                        float: right;
+                        color: #ec3535ea;
+                        font-weight: 800;
+                        font-size: 14px;
+                        font-family: Tahoma, Geneva, Verdana, sans-serif;
+                    }
                 }
             }
         }
     }
-    .iconfont{
+    .iconfont {
         font-size: 24px;
     }
 }
