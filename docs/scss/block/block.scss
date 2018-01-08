@@ -35,6 +35,24 @@
 }
 
 #buy {
+    #rightNav {
+        width: 30%;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        padding: 50px 30px;
+        padding-top: 200px;       
+        background: rgb(255, 176, 5);
+        z-index: 999;
+        li {
+            list-style: none !important;
+            a {
+                line-height: 3;
+                letter-spacing: 2px;
+                color:white;
+            }
+        }
+    }
     #goods {
         padding: 2px;
         .weui-flex {

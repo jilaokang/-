@@ -105,6 +105,27 @@ body {
   width: 60px;
 }
 
+#buy #rightNav {
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  padding: 50px 30px;
+  padding-top: 200px;
+  background: #ffb005;
+  z-index: 999;
+}
+
+#buy #rightNav li {
+  list-style: none !important;
+}
+
+#buy #rightNav li a {
+  line-height: 3;
+  letter-spacing: 2px;
+  color: white;
+}
+
 #buy #goods {
   padding: 2px;
 }
