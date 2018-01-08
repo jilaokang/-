@@ -61,12 +61,10 @@ body {
 
 .weui-cell__hd {
   font-weight: 800;
-  color: rgba(41, 129, 217, 0.9);
+  color: #2981D9;
 }
 
 .weui-btn_primary {
-  background: rgba(41, 129, 217, 0.9) !important;
+  background: #2981D9 !important;
 }
- 
-
- /*# sourceMappingURL= weui.css.map */
+/*# sourceMappingURL=weui.css.map */

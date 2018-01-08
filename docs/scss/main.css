@@ -61,11 +61,11 @@ body {
 
 .weui-cell__hd {
   font-weight: 800;
-  color: rgba(41, 129, 217, 0.9);
+  color: #2981D9;
 }
 
 .weui-btn_primary {
-  background: rgba(41, 129, 217, 0.9) !important;
+  background: #2981D9 !important;
 }
 
 #grade .card .weui-flex:first-child {
@@ -81,7 +81,7 @@ body {
 }
 
 #data .data-title {
-  color: rgba(41, 129, 217, 0.9);
+  color: #2981D9;
   font-weight: 800;
 }
 
@@ -139,7 +139,7 @@ body {
 }
 
 #head-title {
-  color: rgba(41, 129, 217, 0.9);
+  color: #2981D9;
   margin: 32px auto 38px auto;
   text-align: center;
 }
@@ -150,7 +150,7 @@ body {
 
 #head-title a,
 #head-title p {
-  color: rgba(41, 129, 217, 0.9);
+  color: #2981D9;
   font-size: 14px;
 }
 
@@ -168,6 +168,4 @@ footer p {
 .container {
   padding: 15px 12px;
 }
- 
-
- /*# sourceMappingURL= main.css.map */
+/*# sourceMappingURL=main.css.map */

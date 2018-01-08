@@ -1,7 +1,7 @@
 
 <!--conf-->
 <!-- footer-->
-<!-- com-title-->
+<!-- com-title--><!DOCTYPE html>
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,36 +9,41 @@
   <link href="../../../lib/weui/weui.css" rel="stylesheet"/>
   <link href="../../scss/main.css" rel="stylesheet"/>
   <script src="../../../lib/weui/weui.js"></script>
-  <script src="../../../lib/vue/vue.js"></script>
   <link type="image/x-icon" href="http://on5ngaon4.bkt.clouddn.com/Mountain_64px_1120233_easyicon.net.ico" rel="shortcut icon"/>
   <script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script>
   <title>二手市场</title>
-  <style>
-    html {
-        height: 100% !important;
-    
-    }
-    
-  </style>
 </head>
-<body>
-  <footer class="weui-footer">
-    <div>
-      <p><a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
-    </div>
-    <div>
-      <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
-    </div>
-  </footer>
+<body ontouchstart="ontouchstart">
   <div class="weui-tab">
     <div class="weui-tab__panel">   
-      <p>Page 1</p>
-      <p>Page 1</p>
-      <p>Page 1</p>
+      <div id="weui-search-bar" class="search_bar">
+        <form class="weui-search-bar__form">
+          <div class="weui-search-bar__box"><i class="weui-icon-search"></i>
+            <input id="search_input" type="search" placeholder="搜索" class="weui-search-bar__input"/><a id="search_clear" href="http://" class="weui-icon-clear"></a>
+          </div>
+          <label id="search_text" for="search_input" class="weui-search-bar__label"><i class="weui-icon-search"></i><span>搜索</span></label>
+        </form><a id="search_cancel" href="http://" class="weui-search-bar__cancel-btn"></a>
+      </div>
+      <div id="search_show" class="weui-cells weui-cells_access search_show">
+        <div class="weui-cell">
+          <div class="weui-cell__bd weui-cell_primary">
+            <p>实时搜索文本</p>
+          </div>
+        </div>
+      </div>
+      <footer class="weui-footer">
+        <div>
+          <p><a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
+        </div>
+        <div>
+          <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
+        </div>
+      </footer>
     </div>
     <div class="weui-tabbar"><a class="weui-tabbar__item weui-bar__item_on">
-        <p class="weui-tabbar__label">hello</p></a><a class="weui-tabbar__item weui-bar__item_on">
-        <p class="weui-tabbar__label">hello</p></a><a class="weui-tabbar__item weui-bar__item_on">
-        <p class="weui-tabbar__label">hello                                        </p></a></div>
+        <embed src="img/商城.svg" class="weui-tabbar__icon"/>
+        <p class="weui-tabbar__label">购物</p></a><a class="weui-tabbar__item weui-bar__item_on">
+        <embed src="img/订单.svg" class="weui-tabbar__icon"/>
+        <p class="weui-tabbar__label">订单</p></a></div>
   </div>
 </body>
