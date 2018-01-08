@@ -28,4 +28,16 @@
   font-weight: 800;
   width: 60px;
 }
+
+#buy #goods {
+  padding: 2px;
+}
+
+#buy #goods .weui-flex__item {
+  padding: 3px;
+}
+
+#buy #goods .weui-flex__item img {
+  width: 80%;
+}
 /*# sourceMappingURL=block.css.map */

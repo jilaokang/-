@@ -68,6 +68,10 @@ body {
   background: #2981D9 !important;
 }
 
+#search_show {
+  margin-top: 0;
+}
+
 #grade .card .weui-flex:first-child {
   font-weight: 800;
 }
@@ -99,8 +103,16 @@ body {
   width: 60px;
 }
 
-#search_show {
-  margin-top: 0;
+#buy #goods {
+  padding: 2px;
+}
+
+#buy #goods .weui-flex__item {
+  padding: 3px;
+}
+
+#buy #goods .weui-flex__item img {
+  width: 80%;
 }
 
 .card {

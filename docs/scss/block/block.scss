@@ -34,3 +34,14 @@
     }
 }
 
+#buy {
+    #goods {
+        padding: 2px;
+        .weui-flex__item {
+            padding: 3px;
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
