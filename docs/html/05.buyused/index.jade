@@ -3,6 +3,7 @@ include ../common/mixin.jade
 html(lang='en')
     head
         +conf("二手市场")
+        link(rel="stylesheet", href="//at.alicdn.com/t/font_490682_qvehv8qgygyqr529.css")
         style.
             html,body{
                 height:100%;
@@ -65,11 +66,11 @@ html(lang='en')
 
             .weui-tabbar
                 a.weui-tabbar__item
-                    embed.weui-tabbar__icon(src="img/商城.svg")
+                    font.iconfont.icon-mall.weui-tabbar__icon
                     p.weui-tabbar__label 购物
                 a.weui-tabbar__item
-                    embed.weui-tabbar__icon(src="img/订单.svg")
-                    p.weui-tabbar__label 订单
+                    font.iconfont.icon-me.weui-tabbar__icon
+                    p.weui-tabbar__label 个人心中
 
 
 
