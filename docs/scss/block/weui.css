@@ -67,4 +67,8 @@ body {
 .weui-btn_primary {
   background: #2981D9 !important;
 }
+
+#search_show {
+  margin-top: 0;
+}
 /*# sourceMappingURL=weui.css.map */
