@@ -10,7 +10,11 @@ p,
     font-size: 14px !important;
 }
 
-
+.weui-tabbar__icon {
+    font{
+        padding:2px;
+    }
+}
 
 .weui-flex__item {
     line-height: 2;
