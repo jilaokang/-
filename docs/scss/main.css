@@ -107,6 +107,10 @@ body {
   padding: 2px;
 }
 
+#buy #goods .weui-flex {
+  border-bottom: 3px solid #f3f3f3;
+}
+
 #buy #goods .weui-flex__item {
   padding: 3px;
 }

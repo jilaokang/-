@@ -37,6 +37,9 @@
 #buy {
     #goods {
         padding: 2px;
+        .weui-flex{
+            border-bottom: 3px solid $style-color__bg;
+        }
         .weui-flex__item {
             padding: 3px;
             img {
