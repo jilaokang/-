@@ -5,10 +5,14 @@ html(lang='en')
         +conf("二手市场")
 
     body(ontouchstart)
-        
+        script.
+            window.onload =function (){
+                weui.searchBar('#searchBar');
+            }
+
         .weui-tab
             .weui-tab__panel    
-                #search_bar.weui-search-bar
+                #searchBar.weui-search-bar
                     form.weui-search-bar__form
                         .weui-search-bar__box
                             i.weui-icon-search

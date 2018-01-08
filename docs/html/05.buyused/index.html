@@ -15,9 +15,15 @@
     <title>二手市场</title>
   </head>
   <body ontouchstart>
+    <script>
+      window.onload =function (){
+          weui.searchBar('#searchBar');
+      }
+      
+    </script>
     <div class="weui-tab">
       <div class="weui-tab__panel">   
-        <div id="search_bar" class="weui-search-bar">
+        <div id="searchBar" class="weui-search-bar">
           <form class="weui-search-bar__form">
             <div class="weui-search-bar__box"><i class="weui-icon-search"></i>
               <input id="search_input" type="search" placeholder="搜索" class="weui-search-bar__input"><a id="search_clear" href="javascript:" class="weui-icon-clear"></a>
