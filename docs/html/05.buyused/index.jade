@@ -1,36 +1,48 @@
+doctype html
 include ../common/mixin.jade
-<!DOCTYPE html>
-head
-    +conf("二手市场")
+html(lang='en')
+    head
+        +conf("二手市场")
 
-body(ontouchstart)
-    
-    .weui-tab
-        .weui-tab__panel    
-            #weui-search-bar.search_bar
-                form.weui-search-bar__form
-                    .weui-search-bar__box
-                        i.weui-icon-search
-                        input#search_input.weui-search-bar__input(type="search",placeholder="搜索")
-                        a#search_clear.weui-icon-clear(href="http://")
-                    label#search_text.weui-search-bar__label(for="search_input")
-                        i.weui-icon-search
-                        span 搜索
-                a#search_cancel.weui-search-bar__cancel-btn(href="http://")
-            #search_show.weui-cells.weui-cells_access.search_show
-                .weui-cell
-                    .weui-cell__bd.weui-cell_primary
+    body(ontouchstart)
+        
+        .weui-tab
+            .weui-tab__panel    
+                #search_bar.weui-search-bar
+                    form.weui-search-bar__form
+                        .weui-search-bar__box
+                            i.weui-icon-search
+                            input#search_input.weui-search-bar__input(type='search', placeholder='搜索')
+                            a#search_clear.weui-icon-clear(href='javascript:')
+                        label#search_text.weui-search-bar__label(for='search_input')
+                            i.weui-icon-search
+                            span 搜索
+                    a#search_cancel.weui-search-bar__cancel-btn(href='javascript:') 取消
+
+                #search_show.weui-cells.weui-cells_access.search_show
+                    .weui-cell
+                        .weui-cell__bd.weui-cell_primary
+                        p 实时搜索文本
+                    .weui-cell
+                        .weui-cell__bd.weui-cell_primary
+                        p 实时搜索文本
+                    .weui-cell
+                        .weui-cell__bd.weui-cell_primary
+                        p 实时搜索文本
+                    .weui-cell
+                        .weui-cell__bd.weui-cell_primary
                         p 实时搜索文本
 
-            +footer
-        .weui-tabbar
-            a.weui-tabbar__item.weui-bar__item_on
-                embed.weui-tabbar__icon(src="img/商城.svg")
-                p.weui-tabbar__label 购物
-            a.weui-tabbar__item.weui-bar__item_on
-                embed.weui-tabbar__icon(src="img/订单.svg")
-                p.weui-tabbar__label 订单
-                                        
 
-    
-                    
+                +footer
+            .weui-tabbar
+                a.weui-tabbar__item.weui-bar__item_on
+                    embed.weui-tabbar__icon(src="img/商城.svg")
+                    p.weui-tabbar__label 购物
+                a.weui-tabbar__item.weui-bar__item_on
+                    embed.weui-tabbar__icon(src="img/订单.svg")
+                    p.weui-tabbar__label 订单
+                                            
+
+        
+                        
