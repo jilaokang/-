@@ -49,6 +49,14 @@
   border-right: 3px solid #f3f3f3;
 }
 
+#buy #goods .weui-flex__item span:first-child {
+  background: #ec3535ea;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+
 #buy .iconfont {
   font-size: 24px;
 }

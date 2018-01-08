@@ -48,6 +48,15 @@
             &:first-child {
                 border-right: 3px solid $style-color__bg;
             }
+            span{
+                &:first-child{
+                    background: #ec3535ea;
+                    color:white;
+                    font-size:12px;
+                    border-radius: 5px;
+                    padding: 2px 4px;
+                }
+            }
         }
     }
     .iconfont{
