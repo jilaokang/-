@@ -31,6 +31,8 @@ AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
         path: vm.path
     }]);
 
+
+
     //对第一条线路（即索引 0）创建一个巡航器
     var navg1 = pathSimplifierIns.createPathNavigator(0, {
         loop: true, //循环播放
