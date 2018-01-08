@@ -1,4 +1,4 @@
-let sb = new Promise((resolve, reject) => {
+let json = new Promise((resolve, reject) => {
     try {
         $.getJSON("data.json", function (result) {
             resolve(result)

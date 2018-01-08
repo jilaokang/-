@@ -6,7 +6,7 @@ var vm = new Vue({
     },
     methods: {
         chioce: function () {
-            sb.then(value => {
+            json.then(value => {
                 console.log(value);
                 if (route_en_time === 'am') {
                     this.active = value.bus.am[route_en_route].info;
