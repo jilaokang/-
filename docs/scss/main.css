@@ -99,6 +99,10 @@ body {
   width: 60px;
 }
 
+#search_show {
+  margin-top: 0;
+}
+
 .card {
   border-radius: 3px;
 }
