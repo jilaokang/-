@@ -4,13 +4,16 @@ p,
 .weui-article,
 .weui-flex__item,
 .weui-flex-two__sm,
-.weui-tabbar__label,
-.weui-tabbar__icon p {
+.weui-tabbar__label {
   font-size: 14px !important;
 }
 
 .weui-tabbar__icon font {
   padding: 2px;
+}
+
+.weui-tabbar__icon p {
+  font-size: 12px !important;
 }
 
 .weui-flex__item {

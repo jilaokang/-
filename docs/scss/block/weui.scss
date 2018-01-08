@@ -5,14 +5,16 @@ p,
 .weui-article,
 .weui-flex__item,
 .weui-flex-two__sm,
-.weui-tabbar__label,
-.weui-tabbar__icon p {
+.weui-tabbar__label {
     font-size: 14px !important;
 }
 
 .weui-tabbar__icon {
-    font{
-        padding:2px;
+    font {
+        padding: 2px;
+    }
+    p {
+        font-size: 12px !important;
     }
 }
 
@@ -31,7 +33,7 @@ p,
 // 去除高德地图Logo 对不起，o(╥﹏╥)o
 .amap-logo,
 .amap-copyright {
-    display: none !important; 
+    display: none !important;
 }
 
 article,
@@ -71,7 +73,6 @@ body {
     background: $style-color__blue !important;
 }
 
-#search_show{
+#search_show {
     margin-top: 0;
 }
-
