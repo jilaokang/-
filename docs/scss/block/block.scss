@@ -52,6 +52,14 @@
         text-align: center;
         background: $style-color__blue__Light;
     }
+    .fliter{
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+        -webkit-filter: blur(10px); /* Chrome, Opera */
+           -moz-filter: blur(10px);
+            -ms-filter: blur(10px);    
+                filter: blur(10px);
+    }
     #rightNav {
         display: none;
         width: 30%;
@@ -61,7 +69,7 @@
         padding: 50px 30px;
         padding-top: 200px;
         background: $style-color__yellow;
-        z-index: 999;
+        z-index: 999; 
         li {
             list-style: none !important;
             a {

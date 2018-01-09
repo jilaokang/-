@@ -25,4 +25,8 @@ $(document).ready(function () {
     
 
     $("#rightNav").hide();
+
+    $("#ceshi").click(function(){
+        $("#pages1").addClass("fliter");
+    });
 });
