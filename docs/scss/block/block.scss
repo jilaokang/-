@@ -42,18 +42,19 @@
         }
     }
     #menuButton {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         background: $style-color__blue;
-        position: fixed;
-        right: 0;
+        position: absolute;
+        float: right;
         border-radius: 5px;
-     font{
-         color: white;
-         text-align: center;
-         line-height: 30px;
-     }
-        
+        right: 10px;
+        bottom: 80px;
+        text-align: center;
+        font {
+            color: white;
+            line-height: 40px;
+        }
     }
     #rightNav {
         display: none;

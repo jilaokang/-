@@ -111,18 +111,20 @@ body {
 }
 
 #buy #menuButton {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background: #2981D9;
-  position: fixed;
-  right: 0;
+  position: absolute;
+  float: right;
   border-radius: 5px;
+  right: 10px;
+  bottom: 80px;
+  text-align: center;
 }
 
 #buy #menuButton font {
   color: white;
-  text-align: center;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 #buy #rightNav {
