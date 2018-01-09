@@ -13,6 +13,7 @@ $(document).ready(function () {
         $("#icon1").removeClass("activeIcon");
         $("#pages1").hide();
         $("#pages2").show();
+        $("#rightNav").hide();
         console.log("icon2 clicked")
     })
 
