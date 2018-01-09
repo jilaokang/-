@@ -19,15 +19,15 @@ $(document).ready(function () {
 
     $("#menuButton").click(function () {
         $("#rightNav").fadeIn();
+        $("#pages1").addClass("fliter");
     })
     $("#rightNav").on('click', function () {
         $("#rightNav").fadeOut();
+        $("#pages1").removeClass("fliter");
     });
-    
+
 
     $("#rightNav").hide();
 
-    $("#ceshi").click(function(){
-        $("#pages1").addClass("fliter");
-    });
+
 });

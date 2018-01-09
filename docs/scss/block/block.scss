@@ -54,12 +54,7 @@
     }
     .fliter {
         filter: url(blur.svg#blur);
-        /* FireFox, Chrome, Opera */
-        -webkit-filter: blur(10px);
-        /* Chrome, Opera */
-        -moz-filter: blur(10px);
-        -ms-filter: blur(10px);
-        filter: blur(10px);
+        filter: blur(30px);
     }
     #rightNav {
         display: none;
@@ -71,8 +66,9 @@
         padding-top: 200px;
         background: $style-color__blue;
         z-index: 3;
+        opacity: 0.8;
         li {
-            list-style: none !important;
+            list-style: none !important;        
             a {
                 line-height: 3;
                 font-weight: 800;

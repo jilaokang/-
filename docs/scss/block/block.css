@@ -48,12 +48,7 @@
 
 #buy .fliter {
   filter: url(blur.svg#blur);
-  /* FireFox, Chrome, Opera */
-  -webkit-filter: blur(10px);
-  /* Chrome, Opera */
-  -moz-filter: blur(10px);
-  -ms-filter: blur(10px);
-  filter: blur(10px);
+  filter: blur(30px);
 }
 
 #buy #rightNav {
@@ -66,6 +61,7 @@
   padding-top: 200px;
   background: #2981D9;
   z-index: 3;
+  opacity: 0.8;
 }
 
 #buy #rightNav li {
