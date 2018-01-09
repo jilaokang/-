@@ -19,7 +19,9 @@ $(document).ready(function () {
     $("#menuButton").click(function () {
         $("#rightNav").fadeIn();
     })
-
+    $("#rightNav").on('click', function () {
+        $("#rightNav").hide();
+    });
     
 
     $("#rightNav").hide();
