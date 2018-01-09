@@ -15,4 +15,11 @@ $(document).ready(function () {
         $("#pages2").show();
         console.log("icon2 clicked")
     })
+
+
+    $("#menuButton").click(function(){
+        $("#rightNav").fadeIn();
+    })
+    $("#rightNav").hide();
 });
+
