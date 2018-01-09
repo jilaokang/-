@@ -110,6 +110,21 @@ body {
   color: #2981D9;
 }
 
+#buy #menuButton {
+  width: 30px;
+  height: 30px;
+  background: #2981D9;
+  position: fixed;
+  right: 0;
+  border-radius: 5px;
+}
+
+#buy #menuButton font {
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
 #buy #rightNav {
   display: none;
   width: 30%;

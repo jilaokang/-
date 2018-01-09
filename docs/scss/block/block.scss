@@ -41,6 +41,20 @@
             color: $style-color__blue;
         }
     }
+    #menuButton {
+        width: 30px;
+        height: 30px;
+        background: $style-color__blue;
+        position: fixed;
+        right: 0;
+        border-radius: 5px;
+     font{
+         color: white;
+         text-align: center;
+         line-height: 30px;
+     }
+        
+    }
     #rightNav {
         display: none;
         width: 30%;
