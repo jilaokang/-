@@ -140,7 +140,8 @@ body {
 
 #buy #rightNav li a {
   line-height: 3;
-  letter-spacing: 2px;
+  font-weight: 800;
+  letter-spacing: 3px;
   color: white;
 }
 
