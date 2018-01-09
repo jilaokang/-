@@ -16,10 +16,11 @@ $(document).ready(function () {
         console.log("icon2 clicked")
     })
 
-
-    $("#menuButton").click(function(){
+    $("#menuButton").click(function () {
         $("#rightNav").fadeIn();
     })
+
+    
+
     $("#rightNav").hide();
 });
-
