@@ -137,12 +137,11 @@ body {
   padding-top: 200px;
   background: #2981D9;
   z-index: 3;
-  opacity: 0.3;
+  opacity: 0.9;
 }
 
 #buy #rightNav li {
   list-style: none !important;
-  opacity: 1;
 }
 
 #buy #rightNav li a {
