@@ -141,7 +141,7 @@ body {
   padding: 50px 30px;
   padding-top: 200px;
   background: #f1c71f;
-  z-index: 999;
+  z-index: 3;
 }
 
 #buy #rightNav li {
