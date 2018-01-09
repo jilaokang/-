@@ -42,21 +42,14 @@
         }
     }
     #menuButton {
-        width: 40px;
-        height: 40px;
-        background: $style-color__blue;
-        position: absolute;
-        float: right;
-        border-radius: 5px;
-        right: 10px;
-        bottom: 80px;
+        color: white;
+        padding: 0 6px;
+        margin-left: 8px;
+        font-size: 20px;
+        font-weight: 800;
         text-align: center;
-
-        opacity: 0.8;
-        font {
-            color: white;
-            line-height: 40px;
-        }
+        border-radius: 5px;
+        background: $style-color__blue;
     }
     #rightNav {
         display: none;

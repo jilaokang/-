@@ -35,21 +35,14 @@
 }
 
 #buy #menuButton {
-  width: 40px;
-  height: 40px;
-  background: #2981D9;
-  position: absolute;
-  float: right;
-  border-radius: 5px;
-  right: 10px;
-  bottom: 80px;
-  text-align: center;
-  opacity: 0.8;
-}
-
-#buy #menuButton font {
   color: white;
-  line-height: 40px;
+  padding: 0 6px;
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 5px;
+  background: #2981D9;
 }
 
 #buy #rightNav {
