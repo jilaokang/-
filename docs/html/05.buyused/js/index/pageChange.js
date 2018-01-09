@@ -20,7 +20,7 @@ $(document).ready(function () {
         $("#rightNav").fadeIn();
     })
     $("#rightNav").on('click', function () {
-        $("#rightNav").hide();
+        $("#rightNav").fadeOut();
     });
     
 
