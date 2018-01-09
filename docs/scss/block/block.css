@@ -29,14 +29,20 @@
   width: 60px;
 }
 
+#buy .activeIcon p,
+#buy .activeIcon font {
+  color: #2981D9;
+}
+
 #buy #rightNav {
+  display: none;
   width: 30%;
   height: 100%;
   position: fixed;
   right: 0;
   padding: 50px 30px;
   padding-top: 200px;
-  background: #ffb005;
+  background: #ff1605;
   z-index: 999;
 }
 

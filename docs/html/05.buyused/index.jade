@@ -17,85 +17,92 @@ html(lang='en')
 
         .weui-tab
             .weui-tab__panel 
-                #rightNav
-                    ul
-                        li 
-                            a(href="#") 二手易购
-                        li 
-                            a(href="#") 优惠拼团
-                        li 
-                            a(href="#") 技能小铺
-                        li 
-                            a(href="#") 武院纪念品
 
 
-                #searchBar.weui-search-bar
-                    form.weui-search-bar__form
-                        .weui-search-bar__box
-                            i.weui-icon-search
-                            input#search_input.weui-search-bar__input(type='search', placeholder='搜索')
-                            a#search_clear.weui-icon-clear(href='javascript:')
-                        label#search_text.weui-search-bar__label(for='search_input')
-                            i.weui-icon-search
-                            span 搜索
-                    a#search_cancel.weui-search-bar__cancel-btn(href='javascript:') 取消
+                #pages1
+                    #rightNav
+                        ul
+                            li 
+                                a(href="#") 二手易购
+                            li 
+                                a(href="#") 优惠拼团
+                            li 
+                                a(href="#") 技能小铺
+                            li 
+                                a(href="#") 武院纪念品
 
-                #search_show.weui-cells.weui-cells_access.search_show(style="display:none")
-                    .weui-cell
-                        .weui-cell__bd.weui-cell_primary
-                        p 实时搜索文本
-                    .weui-cell
-                        .weui-cell__bd.weui-cell_primary
-                        p 实时搜索文本
-                    .weui-cell
-                        .weui-cell__bd.weui-cell_primary
-                        p 实时搜索文本
-                    .weui-cell
-                        .weui-cell__bd.weui-cell_primary
-                        p 实时搜索文本
 
-                .weui-cells__title Goods
+                    #searchBar.weui-search-bar
+                        form.weui-search-bar__form
+                            .weui-search-bar__box
+                                i.weui-icon-search
+                                input#search_input.weui-search-bar__input(type='search', placeholder='搜索')
+                                a#search_clear.weui-icon-clear(href='javascript:')
+                            label#search_text.weui-search-bar__label(for='search_input')
+                                i.weui-icon-search
+                                span 搜索
+                        a#search_cancel.weui-search-bar__cancel-btn(href='javascript:') 取消
 
-                #goods
-                    .weui-flex
-                        .weui-flex__item 
-                            img(src="img/good1.jpg")
-                            div
-                                span 全新
-                                span 小米MIX2無邊框
-                                span 3699
-                        .weui-flex__item                         
-                            img(src="img/good2.jpg")
-                            div
-                                span#new 全新
-                                span#new2 小米淨化器3.0
-                                span 1599
-                    .weui-flex
-                        .weui-flex__item 
-                            img(src="img/good3.jpg")
-                            div
-                                span 全新
-                                span 小米筆記本
-                                span 5499
-                        .weui-flex__item                         
-                            img(src="img/good4.jpg" )                            
-                            div
-                                span 全新
-                                span 小米電視2.0愛戀版
-                                span 3799
-                          
+                    #search_show.weui-cells.weui-cells_access.search_show(style="display:none")
+                        .weui-cell
+                            .weui-cell__bd.weui-cell_primary
+                            p 实时搜索文本
+                        .weui-cell
+                            .weui-cell__bd.weui-cell_primary
+                            p 实时搜索文本
+                        .weui-cell
+                            .weui-cell__bd.weui-cell_primary
+                            p 实时搜索文本
+                        .weui-cell
+                            .weui-cell__bd.weui-cell_primary
+                            p 实时搜索文本
+
+                    .weui-cells__title Goods
+
+                    #goods
+                        .weui-flex
+                            .weui-flex__item 
+                                img(src="img/good1.jpg")
+                                div
+                                    span 全新
+                                    span 小米MIX2無邊框
+                                    span 3699
+                            .weui-flex__item                         
+                                img(src="img/good2.jpg")
+                                div
+                                    span#new 全新
+                                    span#new2 小米淨化器3.0
+                                    span 1599
+                        .weui-flex
+                            .weui-flex__item 
+                                img(src="img/good3.jpg")
+                                div
+                                    span 全新
+                                    span 小米筆記本
+                                    span 5499
+                            .weui-flex__item                         
+                                img(src="img/good4.jpg" )                            
+                                div
+                                    span 全新
+                                    span 小米電視2.0愛戀版
+                                    span 3799
+
+
+                #pages2
+                    h1 测试
+
                 +footer
 
-            
 
             .weui-tabbar
-                a.weui-tabbar__item
+                a#icon1.weui-tabbar__item
                     font.iconfont.icon-mall.weui-tabbar__icon
                     p.weui-tabbar__label 购物
-                a.weui-tabbar__item
+                a#icon2.weui-tabbar__item
                     font.iconfont.icon-me.weui-tabbar__icon
                     p.weui-tabbar__label 个人心中
 
+            script(src="js/index/pageChange.js")
 
 
 
