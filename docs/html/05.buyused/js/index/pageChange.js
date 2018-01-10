@@ -18,10 +18,10 @@ $(document).ready(function () {
     })
 
     $("#menuButton").click(function () {
-        $("#rightNav").slideDown("slow");
+        $("#rightNav").slideDown("1500");
     })
     $("#rightNav").on('click', function () {
-        $("#rightNav").slideUp("slow");
+        $("#rightNav").slideUp("1500");
     });
     $("#rightNav").hide();
 });
