@@ -56,7 +56,7 @@
   width: 25%;
   position: fixed;
   right: 0;
-  padding: 80px 30px;
+  padding: 80px 30px 10px 30px;
   background: #2981D9;
   z-index: 3;
   border-radius: 0 0 0 8px;
@@ -73,6 +73,12 @@
   font-weight: 800;
   letter-spacing: 2px;
   color: white;
+}
+
+#buy #rightNav li a font {
+  font-size: 2.5em;
+  margin-top: 30px;
+  color: rgba(255, 254, 254, 0.1);
 }
 
 #buy #goods {
