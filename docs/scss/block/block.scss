@@ -58,15 +58,15 @@
     }
     #rightNav {
         display: none;
-        width: 30%;
-        height: 100%;
+        width: 25%;
+      
         position: fixed;
         right: 0;
-        padding: 50px 30px;
-        padding-top: 200px;
+        padding: 80px 30px; 
         background: $style-color__blue;
         z-index: 3;
-        opacity: 0.9;
+        opacity: 0.95;
+        border-radius:0 0 0 8px; 
         li {
             list-style: none !important;        
             a {
