@@ -19,7 +19,7 @@
     <link href="scss\main.css" rel="stylesheet">
 
     <!-- jQuery -->
-    <script  src="lib/jquery/jquery.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
 
 
 
@@ -41,18 +41,18 @@
                         // 消息轮播版块，与轮播条数无关
                         var a_list = 1;
                         var a_sum = $("#wel a").length;
-                        setInterval(function() {
-                            $( $("#wel a")[a_list-1]).fadeOut(0);
-                            $( $("#wel a")[a_list]  ).fadeIn(300);
+                        setInterval(function () {
+                            $($("#wel a")[a_list - 1]).fadeOut(0);
+                            $($("#wel a")[a_list]).fadeIn(300);
 
                             a_list++;
-                            
-                            if(a_list > a_sum){
+
+                            if (a_list > a_sum) {
                                 a_list = 0;
-                                $( $("#wel a")[a_sum-1]).fadeOut(0);
-                                $( $("#wel a")[0]).fadeIn(300);
+                                $($("#wel a")[a_sum - 1]).fadeOut(0);
+                                $($("#wel a")[0]).fadeIn(300);
                             }
-                        } ,3800); 
+                        }, 3800);
                     </script>
 
                 </div>
@@ -95,8 +95,8 @@
             </div>
             <div class="weui-flex__item">
                 <a href="docs/html/05.buyused/index.html">
-                <font class="iconfont icon-svgmoban06" color="#ff925E"></font>
-                <p>二手市场</p>
+                    <font class="iconfont icon-svgmoban06" color="#ff925E"></font>
+                    <p>二手市场</p>
                 </a>
             </div>
             <div class="weui-flex__item">
@@ -129,10 +129,8 @@
         <div class="weui-flex">
 
             <div class="weui-flex__item">
-                <a href="docs/html/41.leave/index.html">
-                    <font class="iconfont icon-qingjia" color="#194945"></font>
-                    <p>请假申请</p>
-                </a>
+                <font class="iconfont icon-qingjia"></font>
+                <p>请假申请</p>
             </div>
             <div class="weui-flex__item">
                 <font class="iconfont icon-jiangxuejin"></font>
@@ -140,7 +138,7 @@
             </div>
             <div class="weui-flex__item">
                 <font class="iconfont icon-icon1"></font>
-                <p>教室借用</p>  
+                <p>教室借用</p>
             </div>
         </div>
 
