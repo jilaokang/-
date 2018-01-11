@@ -257,6 +257,18 @@ body {
   font-size: 24px;
 }
 
+#collect .goodimg {
+  padding-right: 15px;
+}
+
+#collect .goodimg img {
+  width: 80px;
+}
+
+#collect .weui-flex {
+  text-align: right;
+}
+
 .card {
   border-radius: 3px;
   border: 1px solid #eee;

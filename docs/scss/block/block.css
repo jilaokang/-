@@ -180,4 +180,16 @@
 #buy .iconfont {
   font-size: 24px;
 }
+
+#collect .goodimg {
+  padding-right: 15px;
+}
+
+#collect .goodimg img {
+  width: 80px;
+}
+
+#collect .weui-flex {
+  text-align: right;
+}
 /*# sourceMappingURL=block.css.map */

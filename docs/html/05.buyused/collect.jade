@@ -2,6 +2,7 @@ include ../common/mixin.jade
 head
     +conf("收藏列表")
 body
+#collect
     +com-title("我的收藏")
     .weui-form-preview
             .weui-form-preview__hd
@@ -9,8 +10,8 @@ body
                 em.weui-form-preview__value ¥2400.00
             .weui-form-preview__bd
                 .weui-flex
-                    .aa
-                        img(src="img/test.png", alt="",width="50px")
+                    .goodimg
+                        img(src="img/test.png")
                     .weui-flex__item
                         p
                             label.weui-form-preview__label 商品
