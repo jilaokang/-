@@ -264,6 +264,10 @@ body {
   font-size: 24px;
 }
 
+#good img {
+  width: 100%;
+}
+
 .card {
   border-radius: 3px;
   border: 1px solid #eee;
