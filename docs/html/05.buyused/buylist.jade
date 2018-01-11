@@ -1,11 +1,9 @@
 include ../common/mixin.jade
 head
     +conf("订单列表")
-body
-#collect    
+body 
     +com-title("历史订单","返回主页","index.html")    
-    .weui-cells__title 进行中
-    .container
+    .container#gooddet
         .weui-form-preview
                 .weui-form-preview__hd
                     label.weui-form-preview__label 标示价格
@@ -25,7 +23,7 @@ body
                     a.weui-form-preview__btn.weui-form-preview__btn_primary(href='javascript:') 查看                   
 
     .weui-cells__title 已结束
-    .container     
+    .container#gooddet     
         .weui-form-preview
                 .weui-form-preview__hd
                     label.weui-form-preview__label 标示价格
