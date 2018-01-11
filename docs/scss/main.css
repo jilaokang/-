@@ -268,6 +268,23 @@ body {
   width: 100%;
 }
 
+#updatagood {
+  background: #F1C71F !important;
+}
+
+#updatagood span {
+  font-size: 30px;
+  color: #E74C3C;
+}
+
+#updatagood span:last-child {
+  float: right;
+}
+
+#updatagood .iconfont {
+  font-size: 2em;
+}
+
 .card {
   border-radius: 3px;
   border: 1px solid #eee;
