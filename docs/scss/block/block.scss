@@ -32,6 +32,13 @@
         font-weight: 800;
         width: 60px;
     }
+    .weui-input,.weui-select{
+        color: $style-color__blue !important;
+        font-weight: 800;
+    }
+    .weui-label{
+        color:$style-color__grey !important;
+    }
 }
 
 #buy {

@@ -29,6 +29,15 @@
   width: 60px;
 }
 
+#bus .weui-input, #bus .weui-select {
+  color: #2981D9 !important;
+  font-weight: 800;
+}
+
+#bus .weui-label {
+  color: #999999 !important;
+}
+
 #buy .activeIcon p,
 #buy .activeIcon font {
   color: #2981D9;
