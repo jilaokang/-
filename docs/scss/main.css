@@ -366,6 +366,7 @@ footer p {
 
 #gooddet .weui-form-preview {
   border: 1px solid #eee;
+  border-radius: 3px;
   margin-bottom: 15px;
 }
 
