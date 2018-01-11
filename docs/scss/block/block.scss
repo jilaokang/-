@@ -144,13 +144,16 @@
             &:first-child {
                 border-right: 3px solid $style-color__bg;
             }
+            a{
+                color: $style-color__black !important;
+            }
             div {
                 padding: 0 8px 8px 8px;
                 text-align: left !important;
                 span {
                     text-align: left !important;
                     &:first-child {
-                        background: #ecd035;
+                        background: #ec4a35;
                         color: white;
                         font-size: 12px;
                         border-radius: 5px;

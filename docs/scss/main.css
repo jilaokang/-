@@ -232,6 +232,10 @@ body {
   border-right: 3px solid #f3f3f3;
 }
 
+#buy #goods .weui-flex__item a {
+  color: #424242 !important;
+}
+
 #buy #goods .weui-flex__item div {
   padding: 0 8px 8px 8px;
   text-align: left !important;
@@ -242,7 +246,7 @@ body {
 }
 
 #buy #goods .weui-flex__item div span:first-child {
-  background: #ecd035;
+  background: #ec4a35;
   color: white;
   font-size: 12px;
   border-radius: 5px;
