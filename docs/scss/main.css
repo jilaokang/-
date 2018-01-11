@@ -392,6 +392,10 @@ footer p {
   content: none;
 }
 
+#gooddet .weui-form-preview:last-child {
+  margin-bottom: 0;
+}
+
 #gooddet .weui-form-preview__btn {
   color: #2981D9;
   font-weight: 800;

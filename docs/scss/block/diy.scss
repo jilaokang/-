@@ -95,6 +95,9 @@ footer {
         &::after {
             content: none;
         }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     .weui-form-preview__btn {
         color: $style-color__blue;
