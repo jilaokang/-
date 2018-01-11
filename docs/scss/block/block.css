@@ -68,22 +68,20 @@
 }
 
 #buy #portrait .weui-flex__item__extend {
-  width: 80px;
-  height: 58px;
-  padding-right: 20px;
   text-align: right;
 }
 
 #buy #portrait .weui-flex__item__extend img {
-  border-radius: 50px;
+  border-radius: 70px;
   border: 3px solid white;
-  width: 58px;
+  width: 70px;
 }
 
 #buy #portrait .weui-flex__item:last-child {
   height: 58px;
   background: #2981D9 !important;
   text-align: left;
+  padding: 10px 20px;
 }
 
 #buy #portrait .weui-flex__item:last-child a {
