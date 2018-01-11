@@ -139,7 +139,7 @@ body {
 
 #buy #portrait {
   background: #2981D9;
-  padding: 40px 30px;
+  padding: 40px 40px;
   overflow: hiadden;
 }
 
@@ -165,7 +165,6 @@ body {
 #buy #portrait .weui-flex__item:last-child a {
   font-size: 16px;
   color: white;
-  line-height: 95px;
 }
 
 #buy #uploader .weui-cell {
