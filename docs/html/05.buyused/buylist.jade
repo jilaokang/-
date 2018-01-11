@@ -2,58 +2,61 @@ include ../common/mixin.jade
 head
     +conf("订单列表")
 body
-    
+#collect    
     .weui-cells__title 进行中
     .container
-        .card-small
-            #road.box
-                .weui-flex
-                    .weui-flex__item 全新IPad Air2出售 
-                        span ￥20.0
-                .weui-flex
-                    .weui-flex__item 张三 18086407838  
-                        
-        .card-small
-            #road.box
-                .weui-flex
-                    .weui-flex__item 手把手教PS 
-                        span ￥5.0 
-                .weui-flex
-                    .weui-flex__item 王五 18086406666                      
+        .weui-form-preview
+                .weui-form-preview__hd
+                    label.weui-form-preview__label 标示价格
+                    em.weui-form-preview__value ¥2400.00
+                .weui-form-preview__bd
+                    .weui-flex
+                        .goodimg
+                            img(src="img/good1.jpg")
+                        .weui-flex__item
+                            p
+                                label.weui-form-preview__label 商品
+                                span.weui-form-preview__value 黄冈密卷
+                            p
+                                label.weui-form-preview__label 商品描述
+                                span.weui-form-preview__value 从狙击手手里抢的期末试卷出售
+                .weui-form-preview__ft
+                    a.weui-form-preview__btn.weui-form-preview__btn_primary(href='javascript:') 查看                   
 
     .weui-cells__title 已结束
     .container     
         .weui-form-preview
-            .weui-form-preview__hd
-                label.weui-form-preview__label 标示价格
-                em.weui-form-preview__value ¥2400.00
-            .weui-form-preview__bd
-                p
-                label.weui-form-preview__label 商品
-                span.weui-form-preview__value 山东烧饼
-                p
-                label.weui-form-preview__label 时间
-                span.weui-form-preview__value 2018年1月11日
-                p
-                label.weui-form-preview__label 商品描述
-                span.weui-form-preview__value 好吃美味，山东特产吧唧吧唧
-            .weui-form-preview__ft
-                a.weui-form-preview__btn.weui-form-preview__btn_primary(href='javascript:') 查看 
+                .weui-form-preview__hd
+                    label.weui-form-preview__label 标示价格
+                    em.weui-form-preview__value ¥2400.00
+                .weui-form-preview__bd
+                    .weui-flex
+                        .goodimg
+                            img(src="img/good2.jpg")
+                        .weui-flex__item
+                            p
+                                label.weui-form-preview__label 商品
+                                span.weui-form-preview__value 黄冈密卷
+                            p
+                                label.weui-form-preview__label 商品描述
+                                span.weui-form-preview__value 从狙击手手里抢的期末试卷出售
+                .weui-form-preview__ft
+                    a.weui-form-preview__btn.weui-form-preview__btn_primary(href='javascript:') 查看 
         .weui-form-preview
-            .weui-form-preview__hd
-                label.weui-form-preview__label 标示价格
-                em.weui-form-preview__value ¥2400.00
-            .weui-form-preview__bd
-                p
-                label.weui-form-preview__label 商品
-                span.weui-form-preview__value 黄冈密卷
-                p
-                label.weui-form-preview__label 时间
-                span.weui-form-preview__value 2018年1月11日
-                p
-                label.weui-form-preview__label 商品描述
-                span.weui-form-preview__value 明天要考试，我还没复习
-            .weui-form-preview__ft
-                a.weui-form-preview__btn.weui-form-preview__btn_primary(href='javascript:') 查看
-                                                            
+                .weui-form-preview__hd
+                    label.weui-form-preview__label 标示价格
+                    em.weui-form-preview__value ¥2400.00
+                .weui-form-preview__bd
+                    .weui-flex
+                        .goodimg
+                            img(src="img/test.png")
+                        .weui-flex__item
+                            p
+                                label.weui-form-preview__label 商品
+                                span.weui-form-preview__value 黄冈密卷
+                            p
+                                label.weui-form-preview__label 商品描述
+                                span.weui-form-preview__value 从狙击手手里抢的期末试卷出售
+                .weui-form-preview__ft
+                    a.weui-form-preview__btn.weui-form-preview__btn_primary(href='javascript:') 查看                                                             
     +footer
