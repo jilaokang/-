@@ -105,7 +105,8 @@ body {
   width: 60px;
 }
 
-#bus .weui-input, #bus .weui-select {
+#bus .weui-input,
+#bus .weui-select {
   color: #2981D9 !important;
   font-weight: 800;
 }
@@ -143,8 +144,8 @@ body {
 }
 
 #buy #portrait .weui-flex__item__extend {
-  height: 58px;
   width: 80px;
+  height: 58px;
   padding-right: 20px;
   text-align: right;
 }
@@ -164,7 +165,7 @@ body {
 #buy #portrait .weui-flex__item:last-child a {
   font-size: 16px;
   color: white;
-  line-height: 80px;
+  line-height: 95px;
 }
 
 #buy #rightNav {

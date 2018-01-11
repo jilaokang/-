@@ -32,12 +32,13 @@
         font-weight: 800;
         width: 60px;
     }
-    .weui-input,.weui-select{
+    .weui-input,
+    .weui-select {
         color: $style-color__blue !important;
         font-weight: 800;
     }
-    .weui-label{
-        color:$style-color__grey !important;
+    .weui-label {
+        color: $style-color__grey !important;
     }
 }
 
@@ -68,25 +69,26 @@
         padding: 48px 20px;
         overflow: hiadden;
         .weui-flex__item__extend {
-            height: 58px;
             width: 80px;
+            height: 58px;
+            padding-right: 20px;
+            text-align: right;
             img {
                 border-radius: 50px;
                 border: 3px solid white;
                 width: 58px;
             }
-            padding-right: 20px;
-            text-align: right;
         }
         .weui-flex__item:last-child {
             height: 58px;
+            background: $style-color__blue__Light !important;
+            text-align: left;
             a {
                 font-size: 16px;
                 color: white;
-                line-height: 80px;
+                line-height: 95px;
+                
             }
-            background: $style-color__blue__Light !important;
-            text-align: left;
         }
     }
     #rightNav {
