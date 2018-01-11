@@ -138,7 +138,7 @@ body {
 
 #buy #portrait {
   background: #2981D9;
-  padding: 30px 20px;
+  padding: 48px 20px;
   overflow: hiadden;
 }
 
@@ -164,7 +164,7 @@ body {
 #buy #portrait .weui-flex__item:last-child a {
   font-size: 16px;
   color: white;
-  line-height: 58px;
+  line-height: 80px;
 }
 
 #buy #rightNav {
