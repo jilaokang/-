@@ -92,6 +92,10 @@
   line-height: 95px;
 }
 
+#buy #pages2 .weui-cells a {
+  width: 100%;
+}
+
 #buy #rightNav {
   display: none;
   width: 25%;
