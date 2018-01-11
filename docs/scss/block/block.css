@@ -196,14 +196,13 @@
   background: #F1C71F !important;
 }
 
-#updatagood span,
-#updatagood font {
+#updatagood span, #updatagood font {
   font-weight: 800;
   font-size: 30px;
   color: #E74C3C;
 }
 
-#updatagood font {
+#updatagood span:last-child, #updatagood font:last-child {
   float: right;
 }
 /*# sourceMappingURL=block.css.map */
