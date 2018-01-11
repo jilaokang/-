@@ -2,4 +2,68 @@ include ../common/mixin.jade
 head
     +conf("用户信息")
 body
+    .weui-cells
+        .weui-cell
+            .weui-cell__hd
+                label.weui-label 姓名
+            .weui-cell__bd
+                input.weui-input(name="base",value="钱博康")
+        .weui-cell
+            .weui-cell__hd 
+                label.weui-label 宿舍
+            .weui-cell__bd
+                input.weui-input(name="base", value="竹枫斋 4舍", readonly="readonly")
+        .weui-cell
+            .weui-cell__hd
+                label.weui-label 寝室号
+            .weui-cell__bd
+                input.weui-input(name="base", value="227")        
+        .weui-cell
+            .weui-cell__hd
+                label.weui-label 手机号
+            .weui-cell__bd
+                input.weui-input(name="tel", value="18086407838") 
+
+    .weui-btn-area
+        a.weui-btn.weui-btn_primary(onclick="Info()") 提交
+
+
+    script.
+        var net={ "base":"", "tel":"", "err":"" };
+
+
+        function getDorm(){
+            weui.picker([
+                { label: '桂檀斋'}, 
+                { label: '竹枫斋'},
+                { label: '椿萱斋'}, 
+                { label: '梅菊斋'}
+            ], [
+                { label: '1舍'}, 
+                { label: '2舍'}, 
+                { label: '3舍'},
+                { label: '4舍'}
+            ], {
+                onConfirm: function (result) {
+           
+                    var dorm=result[0].label;
+                    var dorm_num=result[1].label;
+
+                    var str = dorm +" "+dorm_num;
+                    base[1].value= str;
+                }
+            });
+        }
+
+        window.onload=function(){
+            // base 监听事件
+            base = document.getElementsByName("base");
+            base[1].onclick = getDorm;
+        }        
+
+  
+
+
+
+
     +footer

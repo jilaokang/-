@@ -259,6 +259,12 @@ body {
 
 .card {
   border-radius: 3px;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.card:last-child {
+  margin-bottom: 0;
 }
 
 .card .weui-flex:nth-child(even) {
@@ -277,6 +283,10 @@ body {
   width: 240px;
 }
 
+.card-small {
+  padding-bottom: 20px;
+}
+
 .card-small .box {
   box-shadow: 0px 0px 8px 2px #bbb;
   color: white;
@@ -290,10 +300,18 @@ body {
   line-height: 3;
 }
 
+.card-small .weui-flex__item span {
+  color: #F1C71F;
+}
+
 .card-small .weui-flex:first-child .weui-flex__item {
   background: white !important;
   color: #2981D9;
   font-weight: 800;
+}
+
+.card-small:last-child {
+  padding-bottom: 0;
 }
 
 #head-title {
