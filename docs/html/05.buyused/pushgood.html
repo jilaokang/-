@@ -14,6 +14,28 @@
   <title>商品发布</title>
 </head>
 <body>
+  <div class="weui-cells__title">商品名称</div>
+  <div class="weui-cells__title">商品描述</div>
+  <div class="weui-cells__title">商品类别</div>
+  <div class="weui-cells__title">商品图片</div>
+  <div id="uploader" class="weui-cells weui-cells_form">
+    <div class="weui-cell">
+      <div class="weui-cell__bd"></div>
+      <div class="weui-uploader">
+        <div class="weui-uploader__hd">
+          <p class="weui-uploader__title">图片上传</p>
+          <div class="weui-uploader__info"></div>
+        </div>
+        <div class="weui-uploader__bd">
+          <ul id="uploaderFiles" class="weui-uploader__files"></ul>
+        </div>
+        <div class="weui-uploader__input-box">
+          <input id="uploaderInput" type="file" accept="image/*" capture="camera" multiple="" class="weui-uploader__input"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="weui-btn-area"><a class="weui-btn weui-btn_primary">提交    </a></div>
   <footer class="weui-footer">
     <div>
       <p><a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
