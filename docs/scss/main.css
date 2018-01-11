@@ -168,6 +168,10 @@ body {
   line-height: 95px;
 }
 
+#buy #uploader .weui-cell {
+  text-align: left;
+}
+
 #buy #pages2 .weui-cells a {
   width: 100%;
 }

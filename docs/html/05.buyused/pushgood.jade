@@ -2,14 +2,31 @@ include ../common/mixin.jade
 head
     +conf("商品发布")
 body
-    .weui-cells__title 商品名称
-    .weui-cells__title 商品描述
     .weui-cells__title 商品类别
+    .weui-cells
+        .weui-cell
+            .weui-cell__hd
+                label.weui-label 商品类别
+            .weui-cell__bd
+                input.weui-input(name="err", placeholder="二手置换",readonly="readonly")
+
+    .weui-cells__title 商品名称
+    .weui-cells
+        .weui-cell
+            .weui-cell__bd
+                textarea.weui-textarea(placeholder="商品名称", rows="1")
+       
+    .weui-cells__title 商品描述
+    .weui-cells
+        .weui-cell
+            .weui-cell__bd
+                textarea.weui-textarea(placeholder="请输入商品描述...", rows="6")
+   
+
     .weui-cells__title 商品图片
 
     #uploader.weui-cells.weui-cells_form
         .weui-cell
-            .weui-cell__bd
             .weui-uploader
                 .weui-uploader__hd
                     p.weui-uploader__title 图片上传
