@@ -43,12 +43,43 @@
   border-radius: 3px;
   font-size: 24px;
   text-align: center;
-  background: rgba(41, 129, 217, 0.8);
+  background: #2981D9;
 }
 
 #buy .fliter {
   filter: url(blur.svg#blur);
   filter: blur(30px);
+}
+
+#buy #portrait {
+  background: #2981D9;
+  padding: 30px 20px;
+  overflow: hiadden;
+}
+
+#buy #portrait .weui-flex__item__extend {
+  height: 58px;
+  width: 80px;
+  padding-right: 20px;
+  text-align: right;
+}
+
+#buy #portrait .weui-flex__item__extend img {
+  border-radius: 50px;
+  border: 3px solid white;
+  width: 58px;
+}
+
+#buy #portrait .weui-flex__item:last-child {
+  height: 58px;
+  background: #2981D9 !important;
+  text-align: left;
+}
+
+#buy #portrait .weui-flex__item:last-child a {
+  font-size: 16px;
+  color: white;
+  line-height: 58px;
 }
 
 #buy #rightNav {
@@ -76,6 +107,7 @@
 }
 
 #buy #rightNav li a font {
+  font-weight: 300;
   font-size: 2.2em;
   margin-top: 30px;
   color: rgba(255, 254, 254, 0.2);

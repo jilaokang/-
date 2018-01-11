@@ -33,8 +33,6 @@ html(lang='en')
                             a
                                 font.icon-jiantoushang.iconfont
                 #pages1
-
-
                     #searchBar.weui-search-bar
                         form.weui-search-bar__form
                             .weui-search-bar__box
@@ -89,11 +87,31 @@ html(lang='en')
                                     span 全新
                                     span 小米電視2.0愛戀版
                                     span 3799
-
-              
-
+       
                 #pages2
-                    .weui-cells__title 我的订单
+                    #portrait
+                        .weui-flex
+                            .weui-flex__item__extend
+                                img(src="img/test.png", alt="", srcset="")
+                            .weui-flex__item
+                                a(href="http://") 帅气的大亮亮
+                        
+
+                    .weui-cells
+                        .weui-cell                             
+                            .weui-cell__hd
+                                label.weui-label 个人信息                    
+                        .weui-cell
+                            .weui-cell__hd
+                                label.weui-label 我的发布   
+                        .weui-cell                             
+                            .weui-cell__hd
+                                label.weui-label 我的订单
+                        .weui-cell                             
+                            .weui-cell__hd
+                                label.weui-label 收藏列表          
+
+               
                         
 
                 +footer

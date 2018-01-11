@@ -24,4 +24,6 @@ $(document).ready(function () {
         $("#rightNav").slideUp("800");
     });
     $("#rightNav").hide();
+
+    $("#icon2").click();
 });

@@ -26,14 +26,14 @@
 }
 
 .card-small .weui-flex__item {
-  background: rgba(41, 129, 217, 0.8) !important;
+  background: #2981D9 !important;
   font-weight: 800;
   line-height: 3;
 }
 
 .card-small .weui-flex:first-child .weui-flex__item {
   background: white !important;
-  color: rgba(41, 129, 217, 0.8);
+  color: #2981D9;
   font-weight: 800;
 }
 
