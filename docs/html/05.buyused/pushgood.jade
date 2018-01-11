@@ -8,7 +8,7 @@ body
             .weui-cell__hd
                 label.weui-label 商品类别
             .weui-cell__bd
-                input.weui-input(name="err", placeholder="二手置换",readonly="readonly")
+                input.weui-input(name="goodlist", placeholder="二手置换",readonly="readonly")
 
     .weui-cells__title 商品名称
     .weui-cells
@@ -107,4 +107,24 @@ body
             // return true; // 阻止默认行为，不使用默认的失败态
         }
         });
-    
+    script.
+        function getErr__number(){
+            weui.picker([
+                { label: '二手易购'}, 
+                { label: '优惠拼团'},
+                { label: '技能小铺'}, 
+                { label: '武院纪念品'}
+            ],{
+                onConfirm: function (result) {
+                    goodlist[0].value= result[0].label;
+                }
+            });
+        }        
+
+      
+        window.onload=function(){
+            goodlist = document.getElementsByName("goodlist");
+
+            goodlist[0].onclick=getErr__number;
+
+        }

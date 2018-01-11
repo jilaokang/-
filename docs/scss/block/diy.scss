@@ -98,4 +98,7 @@ footer {
         color: $style-color__blue;
         font-weight: 800;
     }
+    .weui-form-preview__hd::after{
+        content:none;
+    }
 }

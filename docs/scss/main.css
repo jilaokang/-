@@ -370,4 +370,8 @@ footer p {
   color: #2981D9;
   font-weight: 800;
 }
+
+#gooddet .weui-form-preview__hd::after {
+  content: none;
+}
 /*# sourceMappingURL=main.css.map */
