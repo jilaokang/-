@@ -103,7 +103,7 @@ footer p {
   margin-bottom: 15px;
 }
 
-#gooddet .weui-form-preview::before {
+#gooddet .weui-form-preview::before, #gooddet .weui-form-preview::after {
   content: none;
 }
 
