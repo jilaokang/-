@@ -272,17 +272,15 @@ body {
   background: #F1C71F !important;
 }
 
-#updatagood span {
+#updatagood span,
+#updatagood font {
+  font-weight: 800;
   font-size: 30px;
   color: #E74C3C;
 }
 
-#updatagood span:last-child {
+#updatagood font {
   float: right;
-}
-
-#updatagood .iconfont {
-  font-size: 2em;
 }
 
 .card {

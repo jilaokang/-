@@ -92,7 +92,7 @@
             text-align: left;
         }
     }
-    .weui-label{
+    .weui-label {
         font-weight: 100;
     }
     #pages2 {
@@ -142,7 +142,7 @@
             &:first-child {
                 border-right: 3px solid $style-color__bg;
             }
-            a{
+            a {
                 color: $style-color__black !important;
             }
             div {
@@ -173,18 +173,22 @@
         font-size: 24px;
     }
 }
-#good{
-    img{
+
+#good {
+    img {
         width: 100%;
     }
 }
-#updatagood  {
-    background: $style-color__yellow !important;  
-    span{
+
+#updatagood {
+    background: $style-color__yellow !important;
+    span,
+    font {
+        font-weight: 800;
         font-size: 30px;
         color: $style-color__red;
-        &:last-child{
-            float: right
-        }
+    }
+    font {
+        float: right
     }
 }
