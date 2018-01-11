@@ -169,24 +169,3 @@
     }
 }
 
-#gooddet {
-    .goodimg {
-        padding-right: 15px;
-        img {
-            width: 80px;
-        }
-    }
-    .weui-flex {
-        text-align: right;
-    }
-    .weui-form-preview {
-        border: 1px solid #eee;
-        margin-bottom: 15px;
-        &::before {
-            content: none;
-        }
-    }
-    .weui-form-preview__btn {
-        color: $style-color__blue;
-    }
-}
