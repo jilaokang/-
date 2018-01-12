@@ -140,7 +140,6 @@ body {
 #buy #portrait {
   background: #52a7fc;
   padding: 40px 40px;
-  overflow: hiadden;
 }
 
 #buy #portrait .weui-flex__item__extend {
@@ -154,14 +153,13 @@ body {
 }
 
 #buy #portrait .weui-flex__item:last-child {
-  height: 58px;
   background: #52a7fc !important;
   text-align: left;
   padding: 10px 20px;
 }
 
 #buy #portrait .weui-flex__item:last-child a {
-  font-size: 14px;
+  font-weight: 800;
   color: white;
 }
 

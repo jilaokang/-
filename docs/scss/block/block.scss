@@ -67,7 +67,6 @@
     #portrait {
         background: $style-color__blue__Light;
         padding: 40px 40px;
-        overflow: hiadden;
         .weui-flex__item__extend {
             text-align: right;
             img {
@@ -77,12 +76,13 @@
             }
         }
         .weui-flex__item:last-child {
-            height: 58px;
+  
             background: $style-color__blue__Light !important;
             text-align: left;
             padding: 10px 20px;
             a {
-                font-size: 14px;
+                font-weight: 800;
+             
                 color: white;
             }
         }
