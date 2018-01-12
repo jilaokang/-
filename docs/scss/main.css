@@ -129,7 +129,7 @@ body {
   border-radius: 3px;
   font-size: 24px;
   text-align: center;
-  background: #52a7fc;
+  background: #2981D9;
 }
 
 #buy .fliter {
@@ -186,7 +186,7 @@ body {
 }
 
 #buy #rightNav .weui-cell {
-  background: #52a7fc !important;
+  background: #2981D9 !important;
 }
 
 #buy #rightNav .weui-cell a {

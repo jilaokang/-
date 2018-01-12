@@ -58,7 +58,7 @@
         border-radius: 3px;
         font-size: 24px;
         text-align: center;
-        background: $style-color__blue__Light;
+        background: $style-color__blue;
     }
     .fliter {
         filter: url(blur.svg#blur);
@@ -76,7 +76,6 @@
             }
         }
         .weui-flex__item:last-child {
-  
             background: $style-color__blue__Light !important;
             text-align: left;
             padding: 10px 20px;
@@ -109,7 +108,7 @@
         right: 0;
         margin-top: 0;
         .weui-cell {
-            background: $style-color__blue__Light !important;
+            background: $style-color__blue !important;
             a {
                 color: white;
             }
