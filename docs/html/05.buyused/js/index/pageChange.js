@@ -13,16 +13,18 @@ $(document).ready(function () {
         $("#icon1").removeClass("activeIcon");
         $("#pages1").hide();
         $("#pages2").show();
-        $("#rightNav").hide();
+
         console.log("icon2 clicked")
     })
 
     $("#menuButton").click(function () {
         $("#rightNav").slideDown("800");
+        function dd(){
+            $("#rightNav").slideUp("800");
+        }
+
+        setInterval(dd(), 5000);
     })
-    $("#rightNav").on('click', function () {
-        $("#rightNav").slideUp("800");
-    });
     $("#rightNav").hide();
 
 });

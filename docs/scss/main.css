@@ -129,7 +129,7 @@ body {
   border-radius: 3px;
   font-size: 24px;
   text-align: center;
-  background: #2981D9;
+  background: #52a7fc;
 }
 
 #buy .fliter {
@@ -138,7 +138,7 @@ body {
 }
 
 #buy #portrait {
-  background: #2981D9;
+  background: #52a7fc;
   padding: 40px 40px;
   overflow: hiadden;
 }
@@ -155,7 +155,7 @@ body {
 
 #buy #portrait .weui-flex__item:last-child {
   height: 58px;
-  background: #2981D9 !important;
+  background: #52a7fc !important;
   text-align: left;
   padding: 10px 20px;
 }
@@ -181,33 +181,18 @@ body {
 
 #buy #rightNav {
   display: none;
-  width: 25%;
-  position: fixed;
+  position: absolute;
+  width: 100%;
   right: 0;
-  padding: 80px 20px 6px 20px;
-  background: #2981D9;
-  z-index: 3;
-  border-radius: 0 0 0 3px;
-  box-shadow: 0px 0px 50px 3px #999;
+  margin-top: 0;
 }
 
-#buy #rightNav li {
-  text-align: center !important;
-  list-style: none !important;
+#buy #rightNav .weui-cell {
+  background: #52a7fc !important;
 }
 
-#buy #rightNav li a {
-  line-height: 3;
-  font-weight: 800;
-  letter-spacing: 2px;
+#buy #rightNav .weui-cell a {
   color: white;
-}
-
-#buy #rightNav li a font {
-  font-weight: 300;
-  font-size: 2.2em;
-  margin-top: 30px;
-  color: rgba(255, 254, 254, 0.2);
 }
 
 #buy #goods {
@@ -272,13 +257,15 @@ body {
   background: #ffd739 !important;
 }
 
-#updatagood span, #updatagood font {
+#updatagood span,
+#updatagood font {
   font-weight: 800;
   font-size: 24px;
   color: #df4a3a;
 }
 
-#updatagood span:last-child, #updatagood font:last-child {
+#updatagood span:last-child,
+#updatagood font:last-child {
   float: right;
 }
 
@@ -320,7 +307,7 @@ body {
 }
 
 .card-small .weui-flex__item {
-  background: #2981D9 !important;
+  background: #52a7fc !important;
   font-weight: 800;
   line-height: 3;
 }
@@ -331,7 +318,7 @@ body {
 
 .card-small .weui-flex:first-child .weui-flex__item {
   background: white !important;
-  color: #2981D9;
+  color: #52a7fc;
   font-weight: 800;
 }
 

@@ -17,21 +17,6 @@ html(lang='en')
 
         .weui-tab
             .weui-tab__panel 
-
-
-                #rightNav
-                    ul
-                        li 
-                            a(href="#") 二手易购
-                        li 
-                            a(href="#") 优惠拼团
-                        li 
-                            a(href="#") 技能小铺
-                        li 
-                            a(href="#") 武院纪念品
-                        li
-                            a
-                                font.icon-jiantoushang.iconfont
                 #pages1
                     #searchBar.weui-search-bar
                         form.weui-search-bar__form
@@ -44,6 +29,21 @@ html(lang='en')
                                 span 搜索
                         a#search_cancel.weui-search-bar__cancel-btn(href='javascript:') 取消
                         font.iconfont.icon-list#menuButton  
+
+                    #rightNav.weui-cells.weui-cells_access.search_show
+                        .weui-cell
+                            .weui-cell__bd.weui-cell_primary
+                                a(href="http://") 二手易购
+                        .weui-cell
+                            .weui-cell__bd.weui-cell_primary
+                                a(href="http://") 优惠拼团
+                        .weui-cell
+                            .weui-cell__bd.weui-cell_primary
+                                a(href="http://") 技能小铺
+                        .weui-cell
+                            .weui-cell__bd.weui-cell_primary
+                                a(href="http://") 武院纪念品
+
                     #search_show.weui-cells.weui-cells_access.search_show(style="display:none")
                         .weui-cell
                             .weui-cell__bd.weui-cell_primary

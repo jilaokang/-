@@ -36,7 +36,7 @@
 }
 
 .card-small .weui-flex__item {
-  background: #2981D9 !important;
+  background: #52a7fc !important;
   font-weight: 800;
   line-height: 3;
 }
@@ -47,7 +47,7 @@
 
 .card-small .weui-flex:first-child .weui-flex__item {
   background: white !important;
-  color: #2981D9;
+  color: #52a7fc;
   font-weight: 800;
 }
 
