@@ -193,13 +193,13 @@
 }
 
 #updatagood {
-  background: #F1C71F !important;
+  background: #ffd739 !important;
 }
 
 #updatagood span, #updatagood font {
   font-weight: 800;
-  font-size: 30px;
-  color: #E74C3C;
+  font-size: 24px;
+  color: #df4a3a;
 }
 
 #updatagood span:last-child, #updatagood font:last-child {

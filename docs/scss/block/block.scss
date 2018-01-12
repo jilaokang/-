@@ -180,10 +180,10 @@
 }
 
 #updatagood  {
-    background: $style-color__yellow !important;  
+    background: $style-color__yellow__Light !important;  
     span,font{
         font-weight: 800;
-        font-size: 30px;
+        font-size: 24px;
         color: $style-color__red;
         &:last-child{
             float: right
