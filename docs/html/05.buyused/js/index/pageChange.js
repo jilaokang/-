@@ -17,14 +17,18 @@ $(document).ready(function () {
         console.log("icon2 clicked")
     })
 
+    var a = 1;
     $("#menuButton").click(function () {
-        $("#rightNav").slideDown("800");
-        function dd(){
+        a++;
+        a=a%2;
+        if (a === 1) {
+            $("#rightNav").slideDown("800");
+        } else {
             $("#rightNav").slideUp("800");
         }
-
-        setInterval(dd(), 5000);
+        console.log(a);
     })
+
     $("#rightNav").hide();
 
 });
