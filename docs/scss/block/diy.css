@@ -86,6 +86,10 @@ footer p {
   padding: 15px 12px;
 }
 
+#gooddet {
+  border-top: 2px solid #52a7fc;
+}
+
 #gooddet .goodimg {
   padding-right: 15px;
 }
