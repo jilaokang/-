@@ -171,8 +171,30 @@
   font-size: 24px;
 }
 
-#good img {
+#good {
+  margin-bottom: 50px;
+}
+
+#good #goodCotnet img {
   width: 100%;
+}
+
+#good .price {
+  color: #df4a3a;
+}
+
+#good .person {
+  border-top: none !important;
+}
+
+#good .person img {
+  width: 50px !important;
+  border-radius: 70px;
+  border: 2px solid #52a7fc;
+}
+
+#good .content {
+  margin-bottom: 15px;
 }
 
 #updatagood {

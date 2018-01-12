@@ -4,28 +4,30 @@ head
     +conf("收藏列表")
 body
 #good
+    #gooddet.person     
+        .weui-form-preview
+            .weui-form-preview__bd
+                .weui-flex
+                    .goodimg
+                        img(src="img/test.png")
+                    .weui-flex__item
+                        p
+                            label.weui-form-preview__label 宿舍
+                            span.weui-form-preview__value 竹枫斋4舍
+                        p
+                            label.weui-form-preview__label 联系方式
+                            span.weui-form-preview__value 李四 18086407838
+                   
     .container
-
-        hr
-        div
-            h3 ￥230.0
-            p 今年刚买的小米Mix 2，最高配置，用了几天发现打王者上分太快，导致变妹子成群，现在转交给年轻人。
-        div
-            img(src="img/good1.jpg", alt="")
-            img(src="img/good1.jpg", alt="")
-        hr
-    .weui-form-preview
-
-        .weui-form-preview__bd
-            p
-                label.weui-form-preview__label 联系方式
-                span.weui-form-preview__value 老王 18086407838
-            p
-                label.weui-form-preview__label 宿舍
-                span.weui-form-preview__value 竹枫斋4舍
-        .weui-form-preview__ft
-            a.weui-form-preview__btn.weui-form-preview__btn_primary(href='javascript:') 操作
-
+        #goodCotnet
+            div.content
+                h2.price ￥8.8
+                p 柚子皮，来自人杰地灵的信息中心，天然成型，适合驱虫祛味，是您安睡的必备佳品。
+            div
+                img(src="img/youzipi1.jpg", alt="")
+                img(src="img/youzipi2.jpg", alt="")
+      
+    +footer
     #flexButton
         .weui-btn-area
             a.weui-btn.weui-btn_primary 购买
