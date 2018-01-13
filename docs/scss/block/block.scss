@@ -106,11 +106,8 @@
         width: 100%;
         right: 0;
         margin-top: 0;
-        .weui-cell {
-            background: $style-color__blue !important;
-            a {
-                color: white;
-            }
+        a{
+            color: $style-color__black;
         }
     }
     #goods {

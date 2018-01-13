@@ -109,12 +109,8 @@
   margin-top: 0;
 }
 
-#buy #rightNav .weui-cell {
-  background: #2981D9 !important;
-}
-
-#buy #rightNav .weui-cell a {
-  color: white;
+#buy #rightNav a {
+  color: #424242;
 }
 
 #buy #goods {
