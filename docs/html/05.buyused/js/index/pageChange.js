@@ -20,7 +20,7 @@ $(document).ready(function () {
     var a = 1;
     $("#menuButton").click(function () {
         a++;
-        a=a%2;
+        a = a % 2;
         if (a === 1) {
             $("#rightNav").slideDown("800");
         } else {
@@ -31,4 +31,14 @@ $(document).ready(function () {
 
     $("#rightNav").hide();
 
+
+    function dddd() {
+        var href = window.location.href;
+        arr = href.split("?");
+        console.log(arr)
+        if (arr[1]) {
+            $("#icon2").click();
+        }
+    }
+    dddd();
 });
