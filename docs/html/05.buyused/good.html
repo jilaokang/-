@@ -49,7 +49,15 @@
       <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
     </div>
   </footer>
-  <div id="flexButton">
+  <div id="flexButton" onclick="buy()">
     <div class="weui-btn-area"><a class="weui-btn weui-btn_primary">购买</a></div>
   </div>
+  <script>
+    function buy(){
+        weui.confirm('购买成功！请主动联系商家取货！',function(){
+            window.location.href = "buylist.html";
+    
+        });
+    }
+  </script>
 </div>

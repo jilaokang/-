@@ -28,6 +28,14 @@ body
                 img(src="img/youzipi2.jpg", alt="")
       
     +footer
-    #flexButton
+    #flexButton(onclick="buy()")
         .weui-btn-area
             a.weui-btn.weui-btn_primary 购买
+
+    script.
+        function buy(){
+            weui.confirm('购买成功！请主动联系商家取货！',function(){
+                window.location.href = "buylist.html";
+
+            });
+        }
