@@ -78,7 +78,8 @@ footer {
 }
 
 #gooddet {
-    border-top: 2px solid $style-color__yellow__Light;
+    border-top: 4px solid $style-color__green;
+    border-radius: 3px;
     .goodimg {
         padding-right: 15px;
         img {
@@ -101,8 +102,11 @@ footer {
         }
     }
     .weui-form-preview__btn {
-        color: $style-color__blue;
         font-weight: 800;
+        color: $style-color__grey;
+        &:nth-child(2){
+            color: $style-color__green !important;
+        }
     }
     .weui-form-preview__hd {
         &::after {
@@ -127,7 +131,7 @@ footer {
 }
 
 #backup {
-    // background: #393a3f;
+    // background: #393a3f; 繁体
     background: $style-color__blue;
     .iconfont {
         color: white;

@@ -87,7 +87,8 @@ footer p {
 }
 
 #gooddet {
-  border-top: 2px solid #ffd739;
+  border-top: 4px solid #1d9918;
+  border-radius: 3px;
 }
 
 #gooddet .goodimg {
@@ -117,8 +118,12 @@ footer p {
 }
 
 #gooddet .weui-form-preview__btn {
-  color: #2981D9;
   font-weight: 800;
+  color: #999999;
+}
+
+#gooddet .weui-form-preview__btn:nth-child(2) {
+  color: #1d9918 !important;
 }
 
 #gooddet .weui-form-preview__hd {
