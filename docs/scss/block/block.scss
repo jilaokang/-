@@ -60,10 +60,6 @@
         text-align: center;
         background: $style-color__blue;
     }
-    .fliter {
-        filter: url(blur.svg#blur);
-        filter: blur(30px);
-    }
     #portrait {
         background: $style-color__blue__Light;
         padding: 40px 40px;
@@ -107,22 +103,19 @@
         width: 100%;
         right: 0;
         margin-top: 0;
-        a{
+        a {
             color: $style-color__black;
         }
     }
     #goods {
-        padding: 2px;
         .weui-flex {
             border-bottom: 3px solid $style-color__bg;
         }
         .weui-flex__item {
             padding: 3px;
+            border-right: 3px solid $style-color__bg;
             img {
                 width: 80%;
-            }
-            &:first-child {
-                border-right: 3px solid $style-color__bg;
             }
             a {
                 color: $style-color__black !important;
@@ -131,8 +124,12 @@
                 padding: 0 8px 8px 8px;
                 text-align: left !important;
                 span {
-                    text-align: left !important;
-                    &:first-child {
+                    &:first-child{
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-align: left !important;
                         background: #ec4a35;
                         color: white;
                         font-size: 12px;
@@ -140,13 +137,10 @@
                         padding: 2px 4px;
                         margin-right: 5px;
                     }
-                    &:last-child {
-                        float: right;
-                        color: #ec3535;
-                        font-weight: 800;
-                        font-size: 14px;
-                        font-family: Tahoma, Geneva, Verdana, sans-serif;
-                    }
+                }
+                p {
+                    font-size: 18px !important;
+                    color: Red!important;
                 }
             }
         }
@@ -162,8 +156,8 @@
             width: 100%;
         }
     }
-    .price{
-        color:$style-color__red;
+    .price {
+        color: $style-color__red;
     }
     .person {
         border-top: none !important;
@@ -173,7 +167,7 @@
             border: 2px solid $style-color__blue__Light;
         }
     }
-    .content{
+    .content {
         margin-bottom: 15px;
     }
     margin-bottom: 50px;
@@ -186,9 +180,8 @@
         font-weight: 800;
         font-size: 24px;
         color: $style-color__red;
-        &:last-child {
-            float: right
-        }
+    }
+    p {
+        color: red;
     }
 }
-
