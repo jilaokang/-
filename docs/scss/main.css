@@ -357,8 +357,8 @@ footer p {
 }
 
 #gooddet {
-  border-top: 4px solid #1d9918;
-  border-radius: 3px;
+  border-top: 4px solid #23bd1b;
+  border-radius: 2px;
 }
 
 #gooddet .goodimg {
@@ -377,6 +377,10 @@ footer p {
   border: 1px solid #eee;
   border-radius: 3px;
   margin-bottom: 15px;
+}
+
+#gooddet .weui-form-preview:first-child {
+  border-radius: 0 0 3px 3px;
 }
 
 #gooddet .weui-form-preview::before, #gooddet .weui-form-preview::after {

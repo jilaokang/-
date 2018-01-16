@@ -78,8 +78,8 @@ footer {
 }
 
 #gooddet {
-    border-top: 4px solid $style-color__green;
-    border-radius: 3px;
+    border-top: 4px solid $style-color__green__Light;
+    border-radius: 2px;
     .goodimg {
         padding-right: 15px;
         img {
@@ -92,6 +92,9 @@ footer {
     .weui-form-preview {
         border: 1px solid #eee;
         border-radius: 3px;
+        &:first-child{
+            border-radius: 0 0 3px 3px;
+        }
         margin-bottom: 15px;
         &::before,
         &::after {
