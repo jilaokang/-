@@ -414,4 +414,14 @@ footer p {
 #flexButton .weui-btn-area .weui-btn_primary {
   border-radius: 0;
 }
+
+#backup {
+  background: #393a3f;
+}
+
+#backup .iconfont {
+  color: white;
+  padding: 10px;
+  font-size: 28px !important;
+}
 /*# sourceMappingURL=main.css.map */

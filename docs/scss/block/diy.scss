@@ -78,7 +78,7 @@ footer {
 }
 
 #gooddet {
-    border-top:2px solid $style-color__yellow__Light;
+    border-top: 2px solid $style-color__yellow__Light;
     .goodimg {
         padding-right: 15px;
         img {
@@ -112,17 +112,25 @@ footer {
     }
 }
 
-#flexButton{
+#flexButton {
     position: fixed;
-    bottom:0;    
+    bottom: 0;
     width: 100%;
-    .weui-btn-area{
+    .weui-btn-area {
         width: 100%;
-        padding:0;
-        margin:0;
-        .weui-btn_primary{
+        padding: 0;
+        margin: 0;
+        .weui-btn_primary {
             border-radius: 0;
-
         }
+    }
+}
+
+#backup {
+    background: #393a3f;
+    .iconfont{
+        color: white;
+        padding:  10px;
+        font-size: 28px !important;        
     }
 }
