@@ -127,10 +127,11 @@ footer {
 }
 
 #backup {
-    background: #393a3f;
+    // background: #393a3f;
+    background: $style-color__blue__Light;
     .iconfont{
         color: white;
         padding:  10px;
-        font-size: 28px !important;        
+        font-size: 32px !important;        
     }
 }
