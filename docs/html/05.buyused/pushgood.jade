@@ -10,18 +10,25 @@ body
             .weui-cell__bd
                 input.weui-input(name="goodlist", placeholder="二手易购",readonly="readonly")
 
-    .weui-cells__title 商品名称
+    .weui-cells__title 商品详情
+
+    .weui-cells
+        .weui-cell
+            .weui-cell__bd
+                textarea.weui-textarea(placeholder="商品售价", rows="1")
     .weui-cells
         .weui-cell
             .weui-cell__bd
                 textarea.weui-textarea(placeholder="标题名称", rows="1")
        
-    .weui-cells__title 商品描述
+
     .weui-cells
         .weui-cell
             .weui-cell__bd
                 textarea.weui-textarea(placeholder="请输入商品描述ヽ(^▽^)ノ✿", rows="6")
    
+
+
 
     .weui-cells__title 商品图片
 
@@ -36,10 +43,16 @@ body
                 .weui-uploader__input-box
                     input#uploaderInput.weui-uploader__input(type='file', accept='image/*', capture='camera', multiple='')
         
-    .weui-btn-area
+    .weui-btn-area(onclick="success()")
         a.weui-btn.weui-btn_primary 提交    
     +footer
-
+    script.
+        function success(){
+            weui.confirm('发布成功！',function(){
+                window.location.href = "buylist.html";
+            });
+        }
+        
     script.
         var uploadCount = 0;
         weui.uploader('#uploader', {

@@ -27,7 +27,14 @@
       </div>
     </div>
   </div>
-  <div class="weui-cells__title">商品名称</div>
+  <div class="weui-cells__title">商品详情</div>
+  <div class="weui-cells">
+    <div class="weui-cell">
+      <div class="weui-cell__bd">
+        <textarea placeholder="商品售价" rows="1" class="weui-textarea"></textarea>
+      </div>
+    </div>
+  </div>
   <div class="weui-cells">
     <div class="weui-cell">
       <div class="weui-cell__bd">
@@ -35,7 +42,6 @@
       </div>
     </div>
   </div>
-  <div class="weui-cells__title">商品描述</div>
   <div class="weui-cells">
     <div class="weui-cell">
       <div class="weui-cell__bd">
@@ -60,7 +66,7 @@
       </div>
     </div>
   </div>
-  <div class="weui-btn-area"><a class="weui-btn weui-btn_primary">提交    </a></div>
+  <div onclick="success()" class="weui-btn-area"><a class="weui-btn weui-btn_primary">提交    </a></div>
   <footer class="weui-footer">
     <div>
       <p><a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
@@ -69,6 +75,14 @@
       <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
     </div>
   </footer>
+  <script>
+    function success(){
+        weui.confirm('发布成功！',function(){
+            window.location.href = "buylist.html";
+        });
+    }
+    
+  </script>
   <script>
     var uploadCount = 0;
     weui.uploader('#uploader', {
