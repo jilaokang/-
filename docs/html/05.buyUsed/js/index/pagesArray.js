@@ -1,8 +1,10 @@
+activePage = 1;
 
-function pagesarray(){
-    if(pagesArray){
-        $("#icon2").click();
+! function () {
+    var href = window.location.href;
+    arr = href.split("?");
+    console.log(arr)
+    if (arr[1]) {
+        activePage = 2;
     }
-}
-
-window.onload = pagesarray();
+}();

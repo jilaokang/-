@@ -1,6 +1,7 @@
 $(document).ready(function () {
-    $("#pages2").hide();
-    $("#icon1").addClass("activeIcon");
+
+
+
     $("#icon1").click(function () {
         $("#icon1").addClass("activeIcon");
         $("#icon2").removeClass("activeIcon");
@@ -8,6 +9,7 @@ $(document).ready(function () {
         $("#pages2").hide();
         console.log("icon1 clicked")
     });
+    
     $("#icon2").click(function () {
         $("#icon2").addClass("activeIcon");
         $("#icon1").removeClass("activeIcon");
@@ -17,7 +19,10 @@ $(document).ready(function () {
         console.log("icon2 clicked")
     })
 
-    var a = 1;
+
+
+    var a = 0;
+
     $("#menuButton").click(function () {
         a++;
         a = a % 2;
@@ -29,16 +34,13 @@ $(document).ready(function () {
         console.log(a);
     })
 
-    $("#rightNav").hide();
 
 
-    function dddd() {
-        var href = window.location.href;
-        arr = href.split("?");
-        console.log(arr)
-        if (arr[1]) {
-            $("#icon2").click();
-        }
+    if (activePage === 2) {
+        $("#icon2").click();
     }
-    dddd();
+    if (activePage === 1) {
+        $("#icon1").click();
+    }
+
 });

@@ -166,10 +166,18 @@ body {
   font-weight: 100;
 }
 
+#buy #pages2 {
+  display: none;
+}
+
 #buy #pages2 .weui-cells a {
   width: 100%;
   line-height: 1.8;
   font-size: 15px;
+}
+
+#buy #pages1 {
+  display: none;
 }
 
 #buy #rightNav {
