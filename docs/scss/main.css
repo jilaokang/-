@@ -433,6 +433,7 @@ footer p {
 }
 
 #backup {
+  width: 100%;
   background: #2981D9;
 }
 
@@ -440,5 +441,15 @@ footer p {
   color: white;
   padding: 0 10px;
   font-size: 30px !important;
+}
+
+#backup span {
+  color: white;
+  width: 100%;
+  margin-top: -38px;
+  z-index: 999;
+  font-size: 18px !important;
+  text-align: center;
+  position: fixed;
 }
 /*# sourceMappingURL=main.css.map */

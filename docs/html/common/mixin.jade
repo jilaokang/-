@@ -33,9 +33,11 @@ mixin com-title(com_title,com_a,com_a__href,com_p)
         if com_p
             p #{com_p}
 
-mixin backupNav(backupHref)
+mixin backupNav(backupHref,backupTitle)
     #backup
         a(href="#{backupHref}")
             font.iconfont.icon-fanhui    
+        div
+            span #{backupTitle}
     
             
