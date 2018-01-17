@@ -1,0 +1,37 @@
+include ../common/mixin.jade
+
+head 
+    +conf("教师信息")
+
+
+body
+
+    +com-title("教师信息查询","","","查询在校职工基本情况") 
+    .weui-cells
+        .weui-cell
+            .weui-cell__hd
+                label.weui-label 信息
+            .weui-cell__bd
+                input.weui-input(value="职工姓名",onclick="this.value=''")
+            .weui-cell__hd
+                input(class="weui-btn weui-btn_mini weui-btn_default",type="button",value="查询" )
+
+    .weui-cells__title 查询结果
+
+    .container
+        .card-small
+            .box
+                .weui-flex
+                    item.class
+                        .weui-flex__item(style="width:100%")
+                            img(src="1.jpg",width="100%")
+                        .weui-flex__item item.content
+                        .weui-flex__item item.content
+
+    +footer
+
+    script.
+        function success(){
+            var phone = document.getElementsByClassName("weui-flex__item")[3];
+            weui.toast('复制成功', 1500);
+        }
