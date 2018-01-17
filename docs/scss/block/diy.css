@@ -55,6 +55,16 @@
   padding-bottom: 0;
 }
 
+.card-small img {
+  width: 100%;
+}
+
+.card-small #teacherInfo .weui-flex__item {
+  text-align: left;
+  padding: 20px;
+  color: black;
+}
+
 #head-title {
   color: #2981D9;
   margin: 32px auto 38px auto;

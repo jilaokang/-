@@ -45,6 +45,19 @@
     &:last-child {
         padding-bottom: 0;
     }
+
+    img{
+        width: 100%;
+    }
+
+    #teacherInfo{
+        .weui-flex__item{
+
+            text-align: left;
+            padding: 20px;
+            color: black;
+        }
+    }
 }
 
 // head-title
