@@ -337,10 +337,10 @@ body {
   width: 100%;
 }
 
-.card-small #teacherInfo .weui-flex__item {
+.card-small #teacherInfo .weui-flex__item:last-child {
   text-align: left;
   padding: 20px;
-  color: black;
+  color: #424242;
 }
 
 #head-title {

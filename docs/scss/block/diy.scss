@@ -52,10 +52,11 @@
 
     #teacherInfo{
         .weui-flex__item{
-
-            text-align: left;
-            padding: 20px;
-            color: black;
+            &:last-child{
+                text-align: left;
+                padding: 20px;
+                color: $style-color__black;
+            }
         }
     }
 }
