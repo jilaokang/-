@@ -1,37 +1,103 @@
-<!--conf--><!-- footer--><!-- com-title--><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link href="../../../lib/weui/weui.css" rel="stylesheet"/><link href="../../scss/main.css" rel="stylesheet"/><link rel="stylesheet" href="http://at.alicdn.com/t/font_490682_sgb0yn4jcxzjjor.css"/><script src="../../../lib/weui/weui.js"></script><link type="image/x-icon" href="http://on5ngaon4.bkt.clouddn.com/Mountain_64px_1120233_easyicon.net.ico" rel="shortcut icon"/><script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script><title>校园易购</title></head><body><div id="backup"><a href="index.html?true"><font class="iconfont icon-fanhui">   </font></a><div><span>用户信息</span></div></div><div class="weui-cells"><div class="weui-cell"><div class="weui-cell__hd"><label class="weui-label">姓名</label></div><div class="weui-cell__bd"><input name="base" value="钱博康" class="weui-input"/></div></div><div class="weui-cell"><div class="weui-cell__hd"> <label class="weui-label">宿舍</label></div><div class="weui-cell__bd"><input name="base" value="竹枫斋 4舍" readonly="readonly" class="weui-input"/></div></div><div class="weui-cell"><div class="weui-cell__hd"><label class="weui-label">寝室号</label></div><div class="weui-cell__bd"><input name="base" value="227" class="weui-input"/></div></div><div class="weui-cell"><div class="weui-cell__hd"><label class="weui-label">手机号</label></div><div class="weui-cell__bd"><input name="tel" value="18086407838" class="weui-input"/></div></div></div><div class="weui-btn-area"><a class="weui-btn weui-btn_primary">提交</a></div><script>var net={ "base":"", "tel":"", "err":"" };
 
-
-function getDorm(){
-    weui.picker([
-        { label: '桂檀斋'}, 
-        { label: '竹枫斋'},
-        { label: '椿萱斋'}, 
-        { label: '梅菊斋'}
-    ], [
-        { label: '1舍'}, 
-        { label: '2舍'}, 
-        { label: '3舍'},
-        { label: '4舍'}
-    ], {
-        onConfirm: function (result) {
-   
-            var dorm=result[0].label;
-            var dorm_num=result[1].label;
-
-            var str = dorm +" "+dorm_num;
-            base[1].value= str;
-        }
-    });
-}
-
-window.onload=function(){
-    // base 监听事件
-    base = document.getElementsByName("base");
-    base[1].onclick = getDorm;
-}        
-
-
-
-
-
-</script><footer class="weui-footer"><div><p><a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p></div><div><p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p></div></footer></body>
+<!--conf-->
+<!-- footer-->
+<!-- com-title-->
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link href="../../../lib/weui/weui.css" rel="stylesheet"/>
+  <link href="../../scss/main.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_490682_sgb0yn4jcxzjjor.css"/>
+  <script src="../../../lib/weui/weui.js"></script>
+  <link type="image/x-icon" href="http://on5ngaon4.bkt.clouddn.com/Mountain_64px_1120233_easyicon.net.ico" rel="shortcut icon"/>
+  <script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script>
+  <title>校园易购</title>
+</head>
+<body>
+  <div id="backup"><a href="index.html?true"><font class="iconfont icon-fanhui">   </font></a>
+    <div><span>用户信息</span></div>
+  </div>
+  <div class="weui-cells">
+    <div class="weui-cell">
+      <div class="weui-cell__hd">
+        <label class="weui-label">姓名</label>
+      </div>
+      <div class="weui-cell__bd">
+        <input name="base" value="钱博康" class="weui-input"/>
+      </div>
+    </div>
+    <div class="weui-cell">
+      <div class="weui-cell__hd"> 
+        <label class="weui-label">宿舍</label>
+      </div>
+      <div class="weui-cell__bd">
+        <input name="base" value="竹枫斋 4舍" readonly="readonly" class="weui-input"/>
+      </div>
+    </div>
+    <div class="weui-cell">
+      <div class="weui-cell__hd">
+        <label class="weui-label">寝室号</label>
+      </div>
+      <div class="weui-cell__bd">
+        <input name="base" value="227" class="weui-input"/>
+      </div>
+    </div>
+    <div class="weui-cell">
+      <div class="weui-cell__hd">
+        <label class="weui-label">手机号</label>
+      </div>
+      <div class="weui-cell__bd">
+        <input name="tel" value="18086407838" class="weui-input"/>
+      </div>
+    </div>
+  </div>
+  <div class="weui-btn-area"><a class="weui-btn weui-btn_primary">提交</a></div>
+  <script>
+    var net={ "base":"", "tel":"", "err":"" };
+    
+    
+    function getDorm(){
+        weui.picker([
+            { label: '桂檀斋'}, 
+            { label: '竹枫斋'},
+            { label: '椿萱斋'}, 
+            { label: '梅菊斋'}
+        ], [
+            { label: '1舍'}, 
+            { label: '2舍'}, 
+            { label: '3舍'},
+            { label: '4舍'}
+        ], {
+            onConfirm: function (result) {
+       
+                var dorm=result[0].label;
+                var dorm_num=result[1].label;
+    
+                var str = dorm +" "+dorm_num;
+                base[1].value= str;
+            }
+        });
+    }
+    
+    window.onload=function(){
+        // base 监听事件
+        base = document.getElementsByName("base");
+        base[1].onclick = getDorm;
+    }        
+    
+    
+    
+    
+    
+    
+  </script>
+  <footer class="weui-footer">
+    <div>
+      <p><a href="../102.data/index.html" class="weui-footer__link">版本日志</a><a href="../101.message/index.html" class="weui-footer__link">留言反馈</a></p>
+    </div>
+    <div>
+      <p class="ueui-footer__text">Copyright &copy; 2017 信息中心</p>
+    </div>
+  </footer>
+</body>
