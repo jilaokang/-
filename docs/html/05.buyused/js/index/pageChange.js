@@ -2,7 +2,7 @@ $(document).ready(function () {
     activePage = 1;
 
     window.onload = function () {
-
+        weui.searchBar('#searchBar');
         function iconChange(){            
             var href = window.location.href;
             arr = href.split("?");
