@@ -178,11 +178,15 @@
 #good .person img {
   width: 50px !important;
   border-radius: 70px;
-  border: 2px solid #52a7fc;
+  border: 3px solid #52a7fc;
 }
 
 #good .content {
   margin-bottom: 15px;
+}
+
+#good .weui-btn_primary {
+  background: #23bd1b !important;
 }
 
 #updatagood {
