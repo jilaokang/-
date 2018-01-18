@@ -49,13 +49,12 @@
         width: 100%;
     } // 图文混排
     #teacherInfo {
-        padding: 20px 40px;
+        padding: 20px 28px;
         .weui-flex__item {
-            font-weight: 300 !important;
-            &:first-child {            
+            &:first-child {
                 text-align: left;
                 line-height: 2.5!important;
-                color: $style-color__grey__Deep;
+                color: $style-color__black;
             }
             &:last-child {
                 text-align: right;
@@ -66,11 +65,11 @@
             }
         }
         #listContent {
-            padding: 25px 0  50px 0;       
-            p { 
+            padding: 25px 0 50px 0;
+            p {
                 text-align: left;
                 line-height: 1.6;
-                color: $style-color__grey__Deep;             
+                color: $style-color__black;
             }
         }
     }
