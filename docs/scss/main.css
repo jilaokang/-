@@ -280,6 +280,10 @@ body {
   color: red;
 }
 
+#testconfirm .weui-btn_primary {
+  padding: 30px 0;
+}
+
 #testconfirm .weui-cell_select-after {
   line-height: 3;
 }
