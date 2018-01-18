@@ -14,9 +14,13 @@ body
     +footer
     script.
 
+        $(document).ready(function()  {
+                $("img").lazyload({
+                    effect : "fadeIn"  
+                });
+            }
         window.onload=function (){
-            $("img").lazyload();
-            
+
             var myDate = new Date();  
             var month =  myDate.getMonth();
 
