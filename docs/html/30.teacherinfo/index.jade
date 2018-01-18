@@ -23,11 +23,13 @@ body
             .box#teacherInfo
                 .weui-flex
                     item.class
-                        .weui-flex__item(style="width:100%")
-                            img(src="1.jpg",width="100%")
-                        .weui-flex__item 
-                            p 钱博康
-                            p 信息中心 实习生
+                        .weui-flex
+                            .weui-flex__item
+                                p 钱博康
+                                p 信息中心 实习生
+                            .weui-flex__item
+                                img(src="1.jpg",width="100%")
+                        .weui-flex__item#listContent 
                             p 擅长前端开发，热衷代码编程，剩下字数是为了凑满一个段落，我也不知道这个段落具体要多少字，但是肯定越多越好。还写点什么呢？快要下班了，还要调试哎，好了就写这么多吧。
 
     +footer
