@@ -49,29 +49,28 @@
         width: 100%;
     } // 图文混排
     #teacherInfo {
-        font-weight: 600 !important;
+        padding: 20px 40px;
         .weui-flex__item {
             font-weight: 300 !important;
-            &:first-child {
-                padding: 50px 0 20px 20px;
+            &:first-child {            
                 text-align: left;
                 line-height: 2.5!important;
-                color: $style-color__black;
+                color: $style-color__grey__Deep;
             }
             &:last-child {
-                padding: 20px 20px 20px 15px;
-                padding-bottom: 0;
+                text-align: right;
                 img {
-                    vertical-align: middle !important;
+                    border-radius: 5px;
+                    width: 80%;
                 }
             }
         }
         #listContent {
-            padding:15px 20px;
-            p {
+            padding: 25px 0  50px 0;       
+            p { 
                 text-align: left;
                 line-height: 1.6;
-                color: $style-color__black;             
+                color: $style-color__grey__Deep;             
             }
         }
     }
