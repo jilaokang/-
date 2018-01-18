@@ -203,4 +203,12 @@
 #updatagood p {
   color: red;
 }
+
+#testconfirm .weui-cell_select-after {
+  line-height: 3;
+}
+
+#testconfirm .weui-cells {
+  border-radius: 5px;
+}
 /*# sourceMappingURL=block.css.map */

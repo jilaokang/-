@@ -280,6 +280,14 @@ body {
   color: red;
 }
 
+#testconfirm .weui-cell_select-after {
+  line-height: 3;
+}
+
+#testconfirm .weui-cells {
+  border-radius: 5px;
+}
+
 .card {
   border-radius: 3px;
   border: 1px solid #eee;
