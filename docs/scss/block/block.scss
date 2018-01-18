@@ -90,7 +90,7 @@
         font-weight: 100;
     }
     #pages2 {
-        display:none;
+        display: none;
         .weui-cells a {
             width: 100%;
             line-height: 1.8;
@@ -98,7 +98,7 @@
         }
     }
     #pages1 {
-        display:none;
+        display: none;
     }
     #rightNav {
         display: none;
@@ -128,7 +128,7 @@
                 padding: 0 8px 8px 8px;
                 text-align: left !important;
                 span {
-                    &:first-child{
+                    &:first-child {
                         overflow: hidden;
                         text-align: left !important;
                         background: #ec4a35;
@@ -171,7 +171,7 @@
     .content {
         margin-bottom: 15px;
     }
-    .weui-btn_primary{
+    .weui-btn_primary {
         background: $style-color__green__Light !important;
     }
     margin-bottom: 50px;
@@ -190,16 +190,19 @@
     }
 }
 
-#testconfirm{
-    .weui-btn_primary{
-        padding: 30px 0;
+#testconfirm {
+    .weui-btn-area {
+        &:last-child {
+            padding: 30px 0;
+            .weui-btn_primary {
+                background: $style-color__red !important;
+            }
+        }
     }
-    .weui-cell_select-after{
+    .weui-cell_select-after {
         line-height: 3;
     }
-    
-    .weui-cells{
+    .weui-cells {
         box-shadow: 0px 0px 1px 1px #ddd;
     }
-    
 }

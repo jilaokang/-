@@ -204,8 +204,12 @@
   color: red;
 }
 
-#testconfirm .weui-btn_primary {
+#testconfirm .weui-btn-area:last-child {
   padding: 30px 0;
+}
+
+#testconfirm .weui-btn-area:last-child .weui-btn_primary {
+  background: #df4a3a !important;
 }
 
 #testconfirm .weui-cell_select-after {
