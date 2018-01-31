@@ -1,209 +1,213 @@
 @import 'var.scss';
 // 29 成绩查询 
 #grade {
-    .card .weui-flex:first-child {
-        font-weight: 800;
-    }
-    .weui-cell__hd {
-        width: 50px !important;
-    }
-    .course {
-        width: 120px !important;
-    }
+  .card .weui-flex:first-child {
+    font-weight: 800;
+  }
+  .weui-cell__hd {
+    width: 50px !important;
+  }
+  .course {
+    width: 120px !important;
+  }
 }
 
 // 102 更新日志
 #data {
-    .data-title {
-        color: $style-color__blue;
-        font-weight: 800;
-    }
-    .data-time {
-        color: $style-color__grey__Light;
-        font-size: 0.84em;
-    }
-    p {
-        font-weight: 0.8em;
-    }
+  .data-title {
+    color: $style-color__blue;
+    font-weight: 800;
+  }
+  .data-time {
+    color: $style-color__grey__Light;
+    font-size: 0.84em;
+  }
+  p {
+    font-weight: 0.8em;
+  }
 }
 
 #bus {
-    .time {
-        font-weight: 800;
-        width: 60px;
-    }
-    .weui-input,
-    .weui-select {
-        color: $style-color__blue !important;
-        font-weight: 800;
-    }
-    .weui-label {
-        color: $style-color__grey !important;
-    }
+  .time {
+    font-weight: 800;
+    width: 60px;
+  }
+  .weui-input,
+  .weui-select {
+    color: $style-color__blue !important;
+    font-weight: 800;
+  }
+  .weui-label {
+    color: $style-color__grey !important;
+  }
 }
 
 #buy {
-    .activeIcon {
-        p,
-        font {
-            color: $style-color__blue;
-        }
+  .activeIcon {
+    p,
+    font {
+      color: $style-color__blue;
     }
-    #menuButton {
-        padding: 0 3px;
-        margin-left: 8px;
-        color: white;
-        line-height: 1.2;
+  }
+  #menuButton {
+    padding: 0 3px;
+    margin-left: 8px;
+    color: white;
+    line-height: 1.2;
+    font-weight: 800;
+    border-radius: 3px;
+    font-size: 24px;
+    text-align: center;
+    background: $style-color__blue;
+  }
+  #portrait {
+    background: $style-color__blue__Light;
+    padding: 40px 40px;
+    .weui-flex__item__extend {
+      text-align: right;
+      img {
+        border-radius: 70px;
+        border: 3px solid white;
+        width: 70px;
+      }
+    }
+    .weui-flex__item:last-child {
+      background: $style-color__blue__Light !important;
+      text-align: left;
+      padding: 10px 20px;
+      a {
         font-weight: 800;
-        border-radius: 3px;
-        font-size: 24px;
-        text-align: center;
-        background: $style-color__blue;
+        color: white;
+      }
     }
-    #portrait {
-        background: $style-color__blue__Light;
-        padding: 40px 40px;
-        .weui-flex__item__extend {
-            text-align: right;
-            img {
-                border-radius: 70px;
-                border: 3px solid white;
-                width: 70px;
-            }
+  }
+  #uploader {
+    .weui-cell {
+      text-align: left;
+    }
+  }
+  .weui-label {
+    font-weight: 100;
+  }
+  #pages2 {
+    display: none;
+    .weui-cells a {
+      width: 100%;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+  }
+  #pages1 {
+    display: none;
+  }
+  #rightNav {
+    display: none;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    right: 0;
+    margin-top: 0;
+    a {
+      color: $style-color__black;
+    }
+  }
+  #goods {
+    .weui-flex {
+      border-bottom: 3px solid $style-color__bg;
+    }
+    .weui-flex__item {
+      padding: 3px;
+      border-right: 3px solid $style-color__bg;
+      img {
+        width: 80%;
+      }
+      a {
+        color: $style-color__black !important;
+      }
+      div {
+        padding: 0 8px 8px 8px;
+        text-align: left !important;
+        span {
+          &:first-child {
+            overflow: hidden;
+            text-align: left !important;
+            background: #ec4a35;
+            color: white;
+            font-size: 12px;
+            border-radius: 5px;
+            padding: 2px 4px;
+            margin-right: 5px;
+          }
         }
-        .weui-flex__item:last-child {
-            background: $style-color__blue__Light !important;
-            text-align: left;
-            padding: 10px 20px;
-            a {
-                font-weight: 800;
-                color: white;
-            }
+        p {
+          font-size: 18px !important;
+          color: Red !important;
         }
+      }
     }
-    #uploader {
-        .weui-cell {
-            text-align: left;
-        }
-    }
-    .weui-label {
-        font-weight: 100;
-    }
-    #pages2 {
-        display: none;
-        .weui-cells a {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 15px;
-        }
-    }
-    #pages1 {
-        display: none;
-    }
-    #rightNav {
-        display: none;
-        position: absolute;
-        text-align: right;
-        width: 100%;
-        right: 0;
-        margin-top: 0;
-        a {
-            color: $style-color__black;
-        }
-    }
-    #goods {
-        .weui-flex {
-            border-bottom: 3px solid $style-color__bg;
-        }
-        .weui-flex__item {
-            padding: 3px;
-            border-right: 3px solid $style-color__bg;
-            img {
-                width: 80%;
-            }
-            a {
-                color: $style-color__black !important;
-            }
-            div {
-                padding: 0 8px 8px 8px;
-                text-align: left !important;
-                span {
-                    &:first-child {
-                        overflow: hidden;
-                        text-align: left !important;
-                        background: #ec4a35;
-                        color: white;
-                        font-size: 12px;
-                        border-radius: 5px;
-                        padding: 2px 4px;
-                        margin-right: 5px;
-                    }
-                }
-                p {
-                    font-size: 18px !important;
-                    color: Red!important;
-                }
-            }
-        }
-    }
-    .iconfont {
-        font-size: 24px;
-    }
+  }
+  .iconfont {
+    font-size: 24px;
+  }
 }
 
 #good {
-    #goodCotnet {
-        img {
-            width: 100%;
-        }
+  #goodCotnet {
+    img {
+      width: 100%;
     }
-    .price {
-        color: $style-color__red;
+  }
+  .price {
+    color: $style-color__red;
+  }
+  .person {
+    border-top: none !important;
+    img {
+      width: 50px !important;
+      border-radius: 70px;
+      border: 3px solid $style-color__blue__Light;
     }
-    .person {
-        border-top: none !important;
-        img {
-            width: 50px !important;
-            border-radius: 70px;
-            border: 3px solid $style-color__blue__Light;
-        }
-    }
-    .content {
-        margin-bottom: 15px;
-    }
-    .weui-btn_primary {
-        background: $style-color__green__Light !important;
-    }
-    margin-bottom: 50px;
+  }
+  .content {
+    margin-bottom: 15px;
+  }
+  .weui-btn_primary {
+    background: $style-color__green__Light !important;
+  }
+  margin-bottom: 50px;
 }
 
 #updatagood {
-    background: $style-color__yellow__Light !important;
-    span,
-    font {
-        font-weight: 800;
-        font-size: 24px;
-        color: $style-color__red;
-    }
-    p {
-        color: red;
-    }
+  background: $style-color__yellow__Light !important;
+  span,
+  font {
+    font-weight: 800;
+    font-size: 24px;
+    color: $style-color__red;
+  }
+  p {
+    color: red;
+  }
 }
 
 #testconfirm {
-    .weui-btn-area {
-        &:last-child {
-            padding: 30px 0;
-            .weui-btn_primary {
-                background: $style-color__red !important;
-            }
-        }
+  .weui-btn-area {
+    .weui-btn_primary {
+      padding: 10px 0;
     }
-    .weui-cell_select-after {
-        line-height: 3;
+
+    &:last-child {
+      padding: 10px 0;
+      .weui-btn_primary {
+        background: $style-color__red !important;
+      }
     }
-    .weui-cells {
-        box-shadow: 0px 0px 1px 1px #ddd;
-        border-radius: 2px;
-    }
+  }
+  .weui-cell_select-after {
+    line-height: 3;
+  }
+  .weui-cells {
+    box-shadow: 0px 0px 1px 1px #ddd;
+    border-radius: 2px;
+  }
 }

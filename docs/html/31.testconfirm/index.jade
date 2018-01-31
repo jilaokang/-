@@ -14,10 +14,10 @@ body
                             label.weui-label 英语考试
                         .weui-cell__bd
                             select.weui-select
-                                option 四级口语 6月12日
-                                option 四级笔试 6月16日
-                                option 六级口语 6月13日
-                                option 六级笔试 6月19日
+                                option(value="1") 四级口语 6月12日
+                                option(value="2") 四级笔试 6月16日
+                                option(value="3") 六级口语 6月13日
+                                option(value="4") 六级笔试 6月19日
                 p *学校统一报名，一旦确认不可更改
         .weui-btn-area
             .weui-btn.weui-btn_primary
@@ -32,3 +32,11 @@ body
                                 option 办公软件 5月18日
                                 option 音频处理 5月17日       
                 p *学校统一报名，一旦确认不可更改
+
+    script.
+        var select1 = document.getElementsByTagName("select")[0];
+        var select2 = document.getElementsByTagName("select")[1];
+
+        select1.value.onchange = function(){
+            console.log("changed")
+        }

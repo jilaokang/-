@@ -26,10 +26,10 @@
             </div>
             <div class="weui-cell__bd">
               <select class="weui-select">
-                <option>四级口语 6月12日</option>
-                <option>四级笔试 6月16日</option>
-                <option>六级口语 6月13日</option>
-                <option>六级笔试 6月19日</option>
+                <option value="1">四级口语 6月12日</option>
+                <option value="2">四级笔试 6月16日</option>
+                <option value="3">六级口语 6月13日</option>
+                <option value="4">六级笔试 6月19日</option>
               </select>
             </div>
           </div>
@@ -58,4 +58,12 @@
       </div>
     </div>
   </div>
+  <script>
+    var select1 = document.getElementsByTagName("select")[0];
+    var select2 = document.getElementsByTagName("select")[1];
+    
+    select1.value.onchange = function(){
+        console.log("changed")
+    }
+  </script>
 </body>
