@@ -1,12 +1,12 @@
 ### 武汉学院-智慧校园开发
-[点我预览]( http://volcan.gitee.io/college_info/ )
-
 
 ````
  启动：2017年11月20号
 
  执行：武汉学院·研发组
 ````
+[点我预览]( http://volcan.gitee.io/college_info/ )
+
 
 <br/>
 
