@@ -1,4 +1,5 @@
 ### 武汉学院-智慧校园开发
+[点我预览]( http://volcan.gitee.io/college_info/ )
 
 
 ````
