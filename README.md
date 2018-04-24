@@ -13,19 +13,10 @@
 #### 开发说明
 ##### 前端架构
 
-- [x] html
-- [x] css
-- [x] weui
-- [ ] jade
-- [ ] scss
-- [ ] vue 
-
+- [x] html & css & weui框架
+- [ ] jade & scss & vue
 
 ````
- 基础：Html&CSS，WEUI框架
-
- 进阶：预处理 jade-html,scss-css,vue
-
  基佬康：18086407838
 ````
 
