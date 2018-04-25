@@ -1,7 +1,7 @@
 ### 武汉学院-智慧校园开发
 
 ````
- 启动：2017年11月20号
+ 启动：2017年11月20号
 
  执行：武汉学院·研发组
 ````
@@ -31,29 +31,29 @@ college_info
 │   index.html 首页    
 │
 └───docs 功能目录
-    └───html 所有的小功能存放目录
-    │      02.network 网络报修目
-    │      03.Bus 校车查询
-    │      05.buyUsed 二手易购
-    │      ...
-    │      ...
-    │      ...
-    │      common 公共html模板目录
-    │    
-    └───scss 所有的样式目录
-        │   main.scss 所有css的集合文件
-        │
-        └───block
-              block.scss 独立对各块不同样式
-              diy.scss 自己写的html模块样式
-              var.scss 各类基础变量
-              weui.scss 对weui框架的改造
-   
+│   └───html 所有的小功能存放目录
+│   │      02.network 网络报修目
+│   │      03.Bus 校车查询
+│   │      05.buyUsed 二手易购
+│   │      ...
+│   │      ...
+│   │      ...
+│   │      common 公共html模板目录
+│   │    
+│   └───scss 所有的样式目录
+│       │   main.scss 所有css的集合文件
+│       │
+│       └───block
+│              block.scss 独立对各块不同样式
+│              diy.scss 自己写的html模块样式
+│              var.scss 各类基础变量
+│              weui.scss 对weui框架的改造
+│   
 └───lib 框架文件存放目录
-        │   jquery 
-        │   vue
-        │   Weui
-  
+│       └───jquery 
+│           vue
+│           Weui
+│  
 └───scss 专为首页开发的scss，不用管
     node_modules 附加工具，不用管
 ````
