@@ -24,7 +24,7 @@
 ### 目录结构
 
 ````
-核心目录在./docs/html中，里面为各个子功能开发文件
+核心目录在./docs/html中，里面为各个子功能开发文件
 
 college_info
 │   README.md 说明文档
