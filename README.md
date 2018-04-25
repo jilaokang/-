@@ -54,7 +54,7 @@ college_info
 │           vue
 │           Weui
 │  
-└───scss 专为首页开发的scss，不用管
+└───scss 专为首页开发的scss，不用管
     node_modules 附加工具，不用管
 ````
 
