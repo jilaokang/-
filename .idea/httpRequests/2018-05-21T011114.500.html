@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error - 500</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <style>
+        body {
+            padding: 50px 80px;
+            font: 14px "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        pre {
+            font-size: .8em;
+        }
+    </style>
+</head>
+<body>
+<div id="error">
+    <h1>Error</h1>
+    <p>Looks like something broke!</p>
+
+    <pre>
+        <code>
+Error: Cannot find module &#39;../encodings&#39;
+    at Function.Module._resolveFilename (module.js:536:15)
+    at Function.Module._load (module.js:466:25)
+    at Module.require (module.js:579:17)
+    at require (internal/module.js:11:18)
+    at Object.getCodec (/Users/aa/Nustore Files/.hidden_shortcuts/坚果云/college_info/back_end/node_modules/iconv-lite/lib/index.js:61:27)
+    at Object.getDecoder (/Users/aa/Nustore Files/.hidden_shortcuts/坚果云/college_info/back_end/node_modules/iconv-lite/lib/index.js:118:23)
+    at getDecoder (/Users/aa/Nustore Files/.hidden_shortcuts/坚果云/college_info/back_end/node_modules/raw-body/index.js:44:18)
+    at readStream (/Users/aa/Nustore Files/.hidden_shortcuts/坚果云/college_info/back_end/node_modules/raw-body/index.js:218:15)
+    at executor (/Users/aa/Nustore Files/.hidden_shortcuts/坚果云/college_info/back_end/node_modules/raw-body/index.js:110:5)
+    at new Promise (&lt;anonymous&gt;)
+    at getRawBody (/Users/aa/Nustore Files/.hidden_shortcuts/坚果云/college_info/back_end/node_modules/raw-body/index.js:109:10)
+    at Function.module.exports [as form] (/Users/aa/Nustore Files/.hidden_shortcuts/坚果云/college_info/back_end/node_modules/co-body/lib/form.js:35:10)
+    at parseBody (/Users/aa/Nustore Files/.hidden_shortcuts/坚果云/college_info/back_end/node_modules/koa-bodyparser/index.js:83:20)
+    at bodyParser (/Users/aa/Nustore Files/.hidden_shortcuts/坚果云/college_info/back_end/node_modules/koa-bodyparser/index.js:72:12)
+    at dispatch (/Users/aa/Nustore Files/.hidden_shortcuts/坚果云/college_info/back_end/node_modules/koa-compose/index.js:42:32)
+    at /Users/aa/Nustore Files/.hidden_shortcuts/坚果云/college_info/back_end/node_modules/koa-compose/index.js:34:12
+        </code>
+      </pre>
+
+</div>
+</body>
+</html>
